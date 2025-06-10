@@ -14,11 +14,14 @@ header {
 }
 
 .logo {
-  width: 160px;
-  height: auto;
-  margin-bottom: 10px;
-  filter: drop-shadow(0 0 24px #b8a98f);
-  border-radius: 50%;
+  width: 220px;         /* Increase width as needed */
+  height: auto;         /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto 10px auto;
+  /* Remove border-radius if your logo is not a circle: */
+  border-radius: 0;
+  /* Optional: Add max-width for responsiveness */
+  max-width: 90vw;
 }
 
 nav {
