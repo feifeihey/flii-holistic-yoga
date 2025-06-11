@@ -140,3 +140,21 @@ footer {
     height: 200px;
   }
 }
+.language-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.language-switch button {
+  background: none;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.language-switch button.active {
+  background: #333;
+  color: white;
+}
