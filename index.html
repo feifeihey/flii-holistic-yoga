@@ -6,34 +6,13 @@
   <title>FLII Yoga</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    .language-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    .language-switch button {
-      background: none;
-      border: 1px solid #333;
-      padding: 5px 10px;
-      margin: 0 5px;
-      cursor: pointer;
-    }
-    .language-switch button.active {
-      background: #333;
-      color: white;
-    }
-    [lang="zh"] {
-      display: none;
-    }
-  </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="FLII Yoga Logo" class="logo">
     <div class="language-switch">
-      <button onclick="switchLanguage('en')" class="active">English</button>
-      <button onclick="switchLanguage('zh')">中文</button>
+      <button id="en-btn" class="active">English</button>
+      <button id="zh-btn">中文</button>
     </div>
     <nav>
       <a href="#home" data-en="Home" data-zh="首页">Home</a>
@@ -50,34 +29,61 @@
     </section>
     <section id="about">
       <h2 data-en="About" data-zh="关于我们">About</h2>
-      <p data-en="FLII YOGA is dedicated to helping you nurture mindfulness and holistic well-being through Eastern Philosophy, Yoga & Meditation, and Ayurvedic Therapies." data-zh="FLII YOGA 致力于融合东方哲学、瑜伽冥想与阿育吠陀疗法，引领您走向正念与整体身心灵健康。">FLII YOGA is dedicated to helping you nurture mindfulness and holistic well-being through Eastern Philosophy, Yoga & Meditation, and Ayurvedic Therapies.</p>
+      <p data-en="FLII YOGA is dedicated to helping you nurture mindfulness and holistic well-being through Eastern Philosophy, Yoga & Meditation, and Ayurvedic Therapies." data-zh="FLII瑜伽致力于融合东方哲学、瑜伽冥想与阿育吠陀疗法，引领您走向正念与整体身心灵健康。">FLII YOGA is dedicated to helping you nurture mindfulness and holistic well-being through Eastern Philosophy, Yoga & Meditation, and Ayurvedic Therapies.</p>
     </section>
     <section id="classes">
-  <h2 data-en="Classes & Booking" data-zh="课程与预约">Classes & Booking</h2>
-  <ul class="class-list">
-    <li data-en="Sunrise Hatha - Mondays 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周一 早上6:00 北京">Sunrise Hatha - Mondays 6:00 AM Beijing</li>
-    <li data-en="Sunrise Hatha - Tuesday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周二 早上6:00 北京">Sunrise Hatha - Tuesday 6:00 AM Beijing</li>
-    <li data-en="Sunrise Hatha - Wednesday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周三 早上6:00 北京">Sunrise Hatha - Wednesday 6:00 AM Beijing</li>
-    <li data-en="Sunrise Hatha - Thursday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周四 早上6:00 北京">Sunrise Hatha - Thursday 6:00 AM Beijing</li>
-    <li data-en="Vinyasa Flow - Friday 6:00 AM Beijing" data-zh="流瑜伽 - 周五 早上6:00 北京">Vinyasa Flow - Friday 6:00 AM Beijing</li>
-    <li data-en="Sunset Yin - Saturday 5:00 PM Beijing" data-zh="日落阴瑜伽 - 周六 下午5:00 北京">Sunset Yin - Saturday 5:00 PM Beijing</li>
-  </ul>
-  <div class="booking-form-placeholder">
-    <h3 data-en="Book a Class" data-zh="预约课程">Book a Class</h3>
-    <p data-en="Online booking will be available soon. Please check back later!" data-zh="在线预约功能即将上线，敬请期待！">Online booking will be available soon. Please check back later!</p>
-  </div>
-</section>
+      <h2 data-en="Classes & Booking" data-zh="课程与预约">Classes & Booking</h2>
+      <ul class="class-list">
+        <li data-en="Sunrise Hatha - Mondays 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周一 早上6:00 北京">Sunrise Hatha - Mondays 6:00 AM Beijing</li>
+        <li data-en="Sunrise Hatha - Tuesday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周二 早上6:00 北京">Sunrise Hatha - Tuesday 6:00 AM Beijing</li>
+        <li data-en="Sunrise Hatha - Wednesday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周三 早上6:00 北京">Sunrise Hatha - Wednesday 6:00 AM Beijing</li>
+        <li data-en="Sunrise Hatha - Thursday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周四 早上6:00 北京">Sunrise Hatha - Thursday 6:00 AM Beijing</li>
+        <li data-en="Vinyasa Flow - Friday 6:00 AM Beijing" data-zh="流瑜伽 - 周五 早上6:00 北京">Vinyasa Flow - Friday 6:00 AM Beijing</li>
+        <li data-en="Sunset Yin - Saturday 5:00 PM Beijing" data-zh="日落阴瑜伽 - 周六 下午5:00 北京">Sunset Yin - Saturday 5:00 PM Beijing</li>
+      </ul>
+      <div class="booking-form-placeholder">
+        <h3 data-en="Book a Class" data-zh="预约课程">Book a Class</h3>
+        <p data-en="Online booking will be available soon. Please check back later!" data-zh="在线预约功能即将上线，敬请期待！">Online booking will be available soon. Please check back later!</p>
+      </div>
+    </section>
     <section id="blog">
       <h2 data-en="Blog" data-zh="博客">Blog</h2>
       <article class="blog-post">
         <h3 data-en="5 Benefits of Daily Yoga" data-zh="每日瑜伽的5个好处">5 Benefits of Daily Yoga</h3>
-        <ul>
-          <li><strong data-en="Improves Flexibility & Mobility" data-zh="提升柔韧性与灵活性">Improves Flexibility & Mobility</strong> - <span data-en="Regular practice gently stretches and lengthens muscles, enhancing overall range of motion and reducing stiffness." data-zh="定期练习可以温和地拉伸和延长肌肉，提高整体活动范围并减少僵硬。">Regular practice gently stretches and lengthens muscles, enhancing overall range of motion and reducing stiffness.</span></li>
-          <li><strong data-en="Reduces Stress & Anxiety" data-zh="减轻压力和焦虑">Reduces Stress & Anxiety</strong> – <span data-en="Yoga incorporates breathwork and mindfulness, lowering cortisol levels and promoting relaxation." data-zh="瑜伽结合呼吸法和正念，降低皮质醇水平并促进放松。">Yoga incorporates breathwork and mindfulness, lowering cortisol levels and promoting relaxation.</span></li>
-          <li><strong data-en="Strengthens Muscles & Posture" data-zh="增强肌肉和改善姿势">Strengthens Muscles & Posture</strong> – <span data-en="Poses engage core and stabilizing muscles, improving alignment and reducing back pain." data-zh="体式锻炼核心和稳定肌群，改善身体排列并减少背痛。">Poses engage core and stabilizing muscles, improving alignment and reducing back pain.</span></li>
-          <li><strong data-en="Boosts Mental Clarity & Focus" data-zh="提升精神清晰度和专注力">Boosts Mental Clarity & Focus</strong> – <span data-en="Combines movement with meditation to enhance concentration and reduce mental fog." data-zh="结合运动和冥想，提高专注力并减少精神迷雾。">Combines movement with meditation to enhance concentration and reduce mental fog.</span></li>
-          <li><strong data-en="Supports Heart Health & Circulation" data-zh="支持心脏健康和血液循环">Supports Heart Health & Circulation</strong> – <span data-en="Practices like vinyasa or gentle flow improve blood circulation and may lower blood pressure over time." data-zh="流瑜伽或温和流动等练习可以改善血液循环，长期可能降低血压。">Practices like vinyasa or gentle flow improve blood circulation and may lower blood pressure over time.</span></li>
-        </ul>
+       <article class="blog-post">
+  <h3 data-en="5 Benefits of Daily Yoga" data-zh="每日瑜伽的5个好处">5 Benefits of Daily Yoga</h3>
+  <ul>
+    <li>
+      <strong data-en="Improves Flexibility & Mobility" data-zh="提升柔韧性和灵活性">Improves Flexibility & Mobility</strong> – 
+      <span data-en="Regular practice gently stretches and lengthens muscles, enhancing overall range of motion and reducing stiffness." data-zh="定期练习可以温和地拉伸和延长肌肉，提高整体活动范围并减少僵硬。">
+        Regular practice gently stretches and lengthens muscles, enhancing overall range of motion and reducing stiffness.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Reduces Stress & Anxiety" data-zh="减轻压力和焦虑">Reduces Stress & Anxiety</strong> – 
+      <span data-en="Yoga incorporates breathwork and mindfulness, lowering cortisol levels and promoting relaxation." data-zh="瑜伽结合呼吸法和正念，降低皮质醇水平并促进放松。">
+        Yoga incorporates breathwork and mindfulness, lowering cortisol levels and promoting relaxation.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Strengthens Muscles & Posture" data-zh="增强肌肉和改善姿势">Strengthens Muscles & Posture</strong> – 
+      <span data-en="Poses engage core and stabilizing muscles, improving alignment and reducing back pain." data-zh="体式锻炼核心和稳定肌群，改善身体排列并减少背痛。">
+        Poses engage core and stabilizing muscles, improving alignment and reducing back pain.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Boosts Mental Clarity & Focus" data-zh="提升精神清晰度和专注力">Boosts Mental Clarity & Focus</strong> – 
+      <span data-en="Combines movement with meditation to enhance concentration and reduce mental fog." data-zh="结合运动和冥想，提高专注力并减少精神迷雾。">
+        Combines movement with meditation to enhance concentration and reduce mental fog.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Supports Heart Health & Circulation" data-zh="支持心脏健康和血液循环">Supports Heart Health & Circulation</strong> – 
+      <span data-en="Practices like vinyasa or gentle flow improve blood circulation and may lower blood pressure over time." data-zh="流瑜伽或温和流动等练习可以改善血液循环，长期可能降低血压。">
+        Practices like vinyasa or gentle flow improve blood circulation and may lower blood pressure over time.
+      </span>
+    </li>
+  </ul>
       </article>
       <article class="blog-post">
         <h3 data-en="How to Start a Mindful Practice" data-zh="如何开始正念练习">How to Start a Mindful Practice</h3>
@@ -94,40 +100,30 @@
     <section id="videos">
       <h2 data-en="Videos" data-zh="视频">Videos</h2>
       <div class="video-list">
-      <iframe width="300" height="170" src="https://www.youtube.com/embed/RDdH9f9SGDY" title="Yoga Video 2" frameborder="0" allowfullscreen></iframe>
-      <iframe width="300" height="170" src="https://www.youtube.com/embed/51Kjn6exDro" title="Yoga Video 1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/51Kjn6exDro" title="Yoga Video 1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/RDdH9f9SGDY" title="Yoga Video 2" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
   </main>
   <footer>
     <p data-en="© 2024 FLII YOGA. All rights reserved." data-zh="© 2024 FLII YOGA。保留所有权利。">© 2024 FLII YOGA. All rights reserved.</p>
   </footer>
-
   <script>
     function switchLanguage(lang) {
       // Update active button
-      document.querySelectorAll('.language-switch button').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.textContent.toLowerCase() === lang) {
-          btn.classList.add('active');
-        }
+      document.getElementById('en-btn').classList.toggle('active', lang === 'en');
+      document.getElementById('zh-btn').classList.toggle('active', lang === 'zh');
+      // Update all elements with data-en/data-zh
+      document.querySelectorAll('[data-en]').forEach(function(el) {
+        el.textContent = el.getAttribute('data-' + lang);
       });
-
-      // Update all elements with data attributes
-      document.querySelectorAll('[data-en]').forEach(element => {
-        if (element.tagName === 'INPUT' || element.tagName === 'SELECT') {
-          element.placeholder = element.getAttribute(`data-${lang}-placeholder`) || element.getAttribute(`data-${lang}`);
-        } else {
-          element.textContent = element.getAttribute(`data-${lang}`);
-        }
-      });
-
-      // Update select options
-      document.querySelectorAll('select option').forEach(option => {
-        if (option.getAttribute(`data-${lang}`)) {
-          option.textContent = option.getAttribute(`data-${lang}`);
-        }
+      // For placeholders
+      document.querySelectorAll('[data-en-placeholder]').forEach(function(el) {
+        el.placeholder = el.getAttribute('data-' + lang + '-placeholder');
       });
     }
+    document.getElementById('en-btn').onclick = function() { switchLanguage('en'); };
+    document.getElementById('zh-btn').onclick = function() { switchLanguage('zh'); };
+  </script>
 </body>
 </html>
