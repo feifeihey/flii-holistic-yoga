@@ -27,29 +27,30 @@
       <h2>About</h2>
       <p>FLII YOGA is dedicated to helping you nurture mindfulness and holistic well-being through Eastern Philosophy, Yoga & Meditation, and Ayurvedic Therapies.</p>
     </section>
-    <section id="classes">
+       <section id="classes">
       <h2>Classes & Booking</h2>
       <ul class="class-list">
-        <li>Surise Hatha - Mondays 6:00 AM CST </li>
+        <li>Sunrise Hatha - Mondays 6:00 AM CST</li>
         <li>Sunrise Hatha - Tuesday 6:00 AM CST</li>
         <li>Sunrise Hatha - Wednesday 6:00 AM CST</li>
         <li>Sunrise Hatha - Thursday 6:00 AM CST</li>
         <li>Vinyasa Flow - Friday 6:00 AM CST</li>
-        <li>Sunset Yin - Saturday 5:00 PM CST </li>
+        <li>Sunset Yin - Saturday 5:00 PM CST</li>
       </ul>
-      <form class="booking-form">
+      <form class="booking-form" action="mailto:feifei.li.email@gmail.com" method="post" enctype="text/plain">
         <h3>Book a Class</h3>
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <select name="class">
+        <select name="class" required>
           <option value="">Select Class</option>
-          <option value="morning">Surise Hatha - Monday</option>
-          <option value="morning">Sunrise Hatha - Tuesday</option>
-          <option value="morning">Surise Hatha - Wednesday</option>
-          <option value="morning">Sunrise Hatha - Thursday</option>
-          <option value="morning">Vinyasa Flow - Friday</option>
-          <option value="morning">Sunset Yin - Saturday</option>
+          <option value="monday">Sunrise Hatha - Monday 6:00 AM CST</option>
+          <option value="tuesday">Sunrise Hatha - Tuesday 6:00 AM CST</option>
+          <option value="wednesday">Sunrise Hatha - Wednesday 6:00 AM CST</option>
+          <option value="thursday">Sunrise Hatha - Thursday 6:00 AM CST</option>
+          <option value="friday">Vinyasa Flow - Friday 6:00 AM CST</option>
+          <option value="saturday">Sunset Yin - Saturday 5:00 PM CST</option>
         </select>
+        <input type="hidden" name="subject" value="New Class Booking">
         <button type="submit">Book Now</button>
       </form>
     </section>
