@@ -1,177 +1,129 @@
-body {
-  background: radial-gradient(circle, #f5ecd7 60%, #b8a98f 100%);
-  color: #6b5c3e;
-  font-family: 'Lora', serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  text-align: center;
-  padding: 40px 0 20px 0;
-  background: rgba(245, 236, 215, 0.95);
-  box-shadow: 0 4px 24px 0 rgba(184, 169, 143, 0.2);
-}
-
-.logo {
-  width: 220px;         /* Increase width as needed */
-  height: auto;         /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto 10px auto;
-  /* Remove border-radius if your logo is not a circle: */
-  border-radius: 0;
-  /* Optional: Add max-width for responsiveness */
-  max-width: 90vw;
-}
-
-nav {
-  margin: 20px 0 0 0;
-}
-nav a {
-  color: #6b5c3e;
-  text-decoration: none;
-  margin: 0 18px;
-  font-size: 1.1em;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 18px;
-  transition: background 0.2s;
-}
-nav a:hover {
-  background: #b8d8c2;
-  color: #3a4d3f;
-}
-
-main {
-  max-width: 700px;
-  margin: 40px auto;
-  background: rgba(255,255,255,0.85);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px 0 rgba(184, 169, 143, 0.15);
-  padding: 32px 24px;
-}
-section {
-  margin-bottom: 48px;
-}
-h1, h2, h3 {
-  color: #3a4d3f;
-  font-family: 'Lora', serif;
-  margin-bottom: 12px;
-}
-.class-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 18px;
-}
-.class-list li {
-  background: #e6f2e6;
-  color: #3a4d3f;
-  margin-bottom: 8px;
-  padding: 10px 16px;
-  border-radius: 12px;
-  font-size: 1em;
-}
-.booking-form {
-  background: #f5ecd7;
-  padding: 18px 16px;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px 0 rgba(184, 169, 143, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 350px;
-}
-.booking-form input,
-.booking-form select {
-  padding: 8px 10px;
-  border: 1px solid #b8d8c2;
-  border-radius: 8px;
-  font-size: 1em;
-  font-family: 'Lora', serif;
-}
-.booking-form button {
-  background: #b8d8c2;
-  color: #3a4d3f;
-  border: none;
-  border-radius: 8px;
-  padding: 10px;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.booking-form button:hover {
-  background: #a0c4a0;
-}
-.blog-post {
-  background: #f5ecd7;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 18px;
-  box-shadow: 0 2px 8px 0 rgba(184, 169, 143, 0.07);
-}
-.video-list {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-.video-list iframe {
-  border-radius: 12px;
-  box-shadow: 0 2px 12px 0 rgba(184, 169, 143, 0.12);
-}
-footer {
-  text-align: center;
-  padding: 24px 0 12px 0;
-  color: #b8a98f;
-  font-size: 1em;
-  background: none;
-}
-@media (max-width: 800px) {
-  main {
-    padding: 16px 4vw;
-  }
-  .video-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .video-list iframe {
-    width: 90vw;
-    max-width: 350px;
-    height: 200px;
-  }
-}
-.language-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.language-switch button {
-  background: none;
-  border: 1px solid #333;
-  padding: 5px 10px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.language-switch button.active {
-  background: #333;
-  color: white;
-}
-.booking-form-placeholder {
-  margin-top: 20px;
-  padding: 30px 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-  text-align: center;
-}
-.booking-form-placeholder h3 {
-  margin-bottom: 16px;
-  font-size: 1.4em;
-  color: #333;
-}
-.booking-form-placeholder p {
-  color: #666;
-  font-size: 1.1em;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLII Yoga</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="FLII Yoga Logo" class="logo">
+    <div class="language-switch">
+      <button id="en-btn" class="active">English</button>
+      <button id="zh-btn">中文</button>
+    </div>
+    <nav>
+      <a href="#home" data-en="Home" data-zh="首页">Home</a>
+      <a href="#about" data-en="About" data-zh="关于">About</a>
+      <a href="#classes" data-en="Classes" data-zh="课程">Classes</a>
+      <a href="#blog" data-en="Blog" data-zh="博客">Blog</a>
+      <a href="#videos" data-en="Videos" data-zh="视频">Videos</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1 data-en="Welcome to FLII YOGA" data-zh="欢迎来到FLII YOGA">Welcome to FLII YOGA</h1>
+      <p data-en="Find your balance, strength, and peace with our yoga community." data-zh="在我们的瑜伽社区中找到您的平衡、力量和内心的平静。">Find your balance, strength, and peace with our yoga community.</p>
+    </section>
+    <section id="about">
+      <h2 data-en="About" data-zh="关于我们">About</h2>
+      <p data-en="FLII YOGA is dedicated to helping you nurture mindfulness and holistic well-being through Eastern Philosophy, Yoga & Meditation, and Ayurvedic Therapies." data-zh="FLII瑜伽致力于融合东方哲学、瑜伽冥想与阿育吠陀疗法，引领您走向正念与整体身心灵健康。">FLII YOGA is dedicated to helping you nurture mindfulness and holistic well-being through Eastern Philosophy, Yoga & Meditation, and Ayurvedic Therapies.</p>
+    </section>
+    <section id="classes">
+      <h2 data-en="Classes & Booking" data-zh="课程与预约">Classes & Booking</h2>
+      <ul class="class-list">
+        <li data-en="Sunrise Hatha - Mondays 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周一 早上6:00 北京">Sunrise Hatha - Mondays 6:00 AM Beijing</li>
+        <li data-en="Sunrise Hatha - Tuesday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周二 早上6:00 北京">Sunrise Hatha - Tuesday 6:00 AM Beijing</li>
+        <li data-en="Sunrise Hatha - Wednesday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周三 早上6:00 北京">Sunrise Hatha - Wednesday 6:00 AM Beijing</li>
+        <li data-en="Sunrise Hatha - Thursday 6:00 AM Beijing" data-zh="日出哈他瑜伽 - 周四 早上6:00 北京">Sunrise Hatha - Thursday 6:00 AM Beijing</li>
+        <li data-en="Vinyasa Flow - Friday 6:00 AM Beijing" data-zh="流瑜伽 - 周五 早上6:00 北京">Vinyasa Flow - Friday 6:00 AM Beijing</li>
+        <li data-en="Sunset Yin - Saturday 5:00 PM Beijing" data-zh="日落阴瑜伽 - 周六 下午5:00 北京">Sunset Yin - Saturday 5:00 PM Beijing</li>
+      </ul>
+      <div class="booking-form-placeholder">
+        <h3 data-en="Book a Class" data-zh="预约课程">Book a Class</h3>
+        <p data-en="Online booking will be available soon. Please check back later!" data-zh="在线预约功能即将上线，敬请期待！">Online booking will be available soon. Please check back later!</p>
+      </div>
+    </section>
+    <section id="blog">
+      <h2 data-en="Blog" data-zh="博客">Blog</h2>
+      <article class="blog-post">
+        <h3 data-en="5 Benefits of Daily Yoga" data-zh="每日瑜伽的5个好处">5 Benefits of Daily Yoga</h3>
+       <article class="blog-post">
+  <h3 data-en="5 Benefits of Daily Yoga" data-zh="每日瑜伽的5个好处">5 Benefits of Daily Yoga</h3>
+  <ul>
+    <li>
+      <strong data-en="Improves Flexibility & Mobility" data-zh="提升柔韧性和灵活性">Improves Flexibility & Mobility</strong> – 
+      <span data-en="Regular practice gently stretches and lengthens muscles, enhancing overall range of motion and reducing stiffness." data-zh="定期练习可以温和地拉伸和延长肌肉，提高整体活动范围并减少僵硬。">
+        Regular practice gently stretches and lengthens muscles, enhancing overall range of motion and reducing stiffness.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Reduces Stress & Anxiety" data-zh="减轻压力和焦虑">Reduces Stress & Anxiety</strong> – 
+      <span data-en="Yoga incorporates breathwork and mindfulness, lowering cortisol levels and promoting relaxation." data-zh="瑜伽结合呼吸法和正念，降低皮质醇水平并促进放松。">
+        Yoga incorporates breathwork and mindfulness, lowering cortisol levels and promoting relaxation.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Strengthens Muscles & Posture" data-zh="增强肌肉和改善姿势">Strengthens Muscles & Posture</strong> – 
+      <span data-en="Poses engage core and stabilizing muscles, improving alignment and reducing back pain." data-zh="体式锻炼核心和稳定肌群，改善身体排列并减少背痛。">
+        Poses engage core and stabilizing muscles, improving alignment and reducing back pain.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Boosts Mental Clarity & Focus" data-zh="提升精神清晰度和专注力">Boosts Mental Clarity & Focus</strong> – 
+      <span data-en="Combines movement with meditation to enhance concentration and reduce mental fog." data-zh="结合运动和冥想，提高专注力并减少精神迷雾。">
+        Combines movement with meditation to enhance concentration and reduce mental fog.
+      </span>
+    </li>
+    <li>
+      <strong data-en="Supports Heart Health & Circulation" data-zh="支持心脏健康和血液循环">Supports Heart Health & Circulation</strong> – 
+      <span data-en="Practices like vinyasa or gentle flow improve blood circulation and may lower blood pressure over time." data-zh="流瑜伽或温和流动等练习可以改善血液循环，长期可能降低血压。">
+        Practices like vinyasa or gentle flow improve blood circulation and may lower blood pressure over time.
+      </span>
+    </li>
+  </ul>
+      </article>
+      <article class="blog-post">
+        <h3 data-en="How to Start a Mindful Practice" data-zh="如何开始正念练习">How to Start a Mindful Practice</h3>
+        <ul>
+          <li><strong data-en="Set an Intention" data-zh="设定意图">Set an Intention</strong> – <span data-en="Begin each session with a clear purpose, whether it's relaxation, gratitude, or self-awareness." data-zh="每次练习都以明确的目的开始，无论是放松、感恩还是自我意识。">Begin each session with a clear purpose, whether it's relaxation, gratitude, or self-awareness.</span></li>
+          <li><strong data-en="Focus on Breath" data-zh="专注呼吸">Focus on Breath</strong> – <span data-en="Use deep, conscious breathing to anchor yourself in the present moment." data-zh="使用深度的、有意识的呼吸来锚定自己在当下。">Use deep, conscious breathing to anchor yourself in the present moment.</span></li>
+          <li><strong data-en="Start Small" data-zh="从小开始">Start Small</strong> – <span data-en="Even 5–10 minutes of mindful movement or meditation can create a lasting habit." data-zh="即使是5-10分钟的正念运动或冥想也能形成持久的习惯。">Even 5–10 minutes of mindful movement or meditation can create a lasting habit.</span></li>
+          <li><strong data-en="Observe Without Judgment" data-zh="不带评判地观察">Observe Without Judgment</strong> – <span data-en="Notice sensations, thoughts, and emotions without labeling them as 'good' or 'bad.'" data-zh="注意感觉、想法和情绪，不要将它们标记为'好'或'坏'。">Notice sensations, thoughts, and emotions without labeling them as 'good' or 'bad.'</span></li>
+          <li><strong data-en="Incorporate Mindful Transitions" data-zh="融入正念过渡">Incorporate Mindful Transitions</strong> – <span data-en="Move slowly between poses, paying attention to alignment and breath." data-zh="在体式之间缓慢移动，注意身体排列和呼吸。">Move slowly between poses, paying attention to alignment and breath.</span></li>
+          <li><strong data-en="End with Gratitude" data-zh="以感恩结束">End with Gratitude</strong> – <span data-en="Close your practice by acknowledging your effort and the benefits it brings." data-zh="通过认可自己的努力和带来的好处来结束练习。">Close your practice by acknowledging your effort and the benefits it brings.</span></li>
+        </ul>
+      </article>
+    </section>
+    <section id="videos">
+      <h2 data-en="Videos" data-zh="视频">Videos</h2>
+      <div class="video-list">
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/51Kjn6exDro" title="Yoga Video 1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/RDdH9f9SGDY" title="Yoga Video 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p data-en="© 2024 FLII YOGA. All rights reserved." data-zh="© 2024 FLII YOGA。保留所有权利。">© 2024 FLII YOGA. All rights reserved.</p>
+  </footer>
+  <script>
+    function switchLanguage(lang) {
+      // Update active button
+      document.getElementById('en-btn').classList.toggle('active', lang === 'en');
+      document.getElementById('zh-btn').classList.toggle('active', lang === 'zh');
+      // Update all elements with data-en/data-zh
+      document.querySelectorAll('[data-en]').forEach(function(el) {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+      // For placeholders
+      document.querySelectorAll('[data-en-placeholder]').forEach(function(el) {
+        el.placeholder = el.getAttribute('data-' + lang + '-placeholder');
+      });
+    }
+    document.getElementById('en-btn').onclick = function() { switchLanguage('en'); };
+    document.getElementById('zh-btn').onclick = function() { switchLanguage('zh'); };
+  </script>
+</body>
+</html>
