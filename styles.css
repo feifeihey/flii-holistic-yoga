@@ -1,8 +1,8 @@
 body {
   background: radial-gradient(circle, #f5ecd7 60%, #b8a98f 100%);
-  font-family: 'Special Elite', 'Courier New', monospace;
+  font-family: 'Roboto Serif', serif;
+  font-weight: 300;
   color: #6b5c3e;
-  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +35,8 @@ header {
   padding: 5px 10px;
   margin: 0 5px;
   cursor: pointer;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto Serif', serif;
+  font-weight: 300;
   font-size: 1em;
   border-radius: 5px;
   transition: background 0.2s, color 0.2s;
@@ -53,7 +54,7 @@ nav a {
   text-decoration: none;
   margin: 0 18px;
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: 300;
   padding: 6px 14px;
   border-radius: 18px;
   transition: background 0.2s;
@@ -75,12 +76,11 @@ section {
   border-radius: 24px;
   box-shadow: 0 8px 32px 0 rgba(184, 169, 143, 0.15);
   padding: 32px 24px;
-  border: 1.5px solid #e3d7b8;
+  border: none;
 }
 
 h1, h2, h3 {
   color: #3a4d3f;
-  font-family: 'Lora', serif;
   margin-bottom: 12px;
 }
 
@@ -114,7 +114,6 @@ h1, h2, h3 {
 }
 .hero-text h1 {
   font-size: 2.5em;
-  font-weight: 700;
   margin-bottom: 0.2em;
 }
 .hero-text p {
@@ -128,7 +127,7 @@ h1, h2, h3 {
   color: #3a4d3f;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
-  font-weight: bold;
+  font-weight: 300;
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -216,13 +215,13 @@ h1, h2, h3 {
 .class-overlay h3 {
   margin: 0 0 0.3em 0;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.01em;
-  color: #222;
+  color: #79572f;
 }
 .class-overlay p {
   margin: 0;
-  font-size: 0.75em;
+  font-size: 0.8em;
   line-height: 1.4;
   color: #444;
   word-break: break-word;
@@ -275,9 +274,9 @@ h1, h2, h3 {
   box-shadow: 0 2px 8px 0 rgba(184, 169, 143, 0.07);
 }
 .blog-post h3 {
-  color: #222 !important;
+  color: #79572f !important;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;.
   letter-spacing: 0.01em;
   margin: 0 0 0.3em 0;
 }
@@ -286,7 +285,7 @@ h1, h2, h3 {
 .blog-post span,
 .blog-post strong {
   color: #444 !important;
-  font-size: 0.84em;
+  font-size: 0.8em;
   line-height: 1.4;
   margin: 0;
   word-break: break-word;
