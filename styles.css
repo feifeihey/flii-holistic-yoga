@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 .hero-text p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   margin-bottom: 2em; /* This gives the button more space */
 }
 
@@ -273,14 +273,14 @@ h1, h2, h3 {
 }
 .booking-form-placeholder h3 {
   margin-bottom: 16px;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 500;
   color: #79572f;
 }
 .booking-form-placeholder p {
   color: #79572f;
   font-weight: 500;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* Blog & Video */
