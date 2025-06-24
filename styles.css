@@ -264,7 +264,7 @@ h1, h2, h3 {
 
 .class-overlay p {
   margin: 0;
-  font-size: 0.78em;
+  font-size: 0.75em;
   line-height: 1.4;
   color: #444;
   word-break: break-word;
@@ -299,21 +299,17 @@ h1, h2, h3 {
   color: #79572f !important;
 }
 
-.blog-post p {
-  font-size: 0.78em;
+.blog-post p,
+.blog-post li {
+  font-size: 0.88em;
   line-height: 1.6;
   color: #444;
 }
 
-.blog-post li {
-  font-size: 0.78em;
-  line-height: 1.6;
-  color: #444;
-}
 .blog-post span,
 .blog-post strong {
   color: #444 !important;
-  font-size: 0.78em;
+  font-size: 0.88em;
   line-height: 1.4;
   margin: 0;
   word-break: break-word;
@@ -328,6 +324,7 @@ h1, h2, h3 {
 }
 
 .blog-post li {
+  font-size: 0.88em;
   margin-bottom: 0.78em;
   display: list-item;
   padding-left: 0.3em;
