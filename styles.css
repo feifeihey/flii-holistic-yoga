@@ -1,7 +1,8 @@
 body {
   background: radial-gradient(circle, #f5ecd7 60%, #b8a98f 100%);
+  font-family: 'Special Elite', 'Courier New', monospace;
   color: #6b5c3e;
-  font-family: 'Lora', serif;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -62,68 +63,257 @@ nav a:hover {
   color: #3a4d3f;
 }
 
-main {
-  max-width: 700px;
-  margin: 40px auto;
-  background: rgba(255,255,255,0.85);
+.site-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  margin-bottom: 48px;
+  background: linear-gradient(135deg, #f5ecd7 60%, #e3d7b8 100%);
   border-radius: 24px;
   box-shadow: 0 8px 32px 0 rgba(184, 169, 143, 0.15);
   padding: 32px 24px;
+  border: 1.5px solid #e3d7b8;
 }
-section {
-  margin-bottom: 48px;
-}
+
 h1, h2, h3 {
   color: #3a4d3f;
   font-family: 'Lora', serif;
   margin-bottom: 12px;
 }
+
+/* Hero Section */
+#hero {
+  height: 70vh;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.hero-image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: ellipse(150% 100% at 50% 0%);
+  border-radius: 24px;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.cta-button {
+  text-decoration: none;
+  background-color: #b0c0a4;
+  color: #3a4d3f;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.cta-button:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+#home p,
+#about p {
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* About Section */
+.about-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.about-image {
+  width: 28%;
+  min-width: 120px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.about-text {
+  flex: 1;
+}
+
+/* Class Types Section */
+.class-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  max-width: 100%;
+}
+.class-card {
+  width: 100%;
+  max-width: 320px;
+  background: none;
+  border-radius: 12px;
+  box-shadow: none;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.class-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+.class-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+.class-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #b0c0a4;
+  color: #222;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0.7em;
+  text-align: center;
+  overflow: hidden;
+}
+.class-overlay h3 {
+  margin: 0 0 0.3em 0;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #222;
+}
+.class-overlay p {
+  margin: 0;
+  font-size: 0.75em;
+  line-height: 1.4;
+  color: #444;
+  word-break: break-word;
+}
+
+/* Booking & Lists */
 .class-list {
   list-style: none;
   padding: 0;
   margin-bottom: 18px;
 }
 .class-list li {
-  background: #e6f2e6;
+  background: #f5ecd7;
   color: #3a4d3f;
   margin-bottom: 8px;
   padding: 10px 16px;
+  border: 1.5px solid #b8a98f;
   border-radius: 12px;
   font-size: 1em;
 }
+
 .booking-form-placeholder {
   margin-top: 20px;
   padding: 30px 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  background: #b0c0a4;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(184, 169, 143, 0.10);
+  border: none;
   text-align: center;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .booking-form-placeholder h3 {
   margin-bottom: 16px;
   font-size: 1.4em;
-  color: #333;
+  color: #222;
 }
 .booking-form-placeholder p {
-  color: #666;
+  color: #222;
   font-size: 1.1em;
 }
+
+/* Blog & Video */
 .blog-post {
-  background: #f5ecd7;
+  background: #b0c0a4;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 18px;
   box-shadow: 0 2px 8px 0 rgba(184, 169, 143, 0.07);
 }
+.blog-post h3 {
+  color: #222 !important;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.3em 0;
+}
+.blog-post p,
+.blog-post li,
+.blog-post span,
+.blog-post strong {
+  color: #444 !important;
+  font-size: 0.84em;
+  line-height: 1.4;
+  margin: 0;
+  word-break: break-word;
+  font-weight: normal;
+}
+.blog-post ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+  margin: 0;
+  font-size: 1em; /* Reset for proper nesting */
+}
+.blog-post li {
+  margin-bottom: 0.78em;
+  display: list-item;
+  padding-left: 0.3em;
+}
 .video-list {
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .video-list iframe {
   border-radius: 12px;
   box-shadow: 0 2px 12px 0 rgba(184, 169, 143, 0.12);
 }
+
 footer {
   text-align: center;
   padding: 24px 0 12px 0;
@@ -131,9 +321,41 @@ footer {
   font-size: 1em;
   background: none;
 }
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .class-types {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 800px) {
-  main {
-    padding: 16px 4vw;
+    .hero-text h1 {
+        font-size: 2.2em;
+    }
+    .hero-text p {
+        font-size: 1em;
+    }
+    #hero {
+        height: 50vh;
+    }
+    .about-flex {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .about-image {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+  .site-wrapper {
+    padding: 0 16px;
+  }
+  section {
+    padding: 24px 16px;
   }
   .video-list {
     flex-direction: column;
@@ -141,7 +363,7 @@ footer {
   }
   .video-list iframe {
     width: 90vw;
-    max-width: 350px;
+    max-width: 300px;
     height: 200px;
   }
 }
