@@ -286,7 +286,7 @@ h1, h2, h3 {
 
 .blog-post h3, .booking-form-placeholder h3 {
   color: #79572f !important;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.01em;
   margin: 0 0 0.3em 0;
@@ -299,12 +299,21 @@ h1, h2, h3 {
   color: #79572f !important;
 }
 
-.blog-post p,
-.blog-post li,
+.blog-post p {
+  font-size: 0.78em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.blog-post li {
+  font-size: 0.78em;
+  line-height: 1.6;
+  color: #444;
+}
 .blog-post span,
 .blog-post strong {
   color: #444 !important;
-  font-size: 0.8em;
+  font-size: 0.78em;
   line-height: 1.4;
   margin: 0;
   word-break: break-word;
