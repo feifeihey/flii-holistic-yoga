@@ -8,13 +8,19 @@ body {
 }
 
 header {
+  background: rgba(245, 236, 215, 0.95);
+  box-shadow: 0 4px 24px 0 rgba(184, 169, 143, 0.2);
+  padding: 15px 0;
+  position: relative; /* This is important for the mobile menu */
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background: rgba(245, 236, 215, 0.95);
-  box-shadow: 0 4px 24px 0 rgba(184, 169, 143, 0.2);
-  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .logo {
@@ -166,7 +172,7 @@ h1, h2, h3 {
 
 #home p,
 #about p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: #444;
 }
 
@@ -279,7 +285,7 @@ h1, h2, h3 {
 
 .blog-post h3, .booking-form-placeholder h3 {
   color: #79572f !important;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 700;
   letter-spacing: 0.01em;
   margin: 0 0 0.3em 0;
@@ -287,7 +293,7 @@ h1, h2, h3 {
 
 .booking-form-placeholder p {
   color: #222;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 700;
   color: #79572f !important;
 }
@@ -398,7 +404,7 @@ footer {
   }
 
   .hero-text p {
-    font-size: 0.9em;
+    font-size: 0.85em;
     margin-bottom: 2em;
   }
 
