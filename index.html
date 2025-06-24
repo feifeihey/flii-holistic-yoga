@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLII HOLISTIC</title>
+  <title>FLII HOLISTIC</title>
   <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;500&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="FLII HOLISTIC Logo" class="logo">
-    <div class="language-switch">
-      <button id="en-btn" class="active">English</button>
-      <button id="zh-btn">中文</button>
-    </div>
-    <nav>
+    <button class="hamburger-menu" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="top-nav">
       <a href="#home" data-en="Home" data-zh="首页">Home</a>
       <a href="#about" data-en="About" data-zh="关于">About</a>
       <a href="#class-types" data-en="Classes" data-zh="课程">Classes</a>
       <a href="#classes" data-en="Booking" data-zh="预约">Booking</a>
       <a href="#blog" data-en="Blog" data-zh="博客">Blog</a>
+      <div class="language-switch">
+        <button id="en-btn" class="active">English</button>
+        <button id="zh-btn">中文</button>
+      </div>
     </nav>
   </header>
 
@@ -184,5 +187,5 @@
     <p>© 2024 FLII HOLISTIC. All Rights Reserved.</p>
   </footer>
 
-</body>
+  </body>
 </html>
