@@ -1372,3 +1372,34 @@ This uses a standard, robust carousel pattern to prevent all layout bugs.
     padding-right: 46px;
   }
 }
+/* --- Mobile Carousel: Show One Card at a Time, Centered --- */
+@media (max-width: 600px) {
+  .class-types {
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    gap: 0; /* Remove gap so no edge peeks out */
+    padding: 0 16vw; /* Add horizontal padding to center the card */
+  }
+  .class-card {
+    min-width: 68vw;  /* Card takes up most of the viewport width */
+    max-width: 68vw;
+    width: 68vw;
+    scroll-snap-align: center;
+    margin: 0;        /* Remove margin so only one card is visible */
+    box-sizing: border-box;
+  }
+  .class-types-scroll-wrapper {
+    padding: 0; /* Remove extra padding if any */
+  }
+  .class-scroll-arrow {
+    top: 60%; /* Adjust arrow position for mobile if needed */
+    width: 36px;
+    height: 36px;
+    font-size: 1.2em;
+  }
+}
+
+.class-types {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
