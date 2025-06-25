@@ -45,4 +45,29 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.toggle('nav-active');
     });
   
+     // --- Class Card Horizontal Scroll ---
+  const classTypes = document.querySelector('.class-types');
+  const leftArrow = document.querySelector('.class-scroll-arrow.left');
+  const rightArrow = document.querySelector('.class-scroll-arrow.right');
+  if (classTypes && leftArrow && rightArrow) {
+    leftArrow.addEventListener('click', () => {
+      classTypes.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+    rightArrow.addEventListener('click', () => {
+      classTypes.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+  } 
+    // --- Photo Library Horizontal Scroll ---
+    const photoGallery = document.querySelector('.photo-gallery');
+    const photoLeftArrow = document.querySelector('.photo-scroll-arrow.left');
+    const photoRightArrow = document.querySelector('.photo-scroll-arrow.right');
+  
+    if (photoGallery && photoLeftArrow && photoRightArrow) {
+      photoLeftArrow.addEventListener('click', () => {
+        photoGallery.scrollBy({ left: -350, behavior: 'smooth' }); // Adjust scroll amount as needed
+      });
+      photoRightArrow.addEventListener('click', () => {
+        photoGallery.scrollBy({ left: 350, behavior: 'smooth' }); // Adjust scroll amount as needed
+      });
+    }
   });

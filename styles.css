@@ -476,3 +476,899 @@ footer {
     padding: 0 16px;
   }
 }
+
+/* --- Horizontal scroll for class cards --- */
+.class-types-scroll-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  gap: 0.5rem;
+}
+.class-scroll-arrow {
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(176,192,164,0.18);
+  transition: background 0.2s, transform 0.2s;
+  z-index: 2;
+}
+.class-scroll-arrow:hover {
+  background: #a0b090;
+  transform: scale(1.08);
+}
+.class-types {
+  display: flex !important;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 8px;
+}
+.class-types::-webkit-scrollbar {
+  display: none;
+}
+.class-types {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media (max-width: 900px) {
+  .class-types {
+    flex-direction: row;
+    gap: 0.7rem;
+  }
+  .class-card {
+    min-width: 260px;
+    max-width: 80vw;
+  }
+  .class-scroll-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 600px) {
+  .class-card {
+    min-width: 210px;
+    max-width: 90vw;
+  }
+}
+/* --- Modern overlay arrows for class card scroll --- */
+.class-types-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.class-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.85;
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(176,192,164,0.18);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.class-scroll-arrow.left {
+  left: 0;
+}
+
+.class-scroll-arrow.right {
+  right: 0;
+}
+
+.class-scroll-arrow:hover {
+  background: #a0b090;
+  transform: scale(1.08);
+}
+
+.class-types {
+  margin: 0 56px; /* leave space for arrows, adjust if needed */
+  display: flex !important;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 8px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.class-types::-webkit-scrollbar {
+  display: none;
+}
+/* --- Fix for auto-sizing class cards and overlays --- */
+.class-types {
+  display: flex !important;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 8px;
+  margin: 0 56px; /* leave space for overlay arrows */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.class-types::-webkit-scrollbar {
+  display: none;
+}
+
+.class-card {
+  background: none;
+  border-radius: 12px;
+  box-shadow: none;
+  overflow: visible;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 320px; /* You can adjust this width if you want more/less cards visible at once */
+  min-width: 220px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* auto-size height */
+}
+
+.class-image-wrapper {
+  width: 100%;
+  min-height: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.class-overlay {
+  position: static; /* Not absolute! */
+  width: 100%;
+  height: 100%;
+  background: #b0c0a4;
+  color: #222;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0.7em;
+  text-align: center;
+  overflow: visible;
+}
+
+.class-overlay h3 {
+  margin: 0 0 0.3em 0;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #79572f;
+}
+
+.class-overlay p {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #444;
+  word-break: break-word;
+}
+
+/* --- Overlay scroll arrows --- */
+.class-types-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.class-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.85;
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(176,192,164,0.18);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.class-scroll-arrow.left {
+  left: 0;
+}
+
+.class-scroll-arrow.right {
+  right: 0;
+}
+
+.class-scroll-arrow:hover {
+  background: #a0b090;
+  transform: scale(1.08);
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 900px) {
+  .class-types {
+    gap: 0.7rem;
+  }
+  .class-card {
+    width: 260px;
+    min-width: 180px;
+    max-width: 80vw;
+  }
+  .class-scroll-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2em;
+  }
+  .class-types {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 600px) {
+  .class-card {
+    width: 210px;
+    min-width: 140px;
+    max-width: 95vw;
+  }
+  .class-types {
+    margin: 0 24px;
+  }
+}
+
+/* --- Uniform height for class cards in scroll area --- */
+.class-types {
+  display: flex !important;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 8px;
+  margin: 0 56px; /* leave space for overlay arrows */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  align-items: stretch;   /* Make all cards the same height */
+}
+.class-types::-webkit-scrollbar {
+  display: none;
+}
+
+.class-card {
+  background: none;
+  border-radius: 12px;
+  box-shadow: none;
+  overflow: visible;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 320px;
+  min-width: 220px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex: 1 0 320px;   /* Allow cards to grow/shrink but keep width */
+}
+
+.class-image-wrapper {
+  width: 100%;
+  min-height: 0;
+  height: 100%;      /* Fill parent height */
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.class-overlay {
+  position: static;
+  width: 100%;
+  height: 100%;      /* Fill parent height */
+  background: #b0c0a4;
+  color: #222;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  padding: 1em 0.7em;
+  text-align: center;
+  overflow: visible;
+}
+
+.class-overlay h3 {
+  margin: 0 0 0.3em 0;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #79572f;
+}
+
+.class-overlay p {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #444;
+  word-break: break-word;
+}
+
+/* --- Overlay scroll arrows --- */
+.class-types-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.class-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.85;
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(176,192,164,0.18);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.class-scroll-arrow.left {
+  left: 0;
+}
+
+.class-scroll-arrow.right {
+  right: 0;
+}
+
+.class-scroll-arrow:hover {
+  background: #a0b090;
+  transform: scale(1.08);
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 900px) {
+  .class-types {
+    gap: 0.7rem;
+    margin: 0 40px;
+  }
+  .class-card {
+    width: 260px;
+    min-width: 180px;
+    max-width: 80vw;
+    flex: 1 0 260px;
+  }
+  .class-scroll-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 600px) {
+  .class-card {
+    width: 210px;
+    min-width: 140px;
+    max-width: 95vw;
+    flex: 1 0 210px;
+  }
+  .class-types {
+    margin: 0 24px;
+  }
+}
+
+
+/* Ensures all cards have a subtle, consistent border for definition */
+.class-overlay {
+  border: 1px solid rgba(121, 87, 47, 0.15); /* A subtle border derived from your text color */
+}
+
+/* Beginner's Hatha Yoga - Calming & Natural */
+.class-card.hatha .class-overlay {
+  background: #b0c0a4; /* Earthy Green */
+}
+
+/* Restorative Yin Yoga - Grounding & Deep */
+.class-card.yin .class-overlay {
+  background: #c5b8a5; /* Muted Taupe - a calm, earthy stone color */
+}
+
+/* Vinyasa Flow - Warm & Energetic */
+.class-card.vinyasa .class-overlay {
+  background: #d4a38d; /* Soft Clay - warm and inviting */
+}
+
+/* Ayurveda Cooking - Nourishing & Pure */
+.class-card.ayurveda .class-overlay {
+  background: #d1d9c9; /* Soft Sage - a light, clean, and herbal green */
+}
+
+.class-overlay {
+  position: static;
+  width: 100%;
+  height: 100%;
+  background: #b0c0a4; /* Default background, overridden by specific classes */
+  color: #222;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0.7em;
+  text-align: center;
+  overflow: visible;
+  border: 1px solid #e3d7b8; /* Subtle border for definition */
+}
+
+/* --- Adjust Class Card Text Size for a Refined Look --- */
+.class-overlay h3 {
+  font-size: 0.9em; /* A touch smaller than before */
+}
+
+.class-overlay p {
+  font-size: 0.8em; /* A touch smaller than before */
+  line-height: 1.45; /* Adjusted for better readability with smaller text */
+}
+
+
+/* --- Horizontal Scroll for Photo Library --- */
+.photo-gallery-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.photo-gallery {
+  display: flex !important; /* Override previous grid display */
+  flex-direction: row;
+  align-items: center; /* Vertically align images */
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 56px; /* Leave space for overlay arrows */
+  padding: 8px 0; /* Add some vertical padding */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.photo-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.photo-item {
+  flex-shrink: 0; /* Prevent images from shrinking */
+  max-height: 300px; /* Optional: constrain the max height */
+}
+
+.photo-item img {
+  display: block !important;
+  height: 100% !important; /* Ensure image fits the container height */
+  width: auto !important; /* Allow width to adjust based on aspect ratio */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.photo-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Re-use arrow styles for consistency */
+.photo-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.85;
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(176,192,164,0.18);
+  transition: background 0.2s, transform 0.2s;
+}
+.photo-scroll-arrow.left {
+  left: 0;
+}
+.photo-scroll-arrow.right {
+  right: 0;
+}
+.photo-scroll-arrow:hover {
+  background: #a0b090;
+  transform: scale(1.08);
+}
+
+/* Responsive tweaks for photo gallery arrows */
+@media (max-width: 900px) {
+  .photo-gallery {
+    margin: 0 40px;
+  }
+  .photo-scroll-arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .photo-gallery {
+    margin: 0 24px;
+  }
+}
+
+/* --- Instagram Story Style for Photo Library --- */
+
+/* This gives each photo container a fixed 9:16 aspect ratio */
+.photo-item {
+  flex-shrink: 0;      /* Prevents items from shrinking */
+  width: 200px;          /* Base width for desktop */
+  height: 355px;         /* Base height for desktop (maintains 9:16 ratio) */
+  border-radius: 12px;   /* Keeps the rounded corners */
+  overflow: hidden;      /* Important: Ensures the image respects the container's border-radius */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* This makes the image fill the container without distortion */
+.photo-item img {
+  display: block !important;
+  width: 100% !important;   /* CRITICAL: Fills the container's width */
+  height: 100% !important;  /* CRITICAL: Fills the container's height */
+  object-fit: cover;      /* This crops the image to fit (like Instagram), preventing stretching */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.05); /* A nice hover effect */
+}
+
+
+/* --- Responsive Mobile Tweaks for Story Size --- */
+@media (max-width: 900px) {
+  .photo-item {
+    width: 160px;
+    height: 284px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-item {
+    width: 120px;
+    height: 213px;
+  }
+}
+
+/* --- Fix for Photo Library: No Cropped Text --- */
+
+/* This gives each photo container a fixed 9:16 aspect ratio */
+.photo-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 355px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: #fdfaf2; /* A soft background for any empty space */
+  display: flex;         /* These two lines center the image */
+  align-items: center;   /* inside the container */
+}
+
+/* This makes the image fill the container without distortion */
+.photo-item img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;    /* THE FIX: Shows the whole image, no cropping */
+  border-radius: 8px;     /* A slightly smaller radius for the inner image */
+  transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.03); /* A slightly more subtle hover effect */
+}
+
+/* --- Responsive Mobile Tweaks for Photo Library --- */
+@media (max-width: 900px) {
+  .photo-item {
+    width: 160px;
+    height: 284px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-item {
+    width: 120px;
+    height: 213px;
+  }
+}
+
+/* --- Fix for Photo Library: Readable Text & No White Edges --- */
+
+/* This makes each photo container have a fixed width but automatic height */
+.photo-item {
+  flex-shrink: 0;
+  width: 320px;          /* Give images a consistent, readable width */
+  height: auto;          /* THE FIX: Let height adjust to the image's aspect ratio */
+  border-radius: 12px;
+  overflow: hidden;
+  background: none;      /* No background needed as the image fills the space */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* This makes the image fill the container's width, with height adjusting automatically */
+.photo-item img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important; /* THE FIX: Preserves aspect ratio */
+  object-fit: initial;    /* Reset object-fit */
+  border-radius: 0;       /* The parent container handles the rounding */
+  transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.03);
+}
+
+/* --- Responsive Mobile Tweaks for Photo Library --- */
+@media (max-width: 900px) {
+  .photo-item {
+    width: 280px; /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-item {
+    width: 240px; /* Adjust width for mobile */
+  }
+}
+
+/* --- Final, Robust Fix for Photo Library --- */
+
+/* Use CSS Grid for a bulletproof layout of arrows and scroll area */
+.photo-gallery-scroll-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Left Arrow | Scroll Area | Right Arrow */
+  align-items: center;
+  gap: 0.5rem; /* Space between arrows and content */
+  width: 100%;
+}
+
+/* The scrollable container */
+.photo-gallery {
+  display: flex !important;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  min-width: 0; /* Prevents overflow issues within the grid layout */
+  padding: 8px 4px; /* Give it a little vertical breathing room */
+  -ms-overflow-style: none; /* Hide scrollbar on IE/Edge */
+  scrollbar-width: none;    /* Hide scrollbar on Firefox */
+}
+.photo-gallery::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome, Safari, Opera */
+}
+
+/* Individual photo styles: width is fixed, height is auto */
+.photo-item {
+  flex-shrink: 0; /* Prevents images from shrinking */
+  width: 320px;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.photo-item img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important; /* This preserves the image's aspect ratio */
+}
+
+/* The arrows are now simple, stable grid items */
+.photo-scroll-arrow {
+  /* These styles no longer need position:absolute or transforms */
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(176,192,164,0.18);
+  transition: background 0.2s, transform 0.2s;
+  z-index: 2;
+}
+.photo-scroll-arrow:hover {
+  background: #a0b090;
+  transform: scale(1.08);
+}
+
+
+/* --- Responsive Tweaks for Photo Library --- */
+@media (max-width: 900px) {
+  .photo-item {
+    width: 280px;
+  }
+  .photo-scroll-arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .photo-item {
+    width: 240px;
+  }
+  .photo-gallery-scroll-wrapper {
+    gap: 0.25rem;
+  }
+}
+
+/* ---
+Final, Bulletproof Fix for Photo Library
+This uses a standard, robust carousel pattern to prevent all layout bugs.
+--- */
+
+/* Foundational rule to prevent padding from breaking layouts. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 1. The main wrapper is now the positioning context for the arrows. */
+.photo-gallery-scroll-wrapper {
+  position: relative; /* This is crucial for the new arrow positioning. */
+  width: 100%;
+}
+
+/* 2. The arrows are positioned absolutely, taking them OUT of the layout flow. */
+/* This prevents them from ever pushing the container or causing overflow. */
+.photo-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensures arrows are on top of the images. */
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.2s ease-in-out;
+}
+.photo-scroll-arrow:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+.photo-scroll-arrow.left {
+  left: 10px; /* Position on the left with a small margin. */
+}
+.photo-scroll-arrow.right {
+  right: 10px; /* Position on the right with a small margin. */
+}
+
+/* 3. The scrollable gallery itself. */
+.photo-gallery {
+  display: flex !important; /* Ensure it's a flex container. */
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* Add padding so the first/last images don't hide under the arrows. */
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* This prevents the scrollable area from affecting its parent's width. */
+  width: 100%;
+  margin: 0; /* Reset any margin. */
+  /* Hide the scrollbar cleanly. */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.photo-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+/* 4. Individual photos are sized correctly and will not be cropped. */
+.photo-item {
+  flex-shrink: 0;
+  width: auto;     /* Let the image's height dictate the width. */
+  height: 280px;   /* Give all photos a consistent, readable height. */
+  border-radius: 12px;
+  overflow: hidden;
+  background: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.photo-item img {
+  display: block !important;
+  width: auto !important;   /* Let width adjust based on aspect ratio. */
+  height: 100% !important; /* This is now the controlling dimension. */
+  object-fit: contain;
+}
+
+
+/* --- Responsive Tweaks for the New Layout --- */
+@media (max-width: 900px) {
+  .photo-item {
+    height: 240px;
+  }
+  .photo-gallery {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .photo-scroll-arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .photo-item {
+    height: 200px;
+  }
+  .photo-gallery {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
