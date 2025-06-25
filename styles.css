@@ -365,12 +365,13 @@ h1, h2, h3 {
 }
 
 .photo-item img {
-  display: block; /* Prevents extra space below image */
-  width: 100%;
-  height: auto;   /* This is the key fix */
+  display: block !important; /* Force block display */
+  width: 100% !important; /* Force full width */
+  height: auto !important; /* THIS IS THE CRITICAL FIX */
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 10px; /* Ensures the image is never invisible */
 }
 
 .photo-item img:hover {
