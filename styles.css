@@ -1544,3 +1544,205 @@ Mobile: Single-card, screen-centered carousel.
     right: 5px;
   }
 }
+
+/* ---
+Final, Bulletproof Carousel for Blog Section
+--- */
+
+/* 1. The main wrapper is the positioning context for the arrows. */
+.blog-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* 2. The arrows are positioned absolutely to prevent layout bugs. */
+.blog-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.2s ease-in-out;
+}
+.blog-scroll-arrow:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+.blog-scroll-arrow.left {
+  left: 10px;
+}
+.blog-scroll-arrow.right {
+  right: 10px;
+}
+
+/* 3. The scrollable container for the blog posts. */
+.blog-posts {
+  display: flex !important;
+  align-items: stretch; /* Ensures all blog cards have the same height */
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 64px; /* Space for arrows */
+  width: 100%;
+  margin: 0;
+  /* Hide scrollbar cleanly. */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.blog-posts::-webkit-scrollbar {
+  display: none;
+}
+
+/* 4. Individual blog post styling. */
+.blog-post {
+  flex: 0 0 320px; /* Fixed width for desktop */
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px 0 rgba(184, 169, 143, 0.07);
+}
+
+/* 5. CUSTOM BACKGROUND COLORS FOR EACH BLOG POST */
+.blog-post.benefits-post {
+  background: #e3d7b8; /* Soft Sage */
+}
+.blog-post.mindful-post {
+  background: #e3d7b8; /* Golden Sand */
+}
+
+
+/* --- MOBILE CAROUSEL: Show One Blog Post at a Time --- */
+@media (max-width: 600px) {
+  .blog-posts {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 2rem;
+    padding-left: calc(50% - 150px); /* Centers a 300px card */
+    padding-right: calc(50% - 150px);
+  }
+  .blog-post {
+    flex: 0 0 300px; /* Define the width of the card on mobile */
+    scroll-snap-align: center;
+  }
+  .blog-scroll-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .blog-scroll-arrow.left {
+    left: 5px;
+  }
+  .blog-scroll-arrow.right {
+    right: 5px;
+  }
+}
+
+/* ---
+Final, Bulletproof Fix for Blog Carousel
+This architecture prevents stacking and layout bugs.
+--- */
+
+/* 1. The main wrapper is the positioning context for the arrows. */
+.blog-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* 2. The arrows are positioned absolutely to prevent layout bugs. */
+.blog-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.2s ease-in-out;
+}
+.blog-scroll-arrow:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+.blog-scroll-arrow.left { left: 10px; }
+.blog-scroll-arrow.right { right: 10px; }
+
+/* 3. The scrollable container. THE MOST IMPORTANT RULE IS 'display: flex'. */
+.blog-posts {
+  display: flex !important; /* THIS IS THE KEY: It forces the horizontal layout. */
+  align-items: stretch;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 64px; /* Space for arrows */
+  width: 100%;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.blog-posts::-webkit-scrollbar { display: none; }
+
+/* 4. Individual blog post styling. */
+.blog-post {
+  flex: 0 0 320px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px 0 rgba(184, 169, 143, 0.07);
+}
+
+/* 5. CUSTOM BACKGROUND COLORS */
+.blog-post.benefits-post { background: #e3d7b8; }
+.blog-post.mindful-post { background: #e3d7b8; }
+
+/* --- MOBILE CAROUSEL: Show One Blog Post at a Time --- */
+@media (max-width: 600px) {
+  .blog-posts {
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding-left: calc(50% - 150px);
+    padding-right: calc(50% - 150px);
+  }
+  .blog-post {
+    flex: 0 0 300px;
+    scroll-snap-align: center;
+  }
+  .blog-scroll-arrow { width: 36px; height: 36px; }
+  .blog-scroll-arrow.left { left: 5px; }
+  .blog-scroll-arrow.right { right: 5px; }
+}
+
+/* --- Bulletproof Fix for Blog Carousel --- */
+.blog-scroll-wrapper { position: relative; width: 100%; }
+.blog-scroll-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; background: #b0c0a4; color: #3a4d3f; border: 1px solid rgba(0,0,0,0.05); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.7em; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease-in-out; }
+.blog-scroll-arrow:hover { background: #fff; transform: translateY(-50%) scale(1.08); }
+.blog-scroll-arrow.left { left: 10px; }
+.blog-scroll-arrow.right { right: 10px; }
+.blog-posts { display: flex !important; align-items: stretch; gap: 1.5rem; overflow-x: auto; scroll-behavior: smooth; padding: 8px 64px; width: 100%; margin: 0; -ms-overflow-style: none; scrollbar-width: none; }
+.blog-posts::-webkit-scrollbar { display: none; }
+.blog-post { flex: 0 0 320px; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px 0 rgba(184, 169, 143, 0.07); }
+.blog-post.benefits-post { background: #e3d7b8; }
+.blog-post.mindful-post { background: #e3d7b8; }
+@media (max-width: 600px) {
+  .blog-posts { scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 2rem; padding-left: calc(50% - 150px); padding-right: calc(50% - 150px); }
+  .blog-post { flex: 0 0 300px; scroll-snap-align: center; }
+  .blog-scroll-arrow { width: 36px; height: 36px; }
+  .blog-scroll-arrow.left { left: 5px; }
+  .blog-scroll-arrow.right { right: 5px; }
+}

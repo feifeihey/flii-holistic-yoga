@@ -70,4 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
         photoGallery.scrollBy({ left: 350, behavior: 'smooth' }); // Adjust scroll amount as needed
       });
     }
+      // --- Blog Section Horizontal Scroll ---
+  const blogPostsContainer = document.querySelector('.blog-posts');
+  const blogLeftArrow = document.querySelector('.blog-scroll-arrow.left');
+  const blogRightArrow = document.querySelector('.blog-scroll-arrow.right');
+
+  if (blogPostsContainer && blogLeftArrow && blogRightArrow) {
+    blogLeftArrow.addEventListener('click', () => {
+      // Scroll by the width of one blog post + gap
+      blogPostsContainer.scrollBy({ left: -344, behavior: 'smooth' });
+    });
+    blogRightArrow.addEventListener('click', () => {
+      // Scroll by the width of one blog post + gap
+      blogPostsContainer.scrollBy({ left: 344, behavior: 'smooth' });
+    });
+  }
   });
