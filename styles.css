@@ -1403,3 +1403,144 @@ This uses a standard, robust carousel pattern to prevent all layout bugs.
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
+
+/* --- Mobile: Show One Photo at a Time, Full Width --- */
+@media (max-width: 600px) {
+  .photo-gallery {
+    scroll-snap-type: x mandatory;
+    gap: 0;
+    padding: 0;
+    overflow-x: auto;
+  }
+  .photo-item {
+    min-width: 96vw;  /* Almost full screen, with a little margin for aesthetics */
+    max-width: 96vw;
+    width: 96vw;
+    height: 70vw;     /* 9:16 aspect ratio for portrait, adjust as needed */
+    scroll-snap-align: center;
+    margin: 0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  .photo-gallery-scroll-wrapper {
+    padding: 0;
+  }
+  .photo-scroll-arrow {
+    top: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2em;
+  }
+}
+
+/* ---
+Final, Bulletproof Carousel for Class Cards
+Desktop: Multi-card horizontal scroll.
+Mobile: Single-card, screen-centered carousel.
+--- */
+
+/* 1. The main wrapper is the positioning context for the arrows. */
+.class-types-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* 2. The arrows are positioned absolutely to prevent layout bugs. */
+.class-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #b0c0a4;
+  color: #3a4d3f;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.2s ease-in-out;
+}
+.class-scroll-arrow:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+.class-scroll-arrow.left {
+  left: 10px;
+}
+.class-scroll-arrow.right {
+  right: 10px;
+}
+
+/* 3. The scrollable gallery itself. */
+.class-types {
+  display: flex !important;
+  align-items: stretch; /* Ensures all cards have the same height */
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* Padding creates space so cards don't hide under the arrows. */
+  padding: 8px 64px;
+  width: 100%;
+  margin: 0;
+  /* Hide scrollbar cleanly. */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.class-types::-webkit-scrollbar {
+  display: none;
+}
+
+/* 4. Individual class cards. */
+.class-card {
+  flex: 0 0 280px; /* Gives cards a fixed width so they don't squash. */
+  display: flex;
+}
+.class-overlay {
+  border: 1px solid rgba(121, 87, 47, 0.1);
+}
+
+
+/* --- MOBILE CAROUSEL: Show One Card at a Time (Same effect as Photo Library) --- */
+@media (max-width: 600px) {
+  /* A. Enable snapping behavior on the container. */
+  .class-types {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS. */
+    gap: 2rem; /* The space between the centered cards. */
+    /* Adjust padding for the new layout. */
+    padding-left: calc(50% - 140px); /* These two lines perfectly center the card. */
+    padding-right: calc(50% - 140px);
+  }
+
+  /* B. Make each card the target of the snap. */
+  .class-card {
+    flex: 0 0 280px; /* Define the width of the card. */
+    scroll-snap-align: center;
+  }
+  
+  /* C. Adjust arrow positions for mobile. */
+  .class-scroll-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .class-scroll-arrow.left {
+    left: 5px;
+  }
+  .class-scroll-arrow.right {
+    right: 5px;
+  }
+}
