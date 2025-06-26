@@ -282,7 +282,7 @@ h1, h2, h3 {
 
 /* Blog & Booking */
 .blog-post, .booking-form-placeholder {
-  background: #d1d9c9;
+  background: #dad9d6;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 18px;
@@ -921,12 +921,12 @@ footer {
 
 /* Vinyasa Flow - Warm & Energetic */
 .class-card.vinyasa .class-overlay {
-  background: #d4a38d; /* Soft Clay - warm and inviting */
+  background: #e3d7b8; /* changed to same color as blog background */
 }
 
 /* Ayurveda Cooking - Nourishing & Pure */
 .class-card.ayurveda .class-overlay {
-  background: #d1d9c9; /* Soft Sage - a light, clean, and herbal green */
+  background: #dad9d6; /* Soft Sage - a light, clean, and herbal green */
 }
 
 .class-overlay {
