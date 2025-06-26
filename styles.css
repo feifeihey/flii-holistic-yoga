@@ -1135,6 +1135,10 @@ footer {
     width: 120px;
     height: 213px;
   }
+  .photo-gallery-scroll-wrapper {
+    min-height: 340px !important; /* Adjust this value as needed */
+    height: auto !important;
+  }
 }
 
 /* --- Fix for Photo Library: Readable Text & No White Edges --- */
@@ -1745,4 +1749,74 @@ This architecture prevents stacking and layout bugs.
   .blog-scroll-arrow { width: 36px; height: 36px; }
   .blog-scroll-arrow.left { left: 5px; }
   .blog-scroll-arrow.right { right: 5px; }
+}
+
+
+.photo-item {
+  width: 120px;
+  height: 213px;
+}
+.photo-gallery-scroll-wrapper {
+  min-height: 340px !important; /* Adjust this value as needed */
+  height: auto !important;
+}
+}
+
+@media (max-width: 600px) {
+  .photo-item {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    width: 96vw !important;
+    max-width: 96vw !important;
+    border-radius: 16px !important;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo-item img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 70vw !important;
+    object-fit: contain !important;
+    border-radius: 16px !important;
+    display: block;
+  }
+}
+
+.photo-item {
+  /* Remove any fixed width/height/max-height from previous rules */
+  width: 100%;
+  max-width: 340px;      /* or whatever max width you want for desktop */
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: none;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 420px;     /* or whatever max height you want for desktop */
+  object-fit: contain;   /* Ensures the whole image is visible, never cropped */
+  border-radius: 16px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .photo-item {
+    max-width: 96vw;
+  }
+  .photo-item img {
+    max-height: 60vw;
+  }
 }
