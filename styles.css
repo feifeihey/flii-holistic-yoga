@@ -4,6 +4,9 @@
   --ink-soft: #6a5f58;
   --bg: #f4f1ea;
   --line: rgba(80, 66, 57, 0.2);
+  --img-yoga-hatha: "hatha.png";
+  --img-yoga-yin: "yin.png";
+  --img-yoga-vinyasa: "vinyasa.png";
 }
 
 * {
@@ -352,15 +355,15 @@ body {
 }
 
 .class-card.hatha .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("hatha.png");
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url(var(--img-yoga-hatha));
 }
 
 .class-card.yin .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("yin.png");
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url(var(--img-yoga-yin));
 }
 
 .class-card.vinyasa .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("vinyasa.png");
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url(var(--img-yoga-vinyasa));
 }
 
 .class-card.ayurveda .class-image-wrapper {
