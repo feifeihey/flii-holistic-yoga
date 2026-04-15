@@ -573,6 +573,27 @@ footer {
     flex-wrap: wrap;
   }
 
+  .class-types-scroll-wrapper {
+    display: block;
+  }
+
+  .class-types {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .class-card {
+    flex: initial;
+    width: 100%;
+  }
+
+  .class-scroll-arrow {
+    display: none;
+  }
+
   #about .about-image {
     width: 100%;
     flex-basis: 100%;
