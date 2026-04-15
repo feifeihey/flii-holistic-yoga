@@ -162,11 +162,17 @@ body {
 }
 
 #about .about-flex {
-  align-items: stretch;
+  align-items: center;
 }
 
 .about-text {
   flex: 1 1 280px;
+}
+
+#about .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-image {
@@ -179,9 +185,10 @@ body {
 #about .about-image {
   flex: 0 0 min(420px, 42%);
   width: min(420px, 42%);
-  height: 100%;
-  align-self: stretch;
+  height: clamp(280px, 34vw, 430px);
+  align-self: center;
   object-fit: cover;
+  object-position: center 22%;
 }
 
 .contact-qr-wrap {
@@ -570,5 +577,6 @@ footer {
     width: 100%;
     flex-basis: 100%;
     align-self: auto;
+    height: auto;
   }
 }
