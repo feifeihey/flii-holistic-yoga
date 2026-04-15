@@ -1,88 +1,56 @@
-document.addEventListener('DOMContentLoaded', () => {
+(function () {
+  const enBtn = document.getElementById("en-btn");
+  const zhBtn = document.getElementById("zh-btn");
+  const hamburger = document.querySelector(".hamburger-menu");
+  const topNav = document.querySelector(".top-nav");
 
-    // --- Language Switching Logic ---
-    const enBtn = document.getElementById('en-btn');
-    const zhBtn = document.getElementById('zh-btn');
-    const translatableElements = document.querySelectorAll('[data-en]');
-  
-    const setLanguage = (lang) => {
-      translatableElements.forEach(el => {
-        const text = el.getAttribute(`data-${lang}`);
-        // Use textContent to change only the text, not the inner HTML
-        // Find the first text node and update it
-        const textNode = Array.from(el.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
-        if (textNode) {
-            textNode.textContent = text + ' '; // Add space for elements with children like <strong>
-        } else {
-            // Fallback for elements with no direct text node (like the main P tags)
-            el.textContent = text;
-        }
-      });
-      // Update active button
-      if (lang === 'en') {
-        enBtn.classList.add('active');
-        zhBtn.classList.remove('active');
-      } else {
-        zhBtn.classList.add('active');
-        enBtn.classList.remove('active');
-      }
-      localStorage.setItem('language', lang);
-    };
-  
-    enBtn.addEventListener('click', () => setLanguage('en'));
-    zhBtn.addEventListener('click', () => setLanguage('zh'));
-  
-    // Set initial language from storage or default to English
-    const savedLang = localStorage.getItem('language') || 'en';
-    setLanguage(savedLang);
-  
-  
-    // --- Hamburger Menu Logic ---
-    const hamburger = document.querySelector('.hamburger-menu');
-    const header = document.querySelector('header');
-  
-    hamburger.addEventListener('click', () => {
-      header.classList.toggle('nav-active');
+  function setLang(lang) {
+    document.querySelectorAll("[data-en][data-zh]").forEach(function (el) {
+      var text = lang === "zh" ? el.getAttribute("data-zh") : el.getAttribute("data-en");
+      if (text !== null) el.textContent = text;
     });
-  
-     // --- Class Card Horizontal Scroll ---
-  const classTypes = document.querySelector('.class-types');
-  const leftArrow = document.querySelector('.class-scroll-arrow.left');
-  const rightArrow = document.querySelector('.class-scroll-arrow.right');
-  if (classTypes && leftArrow && rightArrow) {
-    leftArrow.addEventListener('click', () => {
-      classTypes.scrollBy({ left: -320, behavior: 'smooth' });
-    });
-    rightArrow.addEventListener('click', () => {
-      classTypes.scrollBy({ left: 320, behavior: 'smooth' });
-    });
-  } 
-    // --- Photo Library Horizontal Scroll ---
-    const photoGallery = document.querySelector('.photo-gallery');
-    const photoLeftArrow = document.querySelector('.photo-scroll-arrow.left');
-    const photoRightArrow = document.querySelector('.photo-scroll-arrow.right');
-  
-    if (photoGallery && photoLeftArrow && photoRightArrow) {
-      photoLeftArrow.addEventListener('click', () => {
-        photoGallery.scrollBy({ left: -350, behavior: 'smooth' }); // Adjust scroll amount as needed
-      });
-      photoRightArrow.addEventListener('click', () => {
-        photoGallery.scrollBy({ left: 350, behavior: 'smooth' }); // Adjust scroll amount as needed
-      });
+    if (enBtn && zhBtn) {
+      enBtn.classList.toggle("active", lang === "en");
+      zhBtn.classList.toggle("active", lang === "zh");
     }
-      // --- Blog Section Horizontal Scroll ---
-  const blogPostsContainer = document.querySelector('.blog-posts');
-  const blogLeftArrow = document.querySelector('.blog-scroll-arrow.left');
-  const blogRightArrow = document.querySelector('.blog-scroll-arrow.right');
+    try {
+      localStorage.setItem("flii-lang", lang);
+    } catch (e) {}
+  }
 
-  if (blogPostsContainer && blogLeftArrow && blogRightArrow) {
-    blogLeftArrow.addEventListener('click', () => {
-      // Scroll by the width of one blog post + gap
-      blogPostsContainer.scrollBy({ left: -344, behavior: 'smooth' });
-    });
-    blogRightArrow.addEventListener('click', () => {
-      // Scroll by the width of one blog post + gap
-      blogPostsContainer.scrollBy({ left: 344, behavior: 'smooth' });
+  var saved = null;
+  try {
+    saved = localStorage.getItem("flii-lang");
+  } catch (e) {}
+  if (saved === "zh" || saved === "en") {
+    setLang(saved);
+  }
+
+  if (enBtn) enBtn.addEventListener("click", function () { setLang("en"); });
+  if (zhBtn) zhBtn.addEventListener("click", function () { setLang("zh"); });
+
+  if (hamburger && topNav) {
+    hamburger.addEventListener("click", function () {
+      topNav.classList.toggle("is-open");
     });
   }
-  });
+
+  function initHorizontalScroll(wrapperSelector, leftSel, rightSel) {
+    var wrap = document.querySelector(wrapperSelector);
+    if (!wrap) return;
+    var left = wrap.querySelector(leftSel);
+    var right = wrap.querySelector(rightSel);
+    var scrollEl = wrap.querySelector(".class-types, .blog-posts, .photo-gallery");
+    if (!scrollEl || !left || !right) return;
+    left.addEventListener("click", function () {
+      scrollEl.scrollBy({ left: -320, behavior: "smooth" });
+    });
+    right.addEventListener("click", function () {
+      scrollEl.scrollBy({ left: 320, behavior: "smooth" });
+    });
+  }
+
+  initHorizontalScroll(".class-types-scroll-wrapper", ".class-scroll-arrow.left", ".class-scroll-arrow.right");
+  initHorizontalScroll(".blog-scroll-wrapper", ".blog-scroll-arrow.left", ".blog-scroll-arrow.right");
+  initHorizontalScroll(".photo-gallery-scroll-wrapper", ".photo-scroll-arrow.left", ".photo-scroll-arrow.right");
+})();
