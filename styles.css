@@ -352,19 +352,19 @@ body {
 }
 
 .class-card.hatha .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("images/hatha.png");
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("hatha.png");
 }
 
 .class-card.yin .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("images/yin.png");
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("yin.png");
 }
 
 .class-card.vinyasa .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("images/vinyasa.png");
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("vinyasa.png");
 }
 
 .class-card.ayurveda .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("images/body-positivity.jpg");
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("body-positivity.jpg");
 }
 
 .class-overlay {
@@ -510,19 +510,19 @@ body {
 }
 
 .pillar-card--yoga {
-  background-image: url("images/yin.png");
+  background-image: url("yin.png");
 }
 
 .pillar-card--meditation {
-  background-image: url("images/meditation.png");
+  background-image: url("meditation.png");
 }
 
 .pillar-card--sound {
-  background-image: url("images/sound-healing.png");
+  background-image: url("sound-healing.png");
 }
 
 .pillar-card--ayurveda {
-  background-image: url("images/ayurveda.png");
+  background-image: url("ayurveda.png");
 }
 
 .featured-visual {
