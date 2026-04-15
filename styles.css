@@ -4,9 +4,9 @@
   --ink-soft: #6a5f58;
   --bg: #f4f1ea;
   --line: rgba(80, 66, 57, 0.2);
-  --img-yoga-hatha: "hatha.png";
-  --img-yoga-yin: "yin.png";
-  --img-yoga-vinyasa: "vinyasa.png";
+  --img-yoga-hatha: url("hatha.png");
+  --img-yoga-yin: url("yin.png");
+  --img-yoga-vinyasa: url("vinyasa.png");
 }
 
 * {
@@ -355,15 +355,15 @@ body {
 }
 
 .class-card.hatha .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url(var(--img-yoga-hatha));
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), var(--img-yoga-hatha);
 }
 
 .class-card.yin .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url(var(--img-yoga-yin));
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), var(--img-yoga-yin);
 }
 
 .class-card.vinyasa .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url(var(--img-yoga-vinyasa));
+  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), var(--img-yoga-vinyasa);
 }
 
 .class-card.ayurveda .class-image-wrapper {
@@ -487,9 +487,15 @@ body {
   text-decoration: none;
   color: #fff;
   min-height: 200px;
-  background-size: cover;
-  background-position: center;
   box-shadow: 0 4px 20px rgba(47, 40, 36, 0.12);
+}
+
+.pillar-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .pillar-card::after {
@@ -510,22 +516,6 @@ body {
   font-size: 1.1rem;
   letter-spacing: 0.08em;
   text-align: center;
-}
-
-.pillar-card--yoga {
-  background-image: url("yin.png");
-}
-
-.pillar-card--meditation {
-  background-image: url("meditation.png");
-}
-
-.pillar-card--sound {
-  background-image: url("soundhealing-main.png");
-}
-
-.pillar-card--ayurveda {
-  background-image: url("ayurveda.png");
 }
 
 .featured-visual {
