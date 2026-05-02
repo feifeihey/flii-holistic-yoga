@@ -27,10 +27,21 @@ body {
   line-height: 1.6;
 }
 
-.header-container {
+/* Single column for header + main so logo aligns with hero & all body content */
+.site-align {
+  width: 100%;
   max-width: var(--content-max);
-  margin: 0 auto;
-  padding: 1rem var(--content-pad-x);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--content-pad-x);
+  padding-right: var(--content-pad-x);
+  box-sizing: border-box;
+}
+
+.header-container {
+  max-width: none;
+  margin: 0;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,9 +112,9 @@ body {
 }
 
 .site-wrapper {
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding: 0 var(--content-pad-x) 4rem;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 4rem;
 }
 
 .section-title {
