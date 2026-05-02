@@ -167,21 +167,70 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Match hero section text inset (see .hero-text padding: 2rem) */
-#about .section-title {
-  padding-left: 2rem;
-  padding-right: 2rem;
+/* Our Story: copy left, portrait right — full width like hero (inside site-align), no frame */
+.about-story-wrap {
+  margin: 0;
+  background: var(--bg);
+}
+
+.about-story-wrap__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 40%);
+  align-items: stretch;
+  min-height: clamp(420px, 62vh, 920px);
+  /* Space between copy and portrait — not padding-left on body (that misaligned vs hero) */
+  gap: 1.5rem 2rem;
+}
+
+.about-story-wrap__body {
+  padding: 2rem 0 2.5rem;
+  min-width: 0;
+}
+
+.about-story-wrap__figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: clamp(280px, 42vh, 720px);
+}
+
+.about-story-wrap__figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .about-story-wrap__inner {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .about-story-wrap__figure {
+    min-height: clamp(240px, 56vw, 400px);
+  }
 }
 
 #about .about-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
   max-width: none;
-  margin-left: 0;
-  margin-right: 0;
+  color: var(--ink);
+}
+
+#about .about-text p {
+  margin: 0 0 1.05em;
+}
+
+#about .about-text p:last-child {
+  margin-bottom: 0;
 }
 
 .contact-qr-wrap {
