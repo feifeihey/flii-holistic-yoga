@@ -1,5 +1,7 @@
 /* FLII HOLISTIC — shared styles (multi-page) */
 :root {
+  --content-max: 1100px;
+  --content-pad-x: 1.5rem;
   --ink: #2f2824;
   --ink-soft: #6a5f58;
   --bg: #f4f1ea;
@@ -26,9 +28,9 @@ body {
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1rem var(--content-pad-x);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,9 +101,9 @@ body {
 }
 
 .site-wrapper {
-  max-width: 1100px;
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0 1.5rem 4rem;
+  padding: 0 var(--content-pad-x) 4rem;
 }
 
 .section-title {
