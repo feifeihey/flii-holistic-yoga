@@ -1,7 +1,11 @@
 /* FLII HOLISTIC — shared styles (multi-page) */
 :root {
   --content-max: 1100px;
+  /* Horizontal gutter for header + main + footer — matches hero image inset */
   --content-pad-x: 1.5rem;
+  --class-types-gap: 1rem;
+  /* Total row width for three yoga / “classic” cards — gap × 2 between three items */
+  --class-strip-three-span: calc(320px * 3 + 2 * var(--class-types-gap));
   --ink: #2f2824;
   --ink-soft: #6a5f58;
   --bg: #f4f1ea;
@@ -9,6 +13,19 @@
   --img-yoga-hatha: url("hatha.png");
   --img-yoga-yin: url("yin.png");
   --img-yoga-vinyasa: url("vinyasa.png");
+  /* Warm amber / honey photo veils (same family as meditation activity cards) */
+  --photo-veil-warm-a: linear-gradient(
+    165deg,
+    rgba(200, 148, 98, 0.26) 0%,
+    rgba(92, 58, 38, 0.4) 42%,
+    rgba(42, 28, 20, 0.58) 100%
+  );
+  --photo-veil-warm-b: linear-gradient(
+    165deg,
+    rgba(210, 155, 105, 0.24) 0%,
+    rgba(95, 62, 42, 0.38) 44%,
+    rgba(40, 26, 18, 0.58) 100%
+  );
 }
 
 * {
@@ -253,8 +270,9 @@ body {
 .contact-space-wrap {
   text-align: center;
   margin: 0 auto 1.25rem;
-  max-width: 760px;
-  padding: 0 1rem;
+  max-width: none;
+  width: 100%;
+  padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -387,7 +405,7 @@ body {
 
 .class-types {
   display: flex;
-  gap: 1rem;
+  gap: var(--class-types-gap);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 0.5rem 0;
@@ -409,20 +427,44 @@ body {
   background-position: center;
 }
 
+/* Same visible image footprint as yoga cards for any horizontal class strip */
+.class-types > .class-card > .class-image-wrapper {
+  height: 360px;
+  min-height: 360px;
+}
+
 .class-card.hatha .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), var(--img-yoga-hatha);
+  background-image: var(--photo-veil-warm-a), var(--img-yoga-hatha);
 }
 
 .class-card.yin .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), var(--img-yoga-yin);
+  background-image: var(--photo-veil-warm-b), var(--img-yoga-yin);
 }
 
 .class-card.vinyasa .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), var(--img-yoga-vinyasa);
+  background-image: var(--photo-veil-warm-a), var(--img-yoga-vinyasa);
+}
+
+.class-card.sound .class-image-wrapper {
+  background-image: var(--photo-veil-warm-a), url("sound-healing.png");
 }
 
 .class-card.ayurveda .class-image-wrapper {
-  background-image: linear-gradient(rgba(47, 40, 36, 0.35), rgba(47, 40, 36, 0.5)), url("body-positivity.jpg");
+  background-image: var(--photo-veil-warm-b), url("ayurveda.png");
+}
+
+/* Sound / Ayurveda single-column hero cards (not meditation intro) */
+.content-box.ayurveda-single .class-card.sound,
+.content-box.ayurveda-single .class-card.ayurveda {
+  max-width: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content-box.ayurveda-single .class-card.sound .class-image-wrapper,
+.content-box.ayurveda-single .class-card.ayurveda .class-image-wrapper {
+  min-height: 320px;
 }
 
 .class-overlay {
@@ -444,6 +486,143 @@ body {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+/* Meditation page: intro + cards share width; intro typography matches centered cards */
+.meditation-main-stack {
+  width: min(var(--class-strip-three-span), 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Four meditation tiles share the same total span as three yoga cards */
+.meditation-cards-row .class-types {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--class-types-gap);
+  overflow-x: visible;
+  scroll-snap-type: none;
+}
+
+.class-card.meditation .meditation-moving-intro {
+  min-height: auto;
+  background-image: none;
+  background-color: var(--bg);
+}
+
+.class-card.meditation .meditation-moving-intro .class-overlay {
+  justify-content: flex-start;
+  align-items: stretch;
+  text-align: center;
+  color: var(--ink);
+}
+
+.class-card.meditation .meditation-moving-intro .class-overlay h2 {
+  color: var(--ink);
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.75rem;
+}
+
+.class-card.meditation .meditation-moving-intro .class-overlay p {
+  color: var(--ink-soft);
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.65rem;
+}
+
+.class-card.meditation .meditation-moving-intro .class-overlay p:last-child {
+  margin-bottom: 0;
+}
+
+.class-card.meditation-cooking .class-overlay,
+.class-card.meditation-tea .class-overlay,
+.class-card.meditation-baking .class-overlay,
+.class-card.meditation-space .class-overlay {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.7rem 0.4rem;
+}
+
+/* Activity card titles: English one step smaller than Chinese (see html:lang(zh)) */
+.class-card.meditation-cooking .class-overlay h3,
+.class-card.meditation-tea .class-overlay h3,
+.class-card.meditation-baking .class-overlay h3,
+.class-card.meditation-space .class-overlay h3 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(0.6rem, 0.27rem + 0.88vw, 0.78rem);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html:lang(zh) .class-card.meditation-cooking .class-overlay h3,
+html:lang(zh) .class-card.meditation-tea .class-overlay h3,
+html:lang(zh) .class-card.meditation-baking .class-overlay h3,
+html:lang(zh) .class-card.meditation-space .class-overlay h3 {
+  font-size: clamp(0.76rem, 0.36rem + 1.1vw, 0.98rem);
+}
+
+/* Four activity titles — distinct hues, shared legibility on warm veils */
+.class-card.meditation-cooking .class-overlay h3 {
+  color: #dcedc8;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.class-card.meditation-baking .class-overlay h3 {
+  color: #ffe0a3;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.class-card.meditation-tea .class-overlay h3 {
+  color: #f8d4c4;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.class-card.meditation-space .class-overlay h3 {
+  color: #c5e1f5;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.class-card.meditation-baking .meditation-plant-highlight {
+  font-weight: 600;
+  color: #fffdf6;
+  font-size: inherit;
+}
+
+/* Meditation activity cards — warm amber / honey veils (aligned across all four) */
+.class-card.meditation-cooking .meditation-card-photo--cooking {
+  background-image: var(--photo-veil-warm-a), url("cooking-meditation.png");
+}
+
+.class-card.meditation-tea .meditation-card-photo--tea {
+  background-image: var(--photo-veil-warm-a), url("coffee-tea-meditation.png");
+}
+
+.class-card.meditation-baking .meditation-card-photo--baking {
+  background-image: var(--photo-veil-warm-b), url("baking-meditation.png");
+}
+
+.class-card.meditation-space .meditation-card-photo--space {
+  background-image: var(--photo-veil-warm-b), url("space-arrangement-meditation.png");
+}
+
+.class-card.meditation-cooking .class-overlay p,
+.class-card.meditation-tea .class-overlay p,
+.class-card.meditation-baking .class-overlay p,
+.class-card.meditation-space .class-overlay p {
+  max-width: 100%;
+  font-size: clamp(0.56rem, 0.26rem + 0.7vw, 0.68rem);
+  line-height: 1.38;
 }
 
 .class-scroll-arrow {
@@ -510,10 +689,12 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* Pillar page intro */
+/* Pillar page intro — full content column (same horizontal bounds as hero inside .site-align) */
 .pillar-intro {
-  max-width: 720px;
+  max-width: none;
+  width: 100%;
   margin: 0 auto 2rem;
+  padding: 0;
   text-align: center;
   color: var(--ink-soft);
 }
@@ -547,6 +728,22 @@ body {
   box-shadow: 0 4px 20px rgba(47, 40, 36, 0.12);
 }
 
+.pillar-card--yoga {
+  background-image: var(--photo-veil-warm-a), url("yin.png");
+}
+
+.pillar-card--meditation {
+  background-image: var(--photo-veil-warm-b), url("meditation.png");
+}
+
+.pillar-card--sound {
+  background-image: var(--photo-veil-warm-a), url("soundhealing-main.png");
+}
+
+.pillar-card--ayurveda {
+  background-image: var(--photo-veil-warm-b), url("ayurveda.png");
+}
+
 .pillar-card-image {
   position: absolute;
   inset: 0;
@@ -559,7 +756,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(47, 40, 36, 0.30), rgba(47, 40, 36, 0.03));
+  background: linear-gradient(to top, rgba(42, 28, 20, 0.32), rgba(200, 148, 98, 0.06));
 }
 
 .pillar-card span {
@@ -594,8 +791,12 @@ body {
 }
 
 footer {
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem var(--content-pad-x);
   font-size: 0.85rem;
   color: var(--ink-soft);
   border-top: 1px solid var(--line);
@@ -633,6 +834,17 @@ footer {
     scroll-snap-type: none;
   }
 
+  /* Override desktop 4-up grid — stack like yoga cards on narrow screens */
+  .meditation-cards-row .class-types {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .meditation-main-stack {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .class-card {
     flex: initial;
     width: 100%;
@@ -640,6 +852,39 @@ footer {
 
   .class-scroll-arrow {
     display: none;
+  }
+
+  /* Meditation activity cards: slightly larger copy when stacked full-width */
+  .class-card.meditation-cooking .class-overlay,
+  .class-card.meditation-tea .class-overlay,
+  .class-card.meditation-baking .class-overlay,
+  .class-card.meditation-space .class-overlay {
+    padding: 1rem 1.1rem;
+  }
+
+  .class-card.meditation-cooking .class-overlay h3,
+  .class-card.meditation-tea .class-overlay h3,
+  .class-card.meditation-baking .class-overlay h3,
+  .class-card.meditation-space .class-overlay h3 {
+    font-size: clamp(0.78rem, 0.38rem + 0.95vw, 0.92rem);
+    font-weight: 500;
+    margin-bottom: 0.55rem;
+  }
+
+  html:lang(zh) .class-card.meditation-cooking .class-overlay h3,
+  html:lang(zh) .class-card.meditation-tea .class-overlay h3,
+  html:lang(zh) .class-card.meditation-baking .class-overlay h3,
+  html:lang(zh) .class-card.meditation-space .class-overlay h3 {
+    font-size: clamp(1rem, 0.52rem + 1.25vw, 1.2rem);
+  }
+
+  .class-card.meditation-cooking .class-overlay p,
+  .class-card.meditation-tea .class-overlay p,
+  .class-card.meditation-baking .class-overlay p,
+  .class-card.meditation-space .class-overlay p {
+    font-size: clamp(0.72rem, 0.34rem + 0.85vw, 0.86rem);
+    font-weight: 400;
+    line-height: 1.45;
   }
 
 }

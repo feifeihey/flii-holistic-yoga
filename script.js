@@ -5,6 +5,7 @@
   const topNav = document.querySelector(".top-nav");
 
   function setLang(lang) {
+    document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
     document.querySelectorAll("[data-en][data-zh]").forEach(function (el) {
       var text = lang === "zh" ? el.getAttribute("data-zh") : el.getAttribute("data-en");
       if (text !== null) el.textContent = text;
@@ -24,6 +25,8 @@
   } catch (e) {}
   if (saved === "zh" || saved === "en") {
     setLang(saved);
+  } else {
+    document.documentElement.lang = "en";
   }
 
   if (enBtn) enBtn.addEventListener("click", function () { setLang("en"); });
