@@ -148,25 +148,76 @@ body {
 
 #hero .hero-image {
   min-height: 56vh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Hero photo — background URL set by script on #hero-bg so path resolves on GitHub Pages project URLs */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background-size: cover;
   background-position: center;
+  filter: blur(2px);
+  transform: scale(1.02);
+}
+
+/* Same amber / honey veil as yoga & meditation image cards (--photo-veil-warm-a) */
+#hero .hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--photo-veil-warm-a);
+  pointer-events: none;
+}
+
+/* Three-line hero — light weights, warm ivory type */
+.hero-text--stack {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-.hero-text {
   text-align: center;
-  padding: 2rem;
-  color: #fff;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+  padding: 2rem 1.25rem;
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  color: #faf6ef;
 }
 
-.hero-text h1 {
+.hero-line {
+  margin: 0;
+  max-width: 42rem;
   font-weight: 300;
-  font-size: clamp(1.75rem, 5vw, 2.75rem);
-  margin: 0 0 0.75rem;
+  text-shadow: 0 1px 14px rgba(55, 38, 28, 0.18), 0 1px 3px rgba(55, 38, 28, 0.12);
+}
+
+.hero-line--brand {
+  font-weight: 300;
+  font-size: clamp(2rem, 5.5vw, 3.15rem);
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero-line--cats {
+  margin-top: 1.35rem;
+  font-weight: 300;
+  font-size: clamp(0.78rem, 2vw, 1.05rem);
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+.hero-line--tag {
+  margin-top: 0.85rem;
+  font-weight: 300;
+  font-size: clamp(0.72rem, 1.65vw, 0.98rem);
+  letter-spacing: 0.03em;
+  line-height: 1.55;
 }
 
 .cta-button {

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FLII HOLISTIC</title>
-  <link rel="stylesheet" href="styles.css?v=20260423-40">
+  <link rel="stylesheet" href="styles.css?v=20260423-42">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
   <script src="script.js?v=20260423-28" defer></script>
 </head>
@@ -36,7 +36,7 @@
   <main class="site-wrapper">
     <section id="hero">
       <div class="hero-image">
-        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
         <div class="hero-text hero-text--stack">
           <h1 class="hero-line hero-line--brand" data-en="FLII HOLISTIC" data-zh="FLII HOLISTIC">FLII HOLISTIC</h1>
           <p class="hero-line hero-line--cats" data-en="Eastern Philosophy · Yoga &amp; Meditation · Sound Healing · Ayurveda" data-zh="东方哲学 · 瑜伽与冥想 · 声音疗愈 · 阿育吠陀">Eastern Philosophy · Yoga &amp; Meditation · Sound Healing · Ayurveda</p>
@@ -94,5 +94,17 @@
   <footer>
     <p>© 2025 FLII HOLISTIC. All Rights Reserved.</p>
   </footer>
+  <script>
+    (function () {
+      function assetUrlInPageFolder(file) {
+        var path = window.location.pathname;
+        if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
+        if (!path.endsWith("/")) path += "/";
+        return window.location.origin + path + file;
+      }
+      var el = document.getElementById("hero-bg");
+      if (el) el.style.backgroundImage = 'url("' + assetUrlInPageFolder("hero-image.jpg") + '")';
+    })();
+  </script>
 </body>
 </html>
