@@ -445,6 +445,35 @@ body {
   background-image: var(--photo-veil-warm-a), var(--img-yoga-vinyasa);
 }
 
+/* Yoga + meditation activity titles — same hue as Tea / coffee meditation (#f8d4c4) */
+.class-card.hatha .class-overlay h3,
+.class-card.yin .class-overlay h3,
+.class-card.vinyasa .class-overlay h3 {
+  color: #f8d4c4;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  /* English: ~two type sizes below global 1.25rem (see html:lang(zh)) */
+  font-size: 1rem;
+}
+
+html:lang(zh) .class-card.hatha .class-overlay h3,
+html:lang(zh) .class-card.yin .class-overlay h3,
+html:lang(zh) .class-card.vinyasa .class-overlay h3 {
+  font-size: 1.25rem;
+}
+
+/* Yoga card body — English two steps smaller than default 0.9rem */
+.class-card.hatha .class-overlay p,
+.class-card.yin .class-overlay p,
+.class-card.vinyasa .class-overlay p {
+  font-size: 0.8rem;
+}
+
+html:lang(zh) .class-card.hatha .class-overlay p,
+html:lang(zh) .class-card.yin .class-overlay p,
+html:lang(zh) .class-card.vinyasa .class-overlay p {
+  font-size: 0.9rem;
+}
+
 .class-card.sound .class-image-wrapper {
   background-image: var(--photo-veil-warm-a), url("sound-healing.png");
 }
@@ -563,6 +592,8 @@ body {
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #f8d4c4;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
 }
 
 html:lang(zh) .class-card.meditation-cooking .class-overlay h3,
@@ -570,27 +601,6 @@ html:lang(zh) .class-card.meditation-tea .class-overlay h3,
 html:lang(zh) .class-card.meditation-baking .class-overlay h3,
 html:lang(zh) .class-card.meditation-space .class-overlay h3 {
   font-size: clamp(0.76rem, 0.36rem + 1.1vw, 0.98rem);
-}
-
-/* Four activity titles — distinct hues, shared legibility on warm veils */
-.class-card.meditation-cooking .class-overlay h3 {
-  color: #dcedc8;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
-}
-
-.class-card.meditation-baking .class-overlay h3 {
-  color: #ffe0a3;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
-}
-
-.class-card.meditation-tea .class-overlay h3 {
-  color: #f8d4c4;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
-}
-
-.class-card.meditation-space .class-overlay h3 {
-  color: #c5e1f5;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
 }
 
 .class-card.meditation-baking .meditation-plant-highlight {
