@@ -69,4 +69,72 @@
     if (!path.endsWith("/")) path += "/";
     formNext.value = window.location.origin + path + "contact.html?sent=1";
   }
+
+  var contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var errorEl = document.getElementById("contact-form-error");
+      var successEl = document.getElementById("contact-form-success");
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+      if (errorEl) errorEl.hidden = true;
+      if (successEl) successEl.hidden = true;
+
+      var botcheck = contactForm.querySelector('input[name="botcheck"]');
+      if (botcheck && botcheck.checked) return;
+
+      var fd = new FormData(contactForm);
+      var name = String(fd.get("name") || "").trim();
+      var email = String(fd.get("email") || "").trim();
+      var inquirySubject = String(fd.get("inquiry_subject") || "").trim();
+      var message = String(fd.get("message") || "").trim();
+      var accessKey = String(fd.get("access_key") || "").trim();
+      var body = message;
+      if (inquirySubject) {
+        body = "Topic: " + inquirySubject + "\n\n" + message;
+      }
+
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: "FLII HOLISTIC — Contact Us",
+          from_name: name,
+          name: name,
+          email: email,
+          replyto: email,
+          message: body,
+        }),
+      })
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          if (data.success) {
+            contactForm.reset();
+            if (successEl) successEl.hidden = false;
+            if (errorEl) errorEl.hidden = true;
+            try {
+              var u = new URL(window.location.href);
+              u.searchParams.set("sent", "1");
+              window.history.replaceState(null, "", u.pathname + u.search);
+            } catch (err) {}
+            return;
+          }
+          if (errorEl) errorEl.hidden = false;
+        })
+        .catch(function () {
+          if (errorEl) errorEl.hidden = false;
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
+    });
+  }
 })();

@@ -327,6 +327,22 @@ body {
   display: none;
 }
 
+.contact-form-error {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  background: rgba(120, 48, 40, 0.08);
+  color: #7a4038;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-form-error[hidden] {
+  display: none;
+}
+
 .contact-form {
   max-width: 520px;
   margin: 0 auto 2.75rem;

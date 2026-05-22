@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — FLII HOLISTIC</title>
-  <link rel="stylesheet" href="styles.css?v=20260423-54">
+  <script src="base-path.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20260423-56">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
-  <script src="script.js?v=20260423-31" defer></script>
+  <script src="script.js?v=20260423-33" defer></script>
 </head>
 <body class="pillar-page">
   <div class="site-align">
@@ -37,11 +38,12 @@
     <section id="contact">
       <h2 class="section-title" data-en="Contact Us" data-zh="联系我们">Contact Us</h2>
       <p class="contact-form-success" id="contact-form-success" hidden data-en="Thank you — your message has been sent. We will get back to you soon." data-zh="感谢您的留言，我们已收到，会尽快回复您。">Thank you — your message has been sent. We will get back to you soon.</p>
+      <p class="contact-form-error" id="contact-form-error" hidden data-en="Sorry, your message could not be sent. Please try again or contact us via WhatsApp." data-zh="抱歉，留言未能发送。请重试，或通过 WhatsApp 联系我们。">Sorry, your message could not be sent. Please try again or contact us via WhatsApp.</p>
       <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="49ea8c71-77b4-441e-aebd-e6ed7d898f86">
         <input type="hidden" name="subject" value="FLII HOLISTIC — Contact Us">
         <input type="hidden" name="redirect" id="form-next" value="">
-        <input type="checkbox" name="botcheck" class="contact-form-honeypot" tabindex="-1" aria-hidden="true">
+        <input type="checkbox" name="botcheck" class="contact-form-honeypot" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
         <label>
           <span class="required" data-en="Name" data-zh="姓名">Name</span>
           <input type="text" name="name" required autocomplete="name">
@@ -52,7 +54,7 @@
         </label>
         <label>
           <span data-en="Subject" data-zh="主题">Subject</span>
-          <input type="text" name="subject" autocomplete="off">
+          <input type="text" name="inquiry_subject" autocomplete="off">
         </label>
         <label>
           <span class="required" data-en="Message" data-zh="留言">Message</span>
