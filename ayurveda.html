@@ -4,9 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayurveda — FLII HOLISTIC</title>
-  <link rel="stylesheet" href="styles.css?v=20260423-54">
+  <script>
+    (function () {
+      var path = location.pathname;
+      if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
+      else if (path !== "/" && !path.endsWith("/")) path = path.replace(/[^/]+$/, "");
+      if (!path.endsWith("/")) path += "/";
+      window.__siteRoot = path;
+      var head = document.head;
+      var base = document.createElement("base");
+      base.href = path;
+      base.setAttribute("data-site-base", "");
+      head.insertBefore(base, head.firstChild);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260423-57">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
-  <script src="script.js?v=20260423-29" defer></script>
+  <script src="script.js?v=20260423-34" defer></script>
 </head>
 <body class="pillar-page">
   <div class="site-align">

@@ -4,10 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — FLII HOLISTIC</title>
-  <script src="base-path.js"></script>
-  <link rel="stylesheet" href="styles.css?v=20260423-56">
+  <script>
+    (function () {
+      var path = location.pathname;
+      if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
+      else if (path !== "/" && !path.endsWith("/")) path = path.replace(/[^/]+$/, "");
+      if (!path.endsWith("/")) path += "/";
+      window.__siteRoot = path;
+      var head = document.head;
+      var base = document.createElement("base");
+      base.href = path;
+      base.setAttribute("data-site-base", "");
+      head.insertBefore(base, head.firstChild);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260423-57">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
-  <script src="script.js?v=20260423-33" defer></script>
+  <script src="script.js?v=20260423-34" defer></script>
 </head>
 <body class="pillar-page">
   <div class="site-align">
@@ -43,7 +56,7 @@
         <input type="hidden" name="access_key" value="49ea8c71-77b4-441e-aebd-e6ed7d898f86">
         <input type="hidden" name="subject" value="FLII HOLISTIC — Contact Us">
         <input type="hidden" name="redirect" id="form-next" value="">
-        <input type="checkbox" name="botcheck" class="contact-form-honeypot" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="checkbox" name="botcheck" class="contact-form-honeypot" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
         <label>
           <span class="required" data-en="Name" data-zh="姓名">Name</span>
           <input type="text" name="name" required autocomplete="name">

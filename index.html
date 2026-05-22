@@ -4,10 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FLII HOLISTIC</title>
-  <script src="base-path.js"></script>
-  <link rel="stylesheet" href="styles.css?v=20260423-56">
+  <script>
+    (function () {
+      var path = location.pathname;
+      if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
+      else if (path !== "/" && !path.endsWith("/")) path = path.replace(/[^/]+$/, "");
+      if (!path.endsWith("/")) path += "/";
+      window.__siteRoot = path;
+      var head = document.head;
+      var base = document.createElement("base");
+      base.href = path;
+      base.setAttribute("data-site-base", "");
+      head.insertBefore(base, head.firstChild);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260423-57">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
-  <script src="script.js?v=20260423-33" defer></script>
+  <script src="script.js?v=20260423-34" defer></script>
 </head>
 <body>
   <div class="site-align">
@@ -118,9 +131,12 @@
   <script>
     (function () {
       function assetUrlInPageFolder(file) {
-        var path = window.location.pathname;
-        if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
-        if (!path.endsWith("/")) path += "/";
+        var path = window.__siteRoot || window.location.pathname;
+        if (!window.__siteRoot) {
+          if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
+          else if (path !== "/" && !path.endsWith("/")) path = path.replace(/[^/]+$/, "");
+          if (!path.endsWith("/")) path += "/";
+        }
         return window.location.origin + path + file;
       }
       var el = document.getElementById("hero-bg");
