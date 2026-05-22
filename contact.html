@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — FLII HOLISTIC</title>
-  <link rel="stylesheet" href="styles.css?v=20260423-42">
+  <link rel="stylesheet" href="styles.css?v=20260423-54">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
-  <script src="script.js?v=20260423-28" defer></script>
+  <script src="script.js?v=20260423-31" defer></script>
 </head>
 <body class="pillar-page">
   <div class="site-align">
@@ -36,36 +36,56 @@
   <main class="site-wrapper">
     <section id="contact">
       <h2 class="section-title" data-en="Contact Us" data-zh="联系我们">Contact Us</h2>
-      <div class="content-box">
-        <div class="contact-space-wrap">
-          <div class="contact-space-address">
-            <div class="en">No. 425, Yanping Road, Jing'an, Shanghai</div>
-            <div class="cn">上海市静安区延平路425号</div>
-          </div>
-        </div>
-        <div class="contact-qr-wrap">
-          <div class="contact-qr-grid">
-            <div class="qr-card">
-              <a href="https://www.instagram.com/fliiholistic" target="_blank" rel="noopener noreferrer" class="qr-link" aria-label="Open FLII HOLISTIC Instagram">
-                <img src="instagram.png" alt="Instagram icon" class="qr-image">
-                <p data-en="Instagram" data-zh="Instagram">Instagram</p>
-              </a>
-            </div>
-            <div class="qr-card">
-              <a href="https://wa.me/12085804372" target="_blank" rel="noopener noreferrer" class="qr-link" aria-label="Chat on WhatsApp">
-                <img src="whatsapp.png" alt="WhatsApp" class="qr-image">
-                <p data-en="WhatsApp" data-zh="WhatsApp">WhatsApp</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="contact-form-success" id="contact-form-success" hidden data-en="Thank you — your message has been sent. We will get back to you soon." data-zh="感谢您的留言，我们已收到，会尽快回复您。">Thank you — your message has been sent. We will get back to you soon.</p>
+      <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="49ea8c71-77b4-441e-aebd-e6ed7d898f86">
+        <input type="hidden" name="subject" value="FLII HOLISTIC — Contact Us">
+        <input type="hidden" name="redirect" id="form-next" value="">
+        <input type="checkbox" name="botcheck" class="contact-form-honeypot" tabindex="-1" aria-hidden="true">
+        <label>
+          <span class="required" data-en="Name" data-zh="姓名">Name</span>
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label>
+          <span class="required" data-en="Email" data-zh="电子邮箱">Email</span>
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label>
+          <span data-en="Subject" data-zh="主题">Subject</span>
+          <input type="text" name="subject" autocomplete="off">
+        </label>
+        <label>
+          <span class="required" data-en="Message" data-zh="留言">Message</span>
+          <textarea name="message" required rows="6"></textarea>
+        </label>
+        <button type="submit" class="contact-form__submit" data-en="Submit" data-zh="提交">Submit</button>
+      </form>
     </section>
   </main>
   </div>
 
-  <footer>
-    <p>© 2025 FLII HOLISTIC. All Rights Reserved.</p>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="contact-space-address">
+        <div class="en">No. 425, Yanping Road, Jing'an, Shanghai</div>
+        <div class="cn">上海市静安区延平路425号</div>
+      </div>
+      <div class="contact-qr-grid">
+        <div class="qr-card">
+          <a href="https://www.instagram.com/fliiholistic" target="_blank" rel="noopener noreferrer" class="qr-link" aria-label="Open FLII HOLISTIC Instagram">
+            <img src="instagram.png" alt="Instagram icon" class="qr-image">
+            <p data-en="Instagram" data-zh="Instagram">Instagram</p>
+          </a>
+        </div>
+        <div class="qr-card">
+          <a href="https://wa.me/12085804372" target="_blank" rel="noopener noreferrer" class="qr-link" aria-label="Chat on WhatsApp">
+            <img src="whatsapp.png" alt="WhatsApp" class="qr-image">
+            <p data-en="WhatsApp" data-zh="WhatsApp">WhatsApp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="site-footer__copy">© 2025 FLII HOLISTIC. All Rights Reserved.</p>
   </footer>
 </body>
 </html>

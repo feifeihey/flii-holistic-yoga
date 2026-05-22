@@ -56,4 +56,17 @@
   initHorizontalScroll(".class-types-scroll-wrapper", ".class-scroll-arrow.left", ".class-scroll-arrow.right");
   initHorizontalScroll(".blog-scroll-wrapper", ".blog-scroll-arrow.left", ".blog-scroll-arrow.right");
   initHorizontalScroll(".photo-gallery-scroll-wrapper", ".photo-scroll-arrow.left", ".photo-scroll-arrow.right");
+
+  if (new URLSearchParams(window.location.search).get("sent") === "1") {
+    var successEl = document.getElementById("contact-form-success");
+    if (successEl) successEl.hidden = false;
+  }
+
+  var formNext = document.getElementById("form-next");
+  if (formNext) {
+    var path = window.location.pathname;
+    if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
+    if (!path.endsWith("/")) path += "/";
+    formNext.value = window.location.origin + path + "contact.html?sent=1";
+  }
 })();
