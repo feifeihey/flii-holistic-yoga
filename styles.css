@@ -1204,7 +1204,7 @@ body {
 }
 
 .contact-space-address .en {
-  font-size: 0.7875rem;
+  font-size: 0.85rem;
   letter-spacing: 0.04em;
   color: #8a5a36;
   font-weight: 600;
@@ -1212,7 +1212,7 @@ body {
 
 .contact-space-address .cn {
   margin-top: 0.35rem;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   color: #8a5a36;
   font-weight: 600;
 }

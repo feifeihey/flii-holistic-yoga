@@ -117,12 +117,75 @@
     selectedDate = defaultSelectedDate(viewYear, viewMonth, map, monthEvents);
     updateMonthNavButtons();
     renderCalendarUI();
+    refreshBookableSelect();
   }
 
   function isoDate(y, m, d) {
     var mm = String(m + 1).padStart(2, "0");
     var dd = String(d).padStart(2, "0");
     return y + "-" + mm + "-" + dd;
+  }
+
+  function beijingTodayIso() {
+    var n = beijingNow();
+    return isoDate(n.getFullYear(), n.getMonth(), n.getDate());
+  }
+
+  function addDaysToIso(iso, days) {
+    var d = new Date(iso + "T12:00:00");
+    d.setDate(d.getDate() + days);
+    return isoDate(d.getFullYear(), d.getMonth(), d.getDate());
+  }
+
+  /** Booking dropdown: selected day (or today) through the following 14 days; no past dates. */
+  function bookableEventsForSelect(allEvents) {
+    var today = beijingTodayIso();
+    var start = selectedDate || today;
+    if (start < today) start = today;
+    var end = addDaysToIso(start, 14);
+    return sortedEvents(
+      (allEvents || []).filter(function (ev) {
+        return ev.date && ev.date >= start && ev.date <= end;
+      })
+    );
+  }
+
+  function isEventBookable(ev) {
+    if (!ev || !scheduleData) return false;
+    var list = bookableEventsForSelect(scheduleData.events || []);
+    var id = ev.id || "";
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].id === id) return true;
+    }
+    return false;
+  }
+
+  function refreshBookableSelect() {
+    if (!scheduleData) return;
+    populateClassSelect(bookableEventsForSelect(scheduleData.events || []), currentLang());
+  }
+
+  function isMorningClassTime(timeStr) {
+    if (!timeStr) return false;
+    if (/PM|pm|下午|晚上/i.test(timeStr)) return false;
+    var m = timeStr.match(/(\d{1,2}):(\d{2})/);
+    if (!m) return false;
+    return parseInt(m[1], 10) < 12;
+  }
+
+  function formatTimeForSelect(ev, lang) {
+    var raw = pick(ev.time, lang);
+    if (!raw) return "";
+    if (lang === "zh") {
+      if (isMorningClassTime(raw) && !/上午|早上/i.test(raw)) {
+        return raw + " 上午";
+      }
+      return raw;
+    }
+    if (isMorningClassTime(raw) && !/AM|PM/i.test(raw)) {
+      return raw + " AM";
+    }
+    return raw;
   }
 
   function timeSortKey(ev) {
@@ -261,6 +324,7 @@
     }
     selectedDate = iso;
     renderCalendarUI();
+    refreshBookableSelect();
     if (dayPanelEl) {
       dayPanelEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
@@ -360,9 +424,17 @@
     bookBtn.setAttribute("data-en", "Book now");
     bookBtn.setAttribute("data-zh", "预约");
     bookBtn.textContent = lang === "zh" ? "预约" : "Book now";
-    bookBtn.addEventListener("click", function () {
-      scrollToBooking(ev.id);
-    });
+    if (!isEventBookable(ev)) {
+      bookBtn.disabled = true;
+      bookBtn.setAttribute(
+        "title",
+        lang === "zh" ? "仅可预约当天起两周内的课程" : "Only classes within today + the next 2 weeks"
+      );
+    } else {
+      bookBtn.addEventListener("click", function () {
+        scrollToBooking(ev.id);
+      });
+    }
 
     action.appendChild(bookBtn);
     article.appendChild(main);
@@ -531,9 +603,10 @@
     placeholder.value = "";
     placeholder.disabled = true;
     placeholder.selected = true;
-    placeholder.setAttribute("data-en", "Select a class");
-    placeholder.setAttribute("data-zh", "请选择课程");
-    placeholder.textContent = lang === "zh" ? "请选择课程" : "Select a class";
+    placeholder.setAttribute("data-en", "Select a class (today + next 2 weeks)");
+    placeholder.setAttribute("data-zh", "请选择课程（当天起两周内）");
+    placeholder.textContent =
+      lang === "zh" ? "请选择课程（当天起两周内）" : "Select a class (today + next 2 weeks)";
 
     classSelect.innerHTML = "";
     classSelect.appendChild(placeholder);
@@ -542,9 +615,17 @@
       var opt = document.createElement("option");
       opt.value = ev.id || ev.date + "-" + pick(ev.title, "en");
       var labelEn =
-        formatEventDate(ev.date, "en") + " · " + pick(ev.time, "en") + " — " + pick(ev.title, "en");
+        formatEventDate(ev.date, "en") +
+        " · " +
+        formatTimeForSelect(ev, "en") +
+        " — " +
+        pick(ev.title, "en");
       var labelZh =
-        formatEventDate(ev.date, "zh") + " · " + pick(ev.time, "zh") + " — " + pick(ev.title, "zh");
+        formatEventDate(ev.date, "zh") +
+        " · " +
+        formatTimeForSelect(ev, "zh") +
+        " — " +
+        pick(ev.title, "zh");
       opt.setAttribute("data-en", labelEn);
       opt.setAttribute("data-zh", labelZh);
       opt.textContent = lang === "zh" ? labelZh : labelEn;
@@ -603,7 +684,7 @@
     selectedDate = defaultSelectedDate(viewYear, viewMonth, map, monthEvents);
 
     renderCalendarUI();
-    populateClassSelect(events, lang);
+    refreshBookableSelect();
   }
 
   function applySchedule(data) {
@@ -646,7 +727,10 @@
   }
 
   document.addEventListener("flii-lang-change", function () {
-    if (scheduleData) renderSchedule();
+    if (scheduleData) {
+      renderSchedule();
+      refreshBookableSelect();
+    }
   });
 
   loadSchedule();
