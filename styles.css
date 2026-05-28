@@ -327,6 +327,20 @@ body {
   display: none;
 }
 
+.booking-page .contact-form-success {
+  max-width: none;
+  width: max-content;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .booking-page .contact-form-success {
+    font-size: 0.8rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+}
+
 .contact-form-error {
   text-align: center;
   max-width: 36rem;
