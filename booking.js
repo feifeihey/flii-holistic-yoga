@@ -22,6 +22,7 @@
   var viewMonth = null;
   var selectedDate = null;
   var monthNavBound = false;
+  var calendarClickBound = false;
 
   function currentLang() {
     var lang = document.documentElement.lang || "en";
@@ -89,6 +90,27 @@
     }
     calPrevBtn.disabled = viewMonth <= 0;
     calNextBtn.disabled = viewMonth >= 11;
+  }
+
+  function bindCalendarClicks() {
+    if (calendarClickBound) return;
+    calendarClickBound = true;
+    if (gridEl) {
+      gridEl.addEventListener("click", function (e) {
+        var cell = e.target.closest(".booking-cal-cell");
+        if (!cell || cell.disabled) return;
+        var iso = cell.getAttribute("data-date");
+        if (iso) selectDate(iso);
+      });
+    }
+    if (weekstripEl) {
+      weekstripEl.addEventListener("click", function (e) {
+        var btn = e.target.closest(".booking-cal-weekstrip__day");
+        if (!btn) return;
+        var iso = btn.getAttribute("data-date");
+        if (iso) selectDate(iso);
+      });
+    }
   }
 
   function bindMonthNav() {
@@ -489,9 +511,6 @@
         btn.appendChild(dots);
       }
 
-      btn.addEventListener("click", function () {
-        selectDate(btn.getAttribute("data-date"));
-      });
       weekstripEl.appendChild(btn);
     }
   }
@@ -556,16 +575,14 @@
         cell.appendChild(pills);
       }
 
-      cell.addEventListener("click", function () {
-        selectDate(cell.getAttribute("data-date"));
-      });
       gridEl.appendChild(cell);
     }
   }
 
-  function renderDayPanel(lang, map) {
+  function renderDayPanel(lang) {
     if (!dayListEl || !dayLabelEl) return;
-    var events = sortedEvents(map[selectedDate] || []);
+    var fullMap = eventsByDate((scheduleData && scheduleData.events) || []);
+    var events = sortedEvents(fullMap[selectedDate] || []);
     var panelTitle = lang === "zh" ? "当日课程" : "Classes";
     if (selectedDate) {
       dayLabelEl.textContent = formatEventDate(selectedDate, lang);
@@ -593,7 +610,7 @@
 
     renderWeekStrip(lang, map);
     renderMonthGrid(lang, map);
-    renderDayPanel(lang, map);
+    renderDayPanel(lang);
     updateMonthNavButtons();
   }
 
@@ -678,6 +695,7 @@
     }
 
     bindMonthNav();
+    bindCalendarClicks();
 
     var monthEvents = eventsForMonth(events, viewYear, viewMonth);
     var map = eventsByDate(monthEvents);
