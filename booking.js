@@ -415,7 +415,7 @@
       meta.appendChild(li);
     }
 
-    addMeta("◷", pick(ev.time, "en"), pick(ev.time, "zh"));
+    addMeta("◷", formatTimeForSelect(ev, "en"), formatTimeForSelect(ev, "zh"));
     addMeta("◎", pick(ev.teacher, "en"), pick(ev.teacher, "zh"));
     addMeta("⌖", pick(ev.location, "en"), pick(ev.location, "zh"));
     if (ev.spots) {
