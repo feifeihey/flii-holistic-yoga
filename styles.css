@@ -419,6 +419,739 @@ body {
   border-color: #4a403a;
 }
 
+.contact-form select {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.contact-form select:focus {
+  outline: none;
+  border-color: rgba(138, 90, 54, 0.55);
+  box-shadow: 0 0 0 2px rgba(138, 90, 54, 0.12);
+}
+
+/* Booking page */
+.booking-intro {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.booking-schedule-block {
+  max-width: 920px;
+  margin: 0 auto 3.5rem;
+}
+
+.booking-schedule-note {
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.booking-schedule-error,
+.booking-schedule-empty {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.booking-schedule-error[hidden],
+.booking-schedule-empty[hidden],
+.booking-calendar[hidden] {
+  display: none;
+}
+
+/* Calendar — month grid + week strip (inspired by studio booking UIs) */
+.booking-calendar {
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+}
+
+.booking-timezone {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* Class type colors */
+.booking-page {
+  --booking-hatha: #8a5a36;
+  --booking-hatha-bg: rgba(138, 90, 54, 0.14);
+  --booking-vinyasa: #3d8f85;
+  --booking-vinyasa-bg: rgba(61, 143, 133, 0.16);
+  --booking-yin: #5a7088;
+  --booking-yin-bg: rgba(90, 112, 136, 0.14);
+  --booking-yoga: #7a6848;
+  --booking-yoga-bg: rgba(122, 104, 72, 0.12);
+  --booking-workshop: #5c7352;
+  --booking-workshop-bg: rgba(92, 115, 82, 0.16);
+  --booking-meditation: #6d5f82;
+  --booking-meditation-bg: rgba(109, 95, 130, 0.14);
+  --booking-sound-healing: #9a7348;
+  --booking-sound-healing-bg: rgba(154, 115, 72, 0.14);
+  --booking-ayurveda: #8f6b42;
+  --booking-ayurveda-bg: rgba(143, 107, 66, 0.14);
+  --booking-class: #6b6560;
+  --booking-class-bg: rgba(107, 101, 96, 0.12);
+}
+
+.booking-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+.booking-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.booking-legend__swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.booking-legend__swatch--hatha,
+.booking-cal-dot--hatha,
+.booking-cal-cell__pill--hatha {
+  background: var(--booking-hatha);
+}
+
+.booking-legend__swatch--vinyasa,
+.booking-cal-dot--vinyasa,
+.booking-cal-cell__pill--vinyasa {
+  background: var(--booking-vinyasa);
+}
+
+.booking-legend__swatch--yin,
+.booking-cal-dot--yin,
+.booking-cal-cell__pill--yin {
+  background: var(--booking-yin);
+}
+
+.booking-legend__swatch--workshop,
+.booking-cal-dot--workshop,
+.booking-cal-cell__pill--workshop {
+  background: var(--booking-workshop);
+}
+
+.booking-legend__swatch--meditation,
+.booking-cal-dot--meditation,
+.booking-cal-cell__pill--meditation {
+  background: var(--booking-meditation);
+}
+
+.booking-legend__swatch--sound-healing,
+.booking-cal-dot--sound-healing,
+.booking-cal-cell__pill--sound-healing {
+  background: var(--booking-sound-healing);
+}
+
+.booking-legend__swatch--ayurveda,
+.booking-cal-dot--ayurveda,
+.booking-cal-cell__pill--ayurveda {
+  background: var(--booking-ayurveda);
+}
+
+.booking-cal-cell__pill--hatha {
+  color: var(--booking-hatha);
+  background: var(--booking-hatha-bg);
+}
+
+.booking-cal-cell__pill--vinyasa {
+  color: var(--booking-vinyasa);
+  background: var(--booking-vinyasa-bg);
+}
+
+.booking-cal-cell__pill--yin {
+  color: var(--booking-yin);
+  background: var(--booking-yin-bg);
+}
+
+.booking-cal-cell__pill--yoga {
+  color: var(--booking-yoga);
+  background: var(--booking-yoga-bg);
+}
+
+.booking-cal-cell__pill--workshop {
+  color: var(--booking-workshop);
+  background: var(--booking-workshop-bg);
+}
+
+.booking-cal-cell__pill--highlight {
+  font-weight: 500;
+  box-shadow: 0 0 0 1px var(--booking-workshop);
+}
+
+.booking-legend__swatch--highlight {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--booking-workshop);
+}
+
+.booking-cal-cell__pill--meditation {
+  color: var(--booking-meditation);
+  background: var(--booking-meditation-bg);
+}
+
+.booking-cal-cell__pill--sound-healing {
+  color: var(--booking-sound-healing);
+  background: var(--booking-sound-healing-bg);
+}
+
+.booking-cal-cell__pill--ayurveda {
+  color: var(--booking-ayurveda);
+  background: var(--booking-ayurveda-bg);
+}
+
+.booking-cal-weekstrip__dots i {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--hatha,
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--yin,
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--workshop,
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--meditation,
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--sound-healing,
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--ayurveda,
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--yoga,
+.booking-cal-weekstrip__day.is-selected .booking-cal-dot--class {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.85);
+}
+
+.booking-class-card--hatha {
+  border-left: 4px solid var(--booking-hatha);
+}
+
+.booking-class-card--yin {
+  border-left: 4px solid var(--booking-yin);
+}
+
+.booking-class-card--yoga {
+  border-left: 4px solid var(--booking-yoga);
+}
+
+.booking-class-card--workshop {
+  border-left: 4px solid var(--booking-workshop);
+}
+
+.booking-class-card--vinyasa {
+  border-left: 4px solid var(--booking-vinyasa);
+}
+
+.booking-class-card--highlight {
+  border: 2px solid var(--booking-workshop);
+  border-left-width: 5px;
+  background: linear-gradient(135deg, #fff 0%, var(--booking-workshop-bg) 55%, #fff 100%);
+  box-shadow: 0 6px 22px rgba(92, 115, 82, 0.18);
+}
+
+.booking-class-card__badge {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background: var(--booking-workshop);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.booking-class-card--meditation {
+  border-left: 4px solid var(--booking-meditation);
+}
+
+.booking-class-card--sound-healing {
+  border-left: 4px solid var(--booking-sound-healing);
+}
+
+.booking-class-card--ayurveda {
+  border-left: 4px solid var(--booking-ayurveda);
+}
+
+.booking-class-card--class {
+  border-left: 4px solid var(--booking-class);
+}
+
+.booking-class-card__label {
+  font-weight: 500;
+}
+
+.booking-class-card--class .booking-class-card__label {
+  color: var(--booking-class);
+}
+
+.booking-class-card--hatha .booking-class-card__label {
+  color: var(--booking-hatha);
+}
+
+.booking-class-card--vinyasa .booking-class-card__label {
+  color: var(--booking-vinyasa);
+}
+
+.booking-class-card--yin .booking-class-card__label {
+  color: var(--booking-yin);
+}
+
+.booking-class-card--yoga .booking-class-card__label {
+  color: var(--booking-yoga);
+}
+
+.booking-class-card--workshop .booking-class-card__label {
+  color: var(--booking-workshop);
+}
+
+.booking-class-card--meditation .booking-class-card__label {
+  color: var(--booking-meditation);
+}
+
+.booking-class-card--sound-healing .booking-class-card__label {
+  color: var(--booking-sound-healing);
+}
+
+.booking-class-card--ayurveda .booking-class-card__label {
+  color: var(--booking-ayurveda);
+}
+
+.booking-class-card__book--hatha {
+  background: var(--booking-hatha);
+}
+
+.booking-class-card__book--vinyasa {
+  background: var(--booking-vinyasa);
+}
+
+.booking-class-card__book--yin {
+  background: var(--booking-yin);
+}
+
+.booking-class-card__book--workshop {
+  background: var(--booking-workshop);
+}
+
+.booking-class-card__book--meditation {
+  background: var(--booking-meditation);
+}
+
+.booking-class-card__book--sound-healing {
+  background: var(--booking-sound-healing);
+}
+
+.booking-class-card__book--ayurveda {
+  background: var(--booking-ayurveda);
+}
+
+.booking-class-card__book--hatha:hover {
+  background: #734a2e;
+}
+
+.booking-class-card__book--vinyasa:hover {
+  background: #32786f;
+}
+
+.booking-class-card__book--yin:hover {
+  background: #4a5f74;
+}
+
+.booking-class-card__book--workshop:hover {
+  background: #4a5f42;
+}
+
+.booking-class-card__book--meditation:hover {
+  background: #5a4f6c;
+}
+
+.booking-class-card__book--sound-healing:hover {
+  background: #82613c;
+}
+
+.booking-class-card__book--ayurveda:hover {
+  background: #7a5a38;
+}
+
+.booking-cal-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.booking-cal-month-title {
+  margin: 0;
+  min-width: 10rem;
+  text-align: center;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.booking-cal-nav {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink-soft);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.booking-cal-nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.booking-cal-nav:not(:disabled):hover {
+  border-color: #8a5a36;
+  color: var(--ink);
+}
+
+.booking-cal-weekstrip {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.booking-cal-weekstrip__day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-family: inherit;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+}
+
+.booking-cal-weekstrip__num {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.booking-cal-weekstrip__day.is-selected {
+  background: var(--ink);
+  color: #faf6ef;
+}
+
+.booking-cal-weekstrip__day.is-selected .booking-cal-weekstrip__num {
+  color: #faf6ef;
+}
+
+.booking-cal-weekstrip__day.is-outside {
+  opacity: 0.45;
+}
+
+.booking-cal-weekstrip__dots {
+  display: flex;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+
+.booking-cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+  margin-bottom: 0.35rem;
+  text-align: center;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.booking-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.35rem;
+  margin-bottom: 2rem;
+}
+
+.booking-cal-cell {
+  min-height: 5.5rem;
+  padding: 0.45rem 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.booking-cal-cell:hover:not(:disabled) {
+  border-color: rgba(138, 90, 54, 0.45);
+}
+
+.booking-cal-cell.is-selected {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 1px var(--ink);
+}
+
+.booking-cal-cell:has(.booking-cal-cell__pill--highlight) {
+  box-shadow: inset 0 0 0 2px var(--booking-workshop);
+}
+
+.booking-cal-cell.is-outside {
+  visibility: hidden;
+  pointer-events: none;
+  border: none;
+  min-height: 0;
+  padding: 0;
+}
+
+.booking-cal-cell__num {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.booking-cal-cell__pills {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.booking-cal-cell__pill {
+  display: block;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  padding: 2px 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.booking-cal-cell__more {
+  font-size: 0.62rem;
+  color: var(--ink-soft);
+}
+
+.booking-cal-daypanel {
+  margin-top: 1.25rem;
+  padding: 1.35rem 1.25rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  scroll-margin-top: 5rem;
+}
+
+.booking-class-card__note {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.booking-cal-daypanel__title {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.booking-cal-daypanel__empty {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.booking-cal-daypanel__empty[hidden] {
+  display: none;
+}
+
+.booking-cal-day-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking-class-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 1.5rem;
+  align-items: stretch;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.booking-class-card__label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.booking-class-card__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+}
+
+.booking-class-card__meta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.booking-class-card__meta li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.booking-class-card__icon {
+  flex-shrink: 0;
+  width: 1.1rem;
+  text-align: center;
+  opacity: 0.65;
+}
+
+.booking-class-card__action {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-left: 1px solid var(--line);
+  padding-left: 1.25rem;
+}
+
+.booking-class-card__book {
+  padding: 0.65rem 1.35rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #faf6ef;
+  font-family: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.booking-class-card__book:hover {
+  background: #4a403a;
+}
+
+@media (max-width: 720px) {
+  .booking-class-card {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-class-card__action {
+    border-left: none;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: 1rem;
+    justify-content: flex-start;
+  }
+
+  .booking-cal-cell {
+    min-height: 3.5rem;
+  }
+
+  .booking-cal-cell__pill {
+    display: none;
+  }
+
+  .booking-cal-cell.has-class .booking-cal-cell__num::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: var(--booking-hatha);
+  }
+
+  .booking-cal-cell.has-class:has(.booking-cal-cell__pill--yin) .booking-cal-cell__num::after {
+    background: var(--booking-yin);
+  }
+
+  .booking-cal-cell.has-class:has(.booking-cal-cell__pill--workshop) .booking-cal-cell__num::after {
+    background: var(--booking-workshop);
+  }
+}
+
+.booking-form-title {
+  margin-top: 0;
+}
+
+.booking-whatsapp {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.booking-whatsapp a {
+  color: var(--ink);
+  margin-left: 0.35rem;
+}
+
 .contact-qr-wrap {
   margin-top: 2.25rem;
 }

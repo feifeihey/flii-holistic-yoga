@@ -17,6 +17,9 @@
     try {
       localStorage.setItem("flii-lang", lang);
     } catch (e) {}
+    document.dispatchEvent(
+      new CustomEvent("flii-lang-change", { detail: { lang: lang } })
+    );
   }
 
   var saved = null;

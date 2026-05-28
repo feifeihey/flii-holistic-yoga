@@ -1,0 +1,6922 @@
+{
+  "year": 2026,
+  "timezone": {
+    "en": "Beijing Time (GMT+8)",
+    "zh": "北京时间（GMT+8）"
+  },
+  "events": [
+    {
+      "id": "2026-01-01-hatha",
+      "date": "2026-01-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-02-hatha",
+      "date": "2026-01-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-03-yin",
+      "date": "2026-01-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-05-hatha",
+      "date": "2026-01-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-06-hatha",
+      "date": "2026-01-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-07-vinyasa",
+      "date": "2026-01-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-08-hatha",
+      "date": "2026-01-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-09-hatha",
+      "date": "2026-01-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-10-yin",
+      "date": "2026-01-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-12-hatha",
+      "date": "2026-01-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-13-hatha",
+      "date": "2026-01-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-14-vinyasa",
+      "date": "2026-01-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-15-hatha",
+      "date": "2026-01-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-16-hatha",
+      "date": "2026-01-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-17-yin",
+      "date": "2026-01-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-19-hatha",
+      "date": "2026-01-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-20-hatha",
+      "date": "2026-01-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-21-vinyasa",
+      "date": "2026-01-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-22-hatha",
+      "date": "2026-01-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-23-hatha",
+      "date": "2026-01-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-24-yin",
+      "date": "2026-01-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-26-hatha",
+      "date": "2026-01-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-27-hatha",
+      "date": "2026-01-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-28-vinyasa",
+      "date": "2026-01-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-29-hatha",
+      "date": "2026-01-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-30-hatha",
+      "date": "2026-01-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-01-31-yin",
+      "date": "2026-01-31",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-02-hatha",
+      "date": "2026-02-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-03-hatha",
+      "date": "2026-02-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-04-vinyasa",
+      "date": "2026-02-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-05-hatha",
+      "date": "2026-02-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-06-hatha",
+      "date": "2026-02-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-07-yin",
+      "date": "2026-02-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-09-hatha",
+      "date": "2026-02-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-10-hatha",
+      "date": "2026-02-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-11-vinyasa",
+      "date": "2026-02-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-12-hatha",
+      "date": "2026-02-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-13-hatha",
+      "date": "2026-02-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-14-yin",
+      "date": "2026-02-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-16-hatha",
+      "date": "2026-02-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-17-hatha",
+      "date": "2026-02-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-18-vinyasa",
+      "date": "2026-02-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-19-hatha",
+      "date": "2026-02-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-20-hatha",
+      "date": "2026-02-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-21-yin",
+      "date": "2026-02-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-23-hatha",
+      "date": "2026-02-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-24-hatha",
+      "date": "2026-02-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-25-vinyasa",
+      "date": "2026-02-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-26-hatha",
+      "date": "2026-02-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-27-hatha",
+      "date": "2026-02-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-02-28-yin",
+      "date": "2026-02-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-02-hatha",
+      "date": "2026-03-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-03-hatha",
+      "date": "2026-03-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-04-vinyasa",
+      "date": "2026-03-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-05-hatha",
+      "date": "2026-03-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-06-hatha",
+      "date": "2026-03-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-07-yin",
+      "date": "2026-03-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-09-hatha",
+      "date": "2026-03-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-10-hatha",
+      "date": "2026-03-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-11-vinyasa",
+      "date": "2026-03-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-12-hatha",
+      "date": "2026-03-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-13-hatha",
+      "date": "2026-03-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-14-yin",
+      "date": "2026-03-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-16-hatha",
+      "date": "2026-03-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-17-hatha",
+      "date": "2026-03-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-18-vinyasa",
+      "date": "2026-03-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-19-hatha",
+      "date": "2026-03-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-20-hatha",
+      "date": "2026-03-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-21-yin",
+      "date": "2026-03-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-23-hatha",
+      "date": "2026-03-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-24-hatha",
+      "date": "2026-03-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-25-vinyasa",
+      "date": "2026-03-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-26-hatha",
+      "date": "2026-03-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-27-hatha",
+      "date": "2026-03-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-28-yin",
+      "date": "2026-03-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-30-hatha",
+      "date": "2026-03-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-03-31-hatha",
+      "date": "2026-03-31",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-01-vinyasa",
+      "date": "2026-04-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-02-hatha",
+      "date": "2026-04-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-03-hatha",
+      "date": "2026-04-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-04-yin",
+      "date": "2026-04-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-06-hatha",
+      "date": "2026-04-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-07-hatha",
+      "date": "2026-04-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-08-vinyasa",
+      "date": "2026-04-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-09-hatha",
+      "date": "2026-04-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-10-hatha",
+      "date": "2026-04-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-11-yin",
+      "date": "2026-04-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-13-hatha",
+      "date": "2026-04-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-14-hatha",
+      "date": "2026-04-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-15-vinyasa",
+      "date": "2026-04-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-16-hatha",
+      "date": "2026-04-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-17-hatha",
+      "date": "2026-04-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-18-yin",
+      "date": "2026-04-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-20-hatha",
+      "date": "2026-04-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-21-hatha",
+      "date": "2026-04-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-22-vinyasa",
+      "date": "2026-04-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-23-hatha",
+      "date": "2026-04-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-24-hatha",
+      "date": "2026-04-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-25-yin",
+      "date": "2026-04-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-27-hatha",
+      "date": "2026-04-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-28-hatha",
+      "date": "2026-04-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-29-vinyasa",
+      "date": "2026-04-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-04-30-hatha",
+      "date": "2026-04-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-01-hatha",
+      "date": "2026-05-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-02-yin",
+      "date": "2026-05-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-04-hatha",
+      "date": "2026-05-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-05-hatha",
+      "date": "2026-05-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-06-vinyasa",
+      "date": "2026-05-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-07-hatha",
+      "date": "2026-05-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-08-hatha",
+      "date": "2026-05-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-09-yin",
+      "date": "2026-05-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-11-hatha",
+      "date": "2026-05-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-12-hatha",
+      "date": "2026-05-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-13-vinyasa",
+      "date": "2026-05-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-14-hatha",
+      "date": "2026-05-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-15-hatha",
+      "date": "2026-05-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-16-yin",
+      "date": "2026-05-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-18-hatha",
+      "date": "2026-05-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-19-hatha",
+      "date": "2026-05-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-20-vinyasa",
+      "date": "2026-05-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-21-hatha",
+      "date": "2026-05-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-22-hatha",
+      "date": "2026-05-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-23-yin",
+      "date": "2026-05-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-25-hatha",
+      "date": "2026-05-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-26-hatha",
+      "date": "2026-05-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-27-vinyasa",
+      "date": "2026-05-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-28-hatha",
+      "date": "2026-05-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-29-hatha",
+      "date": "2026-05-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-05-30-workshop",
+      "date": "2026-05-30",
+      "time": {
+        "en": "6:00–7:30 PM",
+        "zh": "18:00–19:30"
+      },
+      "title": {
+        "en": "Breath · Deep Rest · Sound Healing",
+        "zh": "呼吸 · 深度休息 · 声音疗愈"
+      },
+      "category": "workshop",
+      "highlight": true,
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
+        "zh": "工作室 — 上海市长宁区愚园路1280弄"
+      },
+      "spots": 12,
+      "note": {
+        "en": "75 min offline charity session · Pranayama, mindful movement & Himalayan singing bowls.",
+        "zh": "75分钟线下公益场 · 呼吸法、正念流动与喜马拉雅颂钵。"
+      }
+    },
+    {
+      "id": "2026-05-30-yin",
+      "date": "2026-05-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-01-hatha",
+      "date": "2026-06-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-02-hatha",
+      "date": "2026-06-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-03-vinyasa",
+      "date": "2026-06-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-04-hatha",
+      "date": "2026-06-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-05-hatha",
+      "date": "2026-06-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-06-yin",
+      "date": "2026-06-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-08-hatha",
+      "date": "2026-06-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-09-hatha",
+      "date": "2026-06-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-10-vinyasa",
+      "date": "2026-06-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-11-hatha",
+      "date": "2026-06-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-12-hatha",
+      "date": "2026-06-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-13-yin",
+      "date": "2026-06-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-15-hatha",
+      "date": "2026-06-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-16-hatha",
+      "date": "2026-06-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-17-vinyasa",
+      "date": "2026-06-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-18-hatha",
+      "date": "2026-06-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-19-hatha",
+      "date": "2026-06-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-20-yin",
+      "date": "2026-06-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-22-hatha",
+      "date": "2026-06-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-23-hatha",
+      "date": "2026-06-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-24-vinyasa",
+      "date": "2026-06-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-25-hatha",
+      "date": "2026-06-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-26-hatha",
+      "date": "2026-06-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-27-yin",
+      "date": "2026-06-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-29-hatha",
+      "date": "2026-06-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-06-30-hatha",
+      "date": "2026-06-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-01-vinyasa",
+      "date": "2026-07-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-02-hatha",
+      "date": "2026-07-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-03-hatha",
+      "date": "2026-07-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-04-yin",
+      "date": "2026-07-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-06-hatha",
+      "date": "2026-07-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-07-hatha",
+      "date": "2026-07-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-08-vinyasa",
+      "date": "2026-07-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-09-hatha",
+      "date": "2026-07-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-10-hatha",
+      "date": "2026-07-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-11-yin",
+      "date": "2026-07-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-13-hatha",
+      "date": "2026-07-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-14-hatha",
+      "date": "2026-07-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-15-vinyasa",
+      "date": "2026-07-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-16-hatha",
+      "date": "2026-07-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-17-hatha",
+      "date": "2026-07-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-18-yin",
+      "date": "2026-07-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-20-hatha",
+      "date": "2026-07-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-21-hatha",
+      "date": "2026-07-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-22-vinyasa",
+      "date": "2026-07-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-23-hatha",
+      "date": "2026-07-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-24-hatha",
+      "date": "2026-07-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-25-yin",
+      "date": "2026-07-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-27-hatha",
+      "date": "2026-07-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-28-hatha",
+      "date": "2026-07-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-29-vinyasa",
+      "date": "2026-07-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-30-hatha",
+      "date": "2026-07-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-07-31-hatha",
+      "date": "2026-07-31",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-01-yin",
+      "date": "2026-08-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-03-hatha",
+      "date": "2026-08-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-04-hatha",
+      "date": "2026-08-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-05-vinyasa",
+      "date": "2026-08-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-06-hatha",
+      "date": "2026-08-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-07-hatha",
+      "date": "2026-08-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-08-yin",
+      "date": "2026-08-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-10-hatha",
+      "date": "2026-08-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-11-hatha",
+      "date": "2026-08-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-12-vinyasa",
+      "date": "2026-08-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-13-hatha",
+      "date": "2026-08-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-14-hatha",
+      "date": "2026-08-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-15-yin",
+      "date": "2026-08-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-17-hatha",
+      "date": "2026-08-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-18-hatha",
+      "date": "2026-08-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-19-vinyasa",
+      "date": "2026-08-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-20-hatha",
+      "date": "2026-08-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-21-hatha",
+      "date": "2026-08-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-22-yin",
+      "date": "2026-08-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-24-hatha",
+      "date": "2026-08-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-25-hatha",
+      "date": "2026-08-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-26-vinyasa",
+      "date": "2026-08-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-27-hatha",
+      "date": "2026-08-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-28-hatha",
+      "date": "2026-08-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-29-yin",
+      "date": "2026-08-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-08-31-hatha",
+      "date": "2026-08-31",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-01-hatha",
+      "date": "2026-09-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-02-vinyasa",
+      "date": "2026-09-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-03-hatha",
+      "date": "2026-09-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-04-hatha",
+      "date": "2026-09-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-05-yin",
+      "date": "2026-09-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-07-hatha",
+      "date": "2026-09-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-08-hatha",
+      "date": "2026-09-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-09-vinyasa",
+      "date": "2026-09-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-10-hatha",
+      "date": "2026-09-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-11-hatha",
+      "date": "2026-09-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-12-yin",
+      "date": "2026-09-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-14-hatha",
+      "date": "2026-09-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-15-hatha",
+      "date": "2026-09-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-16-vinyasa",
+      "date": "2026-09-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-17-hatha",
+      "date": "2026-09-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-18-hatha",
+      "date": "2026-09-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-19-yin",
+      "date": "2026-09-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-21-hatha",
+      "date": "2026-09-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-22-hatha",
+      "date": "2026-09-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-23-vinyasa",
+      "date": "2026-09-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-24-hatha",
+      "date": "2026-09-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-25-hatha",
+      "date": "2026-09-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-26-yin",
+      "date": "2026-09-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-28-hatha",
+      "date": "2026-09-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-29-hatha",
+      "date": "2026-09-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-09-30-vinyasa",
+      "date": "2026-09-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-01-hatha",
+      "date": "2026-10-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-02-hatha",
+      "date": "2026-10-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-03-yin",
+      "date": "2026-10-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-05-hatha",
+      "date": "2026-10-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-06-hatha",
+      "date": "2026-10-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-07-vinyasa",
+      "date": "2026-10-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-08-hatha",
+      "date": "2026-10-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-09-hatha",
+      "date": "2026-10-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-10-yin",
+      "date": "2026-10-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-12-hatha",
+      "date": "2026-10-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-13-hatha",
+      "date": "2026-10-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-14-vinyasa",
+      "date": "2026-10-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-15-hatha",
+      "date": "2026-10-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-16-hatha",
+      "date": "2026-10-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-17-yin",
+      "date": "2026-10-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-19-hatha",
+      "date": "2026-10-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-20-hatha",
+      "date": "2026-10-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-21-vinyasa",
+      "date": "2026-10-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-22-hatha",
+      "date": "2026-10-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-23-hatha",
+      "date": "2026-10-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-24-yin",
+      "date": "2026-10-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-26-hatha",
+      "date": "2026-10-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-27-hatha",
+      "date": "2026-10-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-28-vinyasa",
+      "date": "2026-10-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-29-hatha",
+      "date": "2026-10-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-30-hatha",
+      "date": "2026-10-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-10-31-yin",
+      "date": "2026-10-31",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-02-hatha",
+      "date": "2026-11-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-03-hatha",
+      "date": "2026-11-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-04-vinyasa",
+      "date": "2026-11-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-05-hatha",
+      "date": "2026-11-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-06-hatha",
+      "date": "2026-11-06",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-07-yin",
+      "date": "2026-11-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-09-hatha",
+      "date": "2026-11-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-10-hatha",
+      "date": "2026-11-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-11-vinyasa",
+      "date": "2026-11-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-12-hatha",
+      "date": "2026-11-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-13-hatha",
+      "date": "2026-11-13",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-14-yin",
+      "date": "2026-11-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-16-hatha",
+      "date": "2026-11-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-17-hatha",
+      "date": "2026-11-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-18-vinyasa",
+      "date": "2026-11-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-19-hatha",
+      "date": "2026-11-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-20-hatha",
+      "date": "2026-11-20",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-21-yin",
+      "date": "2026-11-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-23-hatha",
+      "date": "2026-11-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-24-hatha",
+      "date": "2026-11-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-25-vinyasa",
+      "date": "2026-11-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-26-hatha",
+      "date": "2026-11-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-27-hatha",
+      "date": "2026-11-27",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-28-yin",
+      "date": "2026-11-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-11-30-hatha",
+      "date": "2026-11-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-01-hatha",
+      "date": "2026-12-01",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-02-vinyasa",
+      "date": "2026-12-02",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-03-hatha",
+      "date": "2026-12-03",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-04-hatha",
+      "date": "2026-12-04",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-05-yin",
+      "date": "2026-12-05",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-07-hatha",
+      "date": "2026-12-07",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-08-hatha",
+      "date": "2026-12-08",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-09-vinyasa",
+      "date": "2026-12-09",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-10-hatha",
+      "date": "2026-12-10",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-11-hatha",
+      "date": "2026-12-11",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-12-yin",
+      "date": "2026-12-12",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-14-hatha",
+      "date": "2026-12-14",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-15-hatha",
+      "date": "2026-12-15",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-16-vinyasa",
+      "date": "2026-12-16",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-17-hatha",
+      "date": "2026-12-17",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-18-hatha",
+      "date": "2026-12-18",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-19-yin",
+      "date": "2026-12-19",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-21-hatha",
+      "date": "2026-12-21",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-22-hatha",
+      "date": "2026-12-22",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-23-vinyasa",
+      "date": "2026-12-23",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-24-hatha",
+      "date": "2026-12-24",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-25-hatha",
+      "date": "2026-12-25",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-26-yin",
+      "date": "2026-12-26",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Yin Yoga",
+        "zh": "阴瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-28-hatha",
+      "date": "2026-12-28",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-29-hatha",
+      "date": "2026-12-29",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-30-vinyasa",
+      "date": "2026-12-30",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Vinyasa Yoga",
+        "zh": "流瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    },
+    {
+      "id": "2026-12-31-hatha",
+      "date": "2026-12-31",
+      "time": {
+        "en": "7:00–8:15",
+        "zh": "7:00–8:15"
+      },
+      "title": {
+        "en": "Hatha Yoga",
+        "zh": "哈他瑜伽"
+      },
+      "category": "yoga",
+      "teacher": {
+        "en": "Feifei",
+        "zh": "菲菲"
+      },
+      "location": {
+        "en": "Online",
+        "zh": "线上"
+      },
+      "spots": 12
+    }
+  ]
+}

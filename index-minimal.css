@@ -1,0 +1,27 @@
+/* FLII HOLISTIC — homepage: minimalist palette only (layout from styles.css) */
+
+.page-index--minimal {
+  --bg: #f8f7f4;
+  --ink: #1f1c19;
+  --ink-soft: #6b6560;
+  --line: rgba(31, 28, 25, 0.14);
+}
+
+.page-index--minimal {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* Logo size from minimalist pass — layout otherwise from styles.css */
+.page-index--minimal .logo {
+  height: 52px;
+}
+
+.page-index--minimal .language-switch button.active {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.page-index--minimal .site-footer .qr-card p {
+  color: var(--ink-soft);
+}

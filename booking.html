@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking — FLII HOLISTIC</title>
+  <script>
+    (function () {
+      var path = location.pathname;
+      if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
+      else if (path !== "/" && !path.endsWith("/")) path = path.replace(/[^/]+$/, "");
+      if (!path.endsWith("/")) path += "/";
+      window.__siteRoot = path;
+      var head = document.head;
+      var base = document.createElement("base");
+      base.href = path;
+      base.setAttribute("data-site-base", "");
+      head.insertBefore(base, head.firstChild);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260528-5">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+  <script src="booking-schedule.js?v=20260528-4"></script>
+  <script src="script.js?v=20260522-1" defer></script>
+  <script src="booking.js?v=20260528-6" defer></script>
+</head>
+<body class="pillar-page booking-page">
+  <div class="site-align">
+  <header>
+    <div class="header-container">
+      <a href="index.html"><img src="logo.png" alt="FLII HOLISTIC Logo" class="logo"></a>
+      <button class="hamburger-menu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="top-nav">
+        <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+        <a href="yoga.html" data-en="Yoga" data-zh="瑜伽">Yoga</a>
+        <a href="meditation.html" data-en="Meditation" data-zh="冥想">Meditation</a>
+        <a href="sound-healing.html" data-en="Sound Healing" data-zh="声音疗愈">Sound Healing</a>
+        <a href="ayurveda.html" data-en="Ayurveda" data-zh="阿育吠陀">Ayurveda</a>
+        <a href="booking.html" class="active" data-en="Booking" data-zh="预约">Booking</a>
+        <a href="contact.html" data-en="Contact Us" data-zh="联系我们">Contact Us</a>
+        <div class="language-switch">
+          <button type="button" id="en-btn" class="active">English</button>
+          <button type="button" id="zh-btn">中文</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-wrapper">
+    <section id="booking" class="booking-section">
+      <h1 class="section-title" data-en="Booking" data-zh="课程预约">Booking</h1>
+
+      <div class="booking-schedule-block">
+        <p class="booking-schedule-error" id="booking-schedule-error" hidden data-en="Could not load the schedule. Please refresh or contact us on WhatsApp." data-zh="无法加载课表，请刷新页面或通过 WhatsApp 联系我们。">Could not load the schedule. Please refresh or contact us on WhatsApp.</p>
+        <p class="booking-schedule-empty" id="booking-schedule-empty" hidden data-en="No classes are listed for this month yet. You can still send a general inquiry below." data-zh="本月暂未发布课程，您仍可在下方提交咨询。">No classes are listed for this month yet. You can still send a general inquiry below.</p>
+
+        <div class="booking-calendar" id="booking-calendar" hidden>
+          <p class="booking-timezone" id="booking-timezone-label" data-en="Beijing Time (GMT+8)" data-zh="北京时间（GMT+8）">Beijing Time (GMT+8)</p>
+          <ul class="booking-legend" aria-label="Class types">
+            <li><span class="booking-legend__swatch booking-legend__swatch--hatha"></span><span data-en="Hatha Yoga" data-zh="哈他瑜伽">Hatha Yoga</span></li>
+            <li><span class="booking-legend__swatch booking-legend__swatch--vinyasa"></span><span data-en="Vinyasa Yoga" data-zh="流瑜伽">Vinyasa Yoga</span></li>
+            <li><span class="booking-legend__swatch booking-legend__swatch--yin"></span><span data-en="Yin Yoga" data-zh="阴瑜伽">Yin Yoga</span></li>
+            <li><span class="booking-legend__swatch booking-legend__swatch--workshop booking-legend__swatch--highlight"></span><span data-en="Workshop · Featured" data-zh="工作坊 · 重点">Workshop · Featured</span></li>
+            <li><span class="booking-legend__swatch booking-legend__swatch--meditation"></span><span data-en="Meditation" data-zh="冥想">Meditation</span></li>
+            <li><span class="booking-legend__swatch booking-legend__swatch--sound-healing"></span><span data-en="Sound Healing" data-zh="声音疗愈">Sound Healing</span></li>
+            <li><span class="booking-legend__swatch booking-legend__swatch--ayurveda"></span><span data-en="Ayurveda" data-zh="阿育吠陀">Ayurveda</span></li>
+          </ul>
+          <div class="booking-cal-toolbar">
+            <button type="button" class="booking-cal-nav" id="booking-cal-prev" aria-label="Previous month">‹</button>
+            <p class="booking-cal-month-title" id="booking-month-label" aria-live="polite">—</p>
+            <button type="button" class="booking-cal-nav" id="booking-cal-next" aria-label="Next month">›</button>
+          </div>
+          <div class="booking-cal-weekstrip" id="booking-cal-weekstrip" aria-label="Week"></div>
+          <div class="booking-cal-weekdays" aria-hidden="true">
+            <span data-en="SUN" data-zh="日">SUN</span>
+            <span data-en="MON" data-zh="一">MON</span>
+            <span data-en="TUE" data-zh="二">TUE</span>
+            <span data-en="WED" data-zh="三">WED</span>
+            <span data-en="THU" data-zh="四">THU</span>
+            <span data-en="FRI" data-zh="五">FRI</span>
+            <span data-en="SAT" data-zh="六">SAT</span>
+          </div>
+          <div class="booking-cal-grid" id="booking-cal-grid" role="grid" aria-label="Monthly calendar"></div>
+          <div class="booking-cal-daypanel" id="booking-cal-daypanel" aria-live="polite">
+            <h2 class="booking-cal-daypanel__title" id="booking-cal-day-label" data-en="Select a date to view classes" data-zh="选择日期查看当日课程">Select a date to view classes</h2>
+            <p class="booking-cal-daypanel__empty" id="booking-cal-day-empty" hidden data-en="No classes on this day." data-zh="本日暂无课程。">No classes on this day.</p>
+            <div class="booking-cal-day-list" id="booking-cal-day-list" role="list"></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title booking-form-title" data-en="Request a Booking" data-zh="提交预约">Request a Booking</h2>
+      <p class="contact-form-intro" data-en="Fields marked with * are required." data-zh="标有 * 的为必填项。">Fields marked with * are required.</p>
+      <p class="contact-form-success" id="booking-form-success" hidden data-en="Thank you — your booking request has been sent. We will confirm shortly." data-zh="感谢您的预约，我们已收到，将尽快与您确认。">Thank you — your booking request has been sent. We will confirm shortly.</p>
+      <p class="contact-form-error" id="booking-form-error" hidden data-en="Sorry, your request could not be sent. Please try again or message us on WhatsApp." data-zh="抱歉，预约未能发送。请重试，或通过 WhatsApp 联系我们。">Sorry, your request could not be sent. Please try again or message us on WhatsApp.</p>
+
+      <form class="contact-form booking-form" id="booking-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="49ea8c71-77b4-441e-aebd-e6ed7d898f86">
+        <input type="checkbox" name="botcheck" class="contact-form-honeypot" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
+        <label>
+          <span class="required" data-en="Name" data-zh="姓名">Name</span>
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label>
+          <span class="required" data-en="Email" data-zh="电子邮箱">Email</span>
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label>
+          <span data-en="Phone / WeChat (optional)" data-zh="电话 / 微信（选填）">Phone / WeChat (optional)</span>
+          <input type="text" name="phone" autocomplete="tel">
+        </label>
+        <label>
+          <span class="required" data-en="Class / Event" data-zh="课程 / 活动">Class / Event</span>
+          <select name="class_id" id="booking-class" required>
+            <option value="" data-en="Loading…" data-zh="加载中…">Loading…</option>
+          </select>
+        </label>
+        <label>
+          <span data-en="Notes (optional)" data-zh="备注（选填）">Notes (optional)</span>
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="contact-form__submit" data-en="Send Booking Request" data-zh="提交预约">Send Booking Request</button>
+      </form>
+
+      <p class="booking-whatsapp">
+        <span data-en="Prefer to chat?" data-zh="更习惯即时沟通？">Prefer to chat?</span>
+        <a href="https://wa.me/12085804372" target="_blank" rel="noopener noreferrer" data-en="Message us on WhatsApp" data-zh="WhatsApp 联系我们">Message us on WhatsApp</a>
+      </p>
+    </section>
+  </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="contact-space-address">
+        <div class="en">No. 425, Yanping Road, Jing'an, Shanghai</div>
+        <div class="cn">上海市静安区延平路425号</div>
+      </div>
+      <div class="contact-qr-grid">
+        <div class="qr-card">
+          <a href="https://www.instagram.com/fliiholistic" target="_blank" rel="noopener noreferrer" class="qr-link" aria-label="Open FLII HOLISTIC Instagram">
+            <img src="instagram.png" alt="Instagram icon" class="qr-image">
+            <p data-en="Instagram" data-zh="Instagram">Instagram</p>
+          </a>
+        </div>
+        <div class="qr-card">
+          <a href="https://wa.me/12085804372" target="_blank" rel="noopener noreferrer" class="qr-link" aria-label="Chat on WhatsApp">
+            <img src="whatsapp.png" alt="WhatsApp" class="qr-image">
+            <p data-en="WhatsApp" data-zh="WhatsApp">WhatsApp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="site-footer__copy">© 2025 FLII HOLISTIC. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
