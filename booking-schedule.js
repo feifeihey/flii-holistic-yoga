@@ -3517,7 +3517,7 @@ window.FLII_BOOKING_SCHEDULE = {
         "zh": "16:00–18:00"
       },
       "title": {
-        "en": "Dynamic Meditation · Sound Healing",
+        "en": "Active Meditation · Sound Healing",
         "zh": "动态冥想 · 声音疗愈"
       },
       "category": "workshop",

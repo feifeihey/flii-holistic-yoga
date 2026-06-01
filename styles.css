@@ -1693,6 +1693,27 @@ html:lang(zh) .summer-charity__theme-title {
 
 .summer-charity__overview .summer-charity__intro {
   margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+
+html:lang(zh) .summer-charity__overview {
+  max-width: 50rem;
+}
+
+html:lang(zh) .summer-charity__overview .summer-charity__intro {
+  max-width: none;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+@media (max-width: 820px) {
+  html:lang(zh) .summer-charity__overview .summer-charity__intro {
+    white-space: normal;
+    font-size: 0.85rem;
+  }
 }
 
 .summer-charity__overview-list {
@@ -1749,9 +1770,15 @@ html:lang(zh) .summer-charity__theme-title {
 
 .summer-charity__sessions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .summer-charity__sessions {
+    grid-template-columns: 1fr;
+  }
 }
 
 .summer-charity__session {
