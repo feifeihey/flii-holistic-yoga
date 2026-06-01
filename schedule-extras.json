@@ -16,5 +16,77 @@
       "en": "75 min offline charity session · Pranayama, mindful movement & Himalayan singing bowls.",
       "zh": "75分钟线下公益场 · 呼吸法、正念流动与喜马拉雅颂钵。"
     }
+  },
+  {
+    "id": "2026-07-04-summer-sleep",
+    "date": "2026-07-04",
+    "time": { "en": "4:00–6:00 PM", "zh": "16:00–18:00" },
+    "title": { "en": "Active Meditation · Sound Healing", "zh": "动态冥想 · 声音疗愈" },
+    "category": "workshop",
+    "highlight": true,
+    "teacher": { "en": "Feifei", "zh": "菲菲" },
+    "location": {
+      "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
+      "zh": "工作室 — 上海市长宁区愚园路1280弄"
+    },
+    "spots": 6,
+    "note": {
+      "en": "Summer · Rest Well session · Guided movement, breath & Himalayan singing bowls.",
+      "zh": "夏季线下公益 ·【好好休息】计划 · 动态修习、呼吸与颂钵。"
+    }
+  },
+  {
+    "id": "2026-07-11-summer-sleep",
+    "date": "2026-07-11",
+    "time": { "en": "4:00–6:00 PM", "zh": "16:00–18:00" },
+    "title": { "en": "Tea Meditation", "zh": "茶冥想" },
+    "category": "workshop",
+    "highlight": true,
+    "teacher": { "en": "Feifei", "zh": "菲菲" },
+    "location": {
+      "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
+      "zh": "工作室 — 上海市长宁区愚园路1280弄"
+    },
+    "spots": 6,
+    "note": {
+      "en": "Summer · Rest Well session · Brew, pour, and sip with full attention.",
+      "zh": "夏季线下公益 ·【好好休息】计划 · 沏茶、注水、品饮，全然在场。"
+    }
+  },
+  {
+    "id": "2026-07-18-summer-sleep",
+    "date": "2026-07-18",
+    "time": { "en": "4:00–6:00 PM", "zh": "16:00–18:00" },
+    "title": { "en": "Coffee Meditation", "zh": "咖啡冥想" },
+    "category": "workshop",
+    "highlight": true,
+    "teacher": { "en": "Feifei", "zh": "菲菲" },
+    "location": {
+      "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
+      "zh": "工作室 — 上海市长宁区愚园路1280弄"
+    },
+    "spots": 6,
+    "note": {
+      "en": "Summer · Rest Well session · Stillness in grinding, pouring, and tasting.",
+      "zh": "夏季线下公益 ·【好好休息】计划 · 研磨、冲泡、品味中的宁静。"
+    }
+  },
+  {
+    "id": "2026-07-25-summer-sleep",
+    "date": "2026-07-25",
+    "time": { "en": "4:00–6:00 PM", "zh": "16:00–18:00" },
+    "title": { "en": "Eating Meditation", "zh": "饮食冥想" },
+    "category": "workshop",
+    "highlight": true,
+    "teacher": { "en": "Feifei", "zh": "菲菲" },
+    "location": {
+      "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
+      "zh": "工作室 — 上海市长宁区愚园路1280弄"
+    },
+    "spots": 6,
+    "note": {
+      "en": "Summer · Rest Well session · Mindful plant-based nourishment.",
+      "zh": "夏季线下公益 ·【好好休息】计划 · 植物基饮食的正念滋养。"
+    }
   }
 ]

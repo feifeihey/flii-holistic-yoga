@@ -1630,6 +1630,194 @@ html:lang(zh) .class-card.meditation-space .class-overlay h3 {
 }
 
 /* Home: four offerings (JPG thumbnails) */
+/* Homepage — Summer · Rest Well charity series */
+.summer-charity {
+  margin: 2rem 0 3.5rem;
+  padding: 0 var(--content-pad-x);
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.summer-charity__program-tag {
+  margin: 2.5rem auto 0.35rem;
+  text-align: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a5a36;
+  font-weight: 600;
+}
+
+.summer-charity__theme-title {
+  margin-top: 0.25rem;
+  white-space: nowrap;
+}
+
+html:lang(zh) .summer-charity__theme-title {
+  white-space: normal;
+  font-size: clamp(1.15rem, 3.8vw, 1.65rem);
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+}
+
+.summer-charity__overview {
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 1.6rem 1.65rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.summer-charity__overview-title {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8a5a36;
+}
+
+.summer-charity__intro,
+.summer-charity__when {
+  max-width: 40rem;
+  margin: 0 auto 1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.summer-charity__overview .summer-charity__intro {
+  margin-bottom: 1.25rem;
+}
+
+.summer-charity__overview-list {
+  margin: 0 auto 1.15rem;
+  padding: 0;
+  list-style: none;
+  max-width: 36rem;
+}
+
+.summer-charity__overview-list li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.75rem 1rem;
+  align-items: baseline;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.summer-charity__overview-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.summer-charity__overview-date {
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8a5a36;
+}
+
+.summer-charity__overview-name {
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.summer-charity__overview .summer-charity__when {
+  margin-bottom: 0;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 520px) {
+  .summer-charity__overview-list li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+.summer-charity__when {
+  margin-bottom: 2rem;
+  font-size: 0.92rem;
+}
+
+.summer-charity__sessions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.summer-charity__session {
+  margin: 0;
+}
+
+.summer-charity__card {
+  height: 100%;
+  margin-bottom: 0;
+  padding: 1.35rem 1.4rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.summer-charity__date {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8a5a36;
+}
+
+.summer-charity__name {
+  margin: 0 0 0.85rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.summer-charity__card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.summer-charity__spots {
+  margin: 0.5rem 0 0 !important;
+  font-size: 0.88rem !important;
+  color: #8a5a36 !important;
+  font-weight: 500;
+}
+
+.summer-charity__cta-wrap {
+  text-align: center;
+  margin: 0;
+}
+
+.summer-charity__cta {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  background: #8a5a36;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  transition: background 0.15s ease;
+}
+
+.summer-charity__cta:hover {
+  background: #6f4829;
+}
+
 .pillars-section {
   margin: 3rem 0 2.5rem;
 }

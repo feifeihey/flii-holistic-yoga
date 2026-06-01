@@ -1,5 +1,23 @@
 [
   {
+    "id": "2026-07-04-summer-sleep",
+    "date": "2026-07-04",
+    "time": { "en": "4:00–6:00 PM", "zh": "16:00–18:00" },
+    "title": { "en": "Active Meditation · Sound Healing", "zh": "动态冥想 · 声音疗愈" },
+    "category": "workshop",
+    "highlight": true,
+    "teacher": { "en": "Feifei", "zh": "菲菲" },
+    "location": {
+      "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
+      "zh": "工作室 — 上海市长宁区愚园路1280弄"
+    },
+    "spots": 6,
+    "note": {
+      "en": "Summer · Rest Well session",
+      "zh": "夏季线下公益 ·【好好休息】计划"
+    }
+  },
+  {
     "id": "2026-05-30-workshop",
     "date": "2026-05-30",
     "time": { "en": "6:00–7:30 PM", "zh": "18:00–19:30" },
