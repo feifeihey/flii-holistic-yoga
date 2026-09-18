@@ -2093,3 +2093,210 @@ footer,
   }
 
 }
+
+a.class-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.class-card:hover .class-overlay,
+a.class-card:focus-visible .class-overlay {
+  outline: none;
+}
+
+.meditation-practice-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(138, 90, 54, 0.35);
+}
+
+.meditation-practice-link:hover {
+  border-bottom-color: #8a5a36;
+}
+
+/* Cooking Meditation recipes */
+.recipe-kicker {
+  margin: 1.5rem 0 0.4rem;
+  text-align: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a5a36;
+}
+
+.recipe-kicker a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.recipe-kicker a:hover {
+  text-decoration: underline;
+}
+
+.recipe-meta {
+  margin: -1rem auto 1.75rem;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.recipe-index-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.recipe-index-card {
+  display: block;
+  text-decoration: none;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(47, 40, 36, 0.12);
+}
+
+.recipe-index-card img {
+  display: block;
+  width: 100%;
+  height: clamp(140px, 22vw, 220px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.recipe-index-card h2 {
+  margin: 0.9rem 1rem 0.25rem;
+  font-weight: 400;
+  font-size: 1.15rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.recipe-index-card p {
+  margin: 0 1rem;
+  color: var(--ink-soft);
+  text-align: center;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.recipe-index-card__blurb {
+  margin-bottom: 0.35rem;
+}
+
+.recipe-index-card__time {
+  margin-bottom: 1.05rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.recipe-index-card:hover {
+  box-shadow: 0 8px 28px rgba(47, 40, 36, 0.14);
+}
+
+.recipe-body {
+  max-width: 42rem;
+  margin: 0 auto 3.5rem;
+}
+
+.recipe-figure {
+  margin: 0.15rem 0 1.15rem;
+}
+
+.recipe-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(47, 40, 36, 0.12);
+}
+
+.recipe-figure figcaption {
+  margin-top: 0.45rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.recipe-body h2 {
+  margin: 2.4rem 0 0.85rem;
+  font-weight: 400;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #8a5a36;
+}
+
+html:lang(zh) .recipe-body h2 {
+  text-transform: none;
+  letter-spacing: 0.16em;
+}
+
+.recipe-body > p {
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.recipe-list {
+  list-style: none;
+  margin: 0 0 1.75rem;
+  padding: 0;
+}
+
+.recipe-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.48rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.recipe-amt {
+  color: #8a5a36;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.recipe-step {
+  margin: 1.75rem 0 0;
+}
+
+.recipe-step h3 {
+  margin: 0 0 0.7rem;
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--ink);
+}
+
+.recipe-back {
+  margin: 2.5rem 0 0;
+  text-align: center;
+}
+
+.recipe-back a {
+  color: #8a5a36;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+
+.recipe-back a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .recipe-index-grid {
+    grid-template-columns: 1fr;
+  }
+}
