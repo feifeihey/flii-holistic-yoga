@@ -18,11 +18,12 @@
       head.insertBefore(base, head.firstChild);
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260918-recipes2">
+  <link rel="stylesheet" href="styles.css?v=20260919-keep">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
   <script src="script.js?v=20260423-34" defer></script>
+  <script src="recipe.js?v=20260919-1" defer></script>
 </head>
-<body class="pillar-page recipe-page">
+<body class="pillar-page recipe-page" data-recipe-id="tomato-cauliflower">
   <div class="site-align">
   <header>
     <div class="header-container">
@@ -55,71 +56,114 @@
       <a href="cooking-meditation.html" data-en="Cooking Meditation" data-zh="烹饪冥想">Cooking Meditation</a>
     </p>
     <h1 class="section-title" data-en="Tomato Cauliflower" data-zh="番茄菜花">Tomato Cauliflower</h1>
-    <p class="pillar-intro" data-en="Today we are making Tomato Cauliflower. Simple, healthy, and a quiet cooking practice." data-zh="今天做一道番茄菜花。简单、健康，也是一次安静的烹饪练习。">Today we are making Tomato Cauliflower. Simple, healthy, and a quiet cooking practice.</p>
-    <p class="recipe-meta" data-en="10 min prep · 10 min cook · Thermomix recipe" data-zh="备菜 10 分钟 · 烹饪 10 分钟 · 美善品食谱">10 min prep · 10 min cook · Thermomix recipe</p>
+    <p class="pillar-intro" data-en="Simple, healthy, and a quiet cooking practice. Cooked in the Thermomix." data-zh="简单、健康，一次安静的烹饪练习。用美善品完成。">Simple, healthy, and a quiet cooking practice. Cooked in the Thermomix.</p>
+    <p class="recipe-meta" data-en="10 min prep · 10 min cook · Serves 2–3" data-zh="备菜 10 分钟 · 烹饪 10 分钟 · 2–3 人">10 min prep · 10 min cook · Serves 2–3</p>
 
     <div class="recipe-body">
       <figure class="recipe-figure">
         <img src="recipe-media/tomato-cauliflower/01-hero.jpg" alt="Tomato Cauliflower" width="1280" height="720">
       </figure>
 
-      <p data-en="We cook it in the Thermomix. This is the blender we use today." data-zh="我们用美善品 Thermomix 来做。今天这道菜，用这台料理机完成。">We cook it in the Thermomix. This is the blender we use today.</p>
-      <figure class="recipe-figure">
-        <img src="recipe-media/tomato-cauliflower/03-thermomix.jpg" alt="Thermomix" width="1280" height="720">
-      </figure>
+      <div class="recipe-tabbar" role="tablist">
+        <button type="button" class="recipe-tab is-active" role="tab" aria-selected="true" data-tab="ingredients" data-en="Shopping" data-zh="购物">Shopping</button>
+        <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="method" data-en="Method" data-zh="步骤">Method</button>
+        <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="keep" data-en="Keep" data-zh="保存">Keep</button>
+        <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="nutrition" data-en="Nutrition" data-zh="营养">Nutrition</button>
+      </div>
 
-      <h2 data-en="The Ingredients" data-zh="食材与调料">The Ingredients</h2>
-      <figure class="recipe-figure">
-        <img src="recipe-media/tomato-cauliflower/02-ingredients.jpg" alt="Ingredients" width="1280" height="720">
-      </figure>
-      <ul class="recipe-list">
-        <li><span data-en="Ripe tomatoes" data-zh="熟番茄">Ripe tomatoes</span><span class="recipe-amt" data-en="3" data-zh="3 个">3</span></li>
-        <li><span data-en="Cauliflower" data-zh="菜花">Cauliflower</span><span class="recipe-amt">400g</span></li>
-        <li><span data-en="Vegetable oil" data-zh="植物油">Vegetable oil</span><span class="recipe-amt">18g</span></li>
-        <li><span data-en="Salt" data-zh="盐">Salt</span><span class="recipe-amt">5g</span></li>
-        <li><span data-en="Light soy sauce" data-zh="生抽">Light soy sauce</span><span class="recipe-amt">8g</span></li>
-      </ul>
+      <section class="recipe-panel" data-panel="ingredients">
+        <h2 data-en="Shopping list" data-zh="购物清单">Shopping list</h2>
+        <p data-en="Check off what you already have. Amounts are for 2–3 servings." data-zh="家里已有的可以勾掉。份量按 2–3 人。">Check off what you already have. Amounts are for 2–3 servings.</p>
 
-      <h2 data-en="Four Steps" data-zh="四个步骤">Four Steps</h2>
-      <p data-en="Here is the full recipe. First, prep the tomatoes and cauliflower. Then blend the tomatoes in the Thermomix. Next, cook the cauliflower. Then plate." data-zh="先看完整步骤。第一步，备好番茄和菜花。第二步，在 Thermomix 里打碎番茄。第三步煮菜花，第四步装盘。">Here is the full recipe. First, prep the tomatoes and cauliflower. Then blend the tomatoes in the Thermomix. Next, cook the cauliflower. Then plate.</p>
+        <div class="recipe-shop-group">
+          <h3 data-en="Fruit &amp; veg" data-zh="蔬果">Fruit &amp; veg</h3>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="tomatoes"><span class="recipe-shop-item__icon" aria-hidden="true">🍅</span><span class="recipe-shop-item__name" data-en="Ripe tomatoes" data-zh="熟番茄">Ripe tomatoes</span><span class="recipe-shop-item__amt" data-en="3" data-zh="3 个">3</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="cauliflower"><span class="recipe-shop-item__icon" aria-hidden="true">🥦</span><span class="recipe-shop-item__name" data-en="Cauliflower" data-zh="菜花">Cauliflower</span><span class="recipe-shop-item__amt">400g</span></label>
+        </div>
 
-      <section class="recipe-step">
-        <h3 data-en="01  Prep" data-zh="01  备菜">01  Prep</h3>
-        <p data-en="Peel the tomatoes and cut them in half. Wash the cauliflower and cut it into even florets." data-zh="番茄去皮去蒂，一切为二。菜花洗净，剪成均匀小朵。">Peel the tomatoes and cut them in half. Wash the cauliflower and cut it into even florets.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/tomato-cauliflower/04-prep.jpg" alt="Prep tomatoes and cauliflower" width="1280" height="720">
-        </figure>
+        <div class="recipe-shop-group">
+          <h3 data-en="Sauces &amp; seasonings" data-zh="调料">Sauces &amp; seasonings</h3>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="oil"><span class="recipe-shop-item__icon" aria-hidden="true">🟡</span><span class="recipe-shop-item__name" data-en="Vegetable oil" data-zh="植物油">Vegetable oil</span><span class="recipe-shop-item__amt">18g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="salt"><span class="recipe-shop-item__icon" aria-hidden="true">⚪</span><span class="recipe-shop-item__name" data-en="Salt" data-zh="盐">Salt</span><span class="recipe-shop-item__amt">5g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="soy"><span class="recipe-shop-item__icon" aria-hidden="true">🟤</span><span class="recipe-shop-item__name" data-en="Light soy sauce" data-zh="生抽">Light soy sauce</span><span class="recipe-shop-item__amt">8g</span></label>
+        </div>
       </section>
 
-      <section class="recipe-step">
-        <h3 data-en="02  Blend" data-zh="02  打碎">02  Blend</h3>
-        <p data-en="Put the tomatoes in the Thermomix." data-zh="把番茄放进美善品 Thermomix。">Put the tomatoes in the Thermomix.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/tomato-cauliflower/05-add.jpg" alt="Add tomatoes" width="1280" height="720">
-        </figure>
-        <p data-en="Blend at speed 6 for 5 seconds. Add 18g oil. Cook 2 minutes at 120°, reverse, spoon speed." data-zh="六速五秒打碎。加入植物油 18g。一百二十度，反转小勺，煮两分钟。">Blend at speed 6 for 5 seconds. Add 18g oil. Cook 2 minutes at 120°, reverse, spoon speed.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/tomato-cauliflower/06-blend.jpg" alt="Blend and add oil" width="1280" height="720">
-        </figure>
+      <section class="recipe-panel" data-panel="method" hidden>
+        <section class="recipe-step">
+          <h3 data-en="Step 1" data-zh="步骤 1">Step 1</h3>
+          <p data-en="Peel the tomatoes and cut them in half. Wash the cauliflower and cut it into even florets." data-zh="番茄去皮去蒂，一切为二。菜花洗净，剪成均匀小朵。">Peel the tomatoes and cut them in half. Wash the cauliflower and cut it into even florets.</p>
+          <figure class="recipe-figure"><img src="recipe-media/tomato-cauliflower/04-prep.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">🍅</span><span class="recipe-chip__amt" data-en="3" data-zh="3 个">3</span><span data-en="Ripe tomatoes" data-zh="熟番茄">Ripe tomatoes</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🥦</span><span class="recipe-chip__amt">400g</span><span data-en="Cauliflower" data-zh="菜花">Cauliflower</span></span>
+          </div>
+        </section>
+
+        <section class="recipe-step">
+          <h3 data-en="Step 2" data-zh="步骤 2">Step 2</h3>
+          <p data-en="Put the tomatoes in the Thermomix. Blend at speed 6 for 5 seconds. Add 18g oil. Cook 2 minutes at 120°, reverse, spoon speed." data-zh="番茄放入美善品 Thermomix。六速五秒打碎。加入植物油 18g。一百二十度，反转小勺，煮两分钟。">Put the tomatoes in the Thermomix. Blend at speed 6 for 5 seconds. Add 18g oil. Cook 2 minutes at 120°, reverse, spoon speed.</p>
+          <figure class="recipe-figure"><img src="recipe-media/tomato-cauliflower/03-thermomix.jpg" alt="" width="1280" height="720"></figure>
+          <figure class="recipe-figure"><img src="recipe-media/tomato-cauliflower/06-blend.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">🍅</span><span class="recipe-chip__amt" data-en="3" data-zh="3 个">3</span><span data-en="Ripe tomatoes" data-zh="熟番茄">Ripe tomatoes</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🟡</span><span class="recipe-chip__amt">18g</span><span data-en="Vegetable oil" data-zh="植物油">Vegetable oil</span></span>
+          </div>
+        </section>
+
+        <section class="recipe-step">
+          <h3 data-en="Step 3" data-zh="步骤 3">Step 3</h3>
+          <p data-en="Add the cauliflower, 5g salt, and 8g soy sauce. Cook 8 minutes at 120°, reverse speed 1." data-zh="再放入菜花、盐 5g、生抽 8g。八分钟，一百二十度，反转速度一。">Add the cauliflower, 5g salt, and 8g soy sauce. Cook 8 minutes at 120°, reverse speed 1.</p>
+          <figure class="recipe-figure"><img src="recipe-media/tomato-cauliflower/07-cook.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">🥦</span><span class="recipe-chip__amt">400g</span><span data-en="Cauliflower" data-zh="菜花">Cauliflower</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">⚪</span><span class="recipe-chip__amt">5g</span><span data-en="Salt" data-zh="盐">Salt</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🟤</span><span class="recipe-chip__amt">8g</span><span data-en="Light soy sauce" data-zh="生抽">Light soy sauce</span></span>
+          </div>
+        </section>
+
+        <section class="recipe-step">
+          <h3 data-en="Step 4" data-zh="步骤 4">Step 4</h3>
+          <p data-en="Taste, then plate. Sweet, tangy, and light." data-zh="尝一口再装盘。酸甜可口，开胃又暖。">Taste, then plate. Sweet, tangy, and light.</p>
+          <figure class="recipe-figure"><img src="recipe-media/tomato-cauliflower/08-plate.jpg" alt="" width="1280" height="720"></figure>
+          <figure class="recipe-figure"><img src="recipe-media/tomato-cauliflower/01-hero.jpg" alt="" width="1280" height="720"></figure>
+        </section>
       </section>
 
-      <section class="recipe-step">
-        <h3 data-en="03  Cook" data-zh="03  烹煮">03  Cook</h3>
-        <p data-en="Add the cauliflower, 5g salt, and 8g soy sauce. Cook 8 minutes at 120°, reverse speed 1." data-zh="再放入菜花、盐 5g、生抽 8g。八分钟，一百二十度，反转速度一。">Add the cauliflower, 5g salt, and 8g soy sauce. Cook 8 minutes at 120°, reverse speed 1.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/tomato-cauliflower/07-cook.jpg" alt="Cook cauliflower" width="1280" height="720">
-        </figure>
+      <section class="recipe-panel" data-panel="keep" hidden>
+        <div class="recipe-tips">
+          <article class="recipe-tip recipe-tip--store">
+            <span class="recipe-tip__icon" aria-hidden="true">🥡</span>
+            <h3 data-en="How to store it" data-zh="如何保存">How to store it</h3>
+            <p data-en="Cool completely. Keep in an airtight container in the fridge for up to 3 days." data-zh="彻底放凉后密封冷藏，最多 3 天。">Cool completely. Keep in an airtight container in the fridge for up to 3 days.</p>
+          </article>
+          <article class="recipe-tip recipe-tip--freeze">
+            <span class="recipe-tip__icon" aria-hidden="true">❄️</span>
+            <h3 data-en="How to freeze it" data-zh="如何冷冻">How to freeze it</h3>
+            <p data-en="Freeze in portions for up to 1 month. Cauliflower will be a little softer after thawing." data-zh="可分份冷冻约 1 个月。解冻后菜花会稍软。">Freeze in portions for up to 1 month. Cauliflower will be a little softer after thawing.</p>
+          </article>
+          <article class="recipe-tip recipe-tip--reheat">
+            <span class="recipe-tip__icon" aria-hidden="true">🔥</span>
+            <h3 data-en="How to reheat it" data-zh="如何复热">How to reheat it</h3>
+            <p data-en="From fridge: warm in the Thermomix or a pan until piping hot. From freezer: thaw in the fridge first, then reheat the same way. Stir gently." data-zh="冷藏：美善品或平底锅加热至热透。冷冻：先放冰箱解冻，再同样加热。轻轻搅拌即可。">From fridge: warm in the Thermomix or a pan until piping hot. From freezer: thaw in the fridge first, then reheat the same way. Stir gently.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="recipe-step">
-        <h3 data-en="04  Plate" data-zh="04  装盘">04  Plate</h3>
-        <p data-en="Taste, then plate. Sweet, tangy, and light. Simple ingredients. A healthy life." data-zh="尝一口再装盘。酸甜可口，开胃又暖。用简单的食材，做健康的生活。">Taste, then plate. Sweet, tangy, and light. Simple ingredients. A healthy life.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/tomato-cauliflower/08-plate.jpg" alt="Plated tomato cauliflower" width="1280" height="720">
-        </figure>
-        <figure class="recipe-figure">
-          <img src="recipe-media/tomato-cauliflower/01-hero.jpg" alt="Tomato Cauliflower" width="1280" height="720">
-        </figure>
+      <section class="recipe-panel" data-panel="nutrition" hidden>
+        <p class="recipe-nutri-note" data-en="Nutritional information per serving (based on 2 servings). Approximate." data-zh="每份营养参考（按 2 人份估算）。">Nutritional information per serving (based on 2 servings). Approximate.</p>
+        <div class="recipe-nutri-highlights">
+          <div class="recipe-nutri-card"><span data-en="Calories" data-zh="热量">Calories</span><strong>170 kcal</strong></div>
+          <div class="recipe-nutri-card"><span data-en="Protein" data-zh="蛋白质">Protein</span><strong>5 g</strong></div>
+        </div>
+        <table class="recipe-nutri-table">
+          <tr><td data-en="Fat" data-zh="脂肪">Fat</td><td>9g</td></tr>
+          <tr><td data-en="Saturated fat" data-zh="饱和脂肪">Saturated fat</td><td>1g</td></tr>
+          <tr><td data-en="Carbohydrates" data-zh="碳水化合物">Carbohydrates</td><td>18g</td></tr>
+          <tr><td data-en="Sugars" data-zh="糖">Sugars</td><td>9g</td></tr>
+          <tr><td data-en="Dietary fibre" data-zh="膳食纤维">Dietary fibre</td><td>6g</td></tr>
+          <tr><td data-en="Sodium" data-zh="钠">Sodium</td><td>480mg</td></tr>
+        </table>
       </section>
 
       <p class="recipe-back">

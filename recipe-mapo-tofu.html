@@ -18,11 +18,12 @@
       head.insertBefore(base, head.firstChild);
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260918-recipes2">
+  <link rel="stylesheet" href="styles.css?v=20260919-keep">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
   <script src="script.js?v=20260423-34" defer></script>
+  <script src="recipe.js?v=20260919-1" defer></script>
 </head>
-<body class="pillar-page recipe-page">
+<body class="pillar-page recipe-page" data-recipe-id="mapo-tofu">
   <div class="site-align">
   <header>
     <div class="header-container">
@@ -55,7 +56,7 @@
       <a href="cooking-meditation.html" data-en="Cooking Meditation" data-zh="烹饪冥想">Cooking Meditation</a>
     </p>
     <h1 class="section-title" data-en="Mapo Tofu" data-zh="麻婆豆腐">Mapo Tofu</h1>
-    <p class="pillar-intro" data-en="Today we're making Mapo Tofu. Soft tofu, chili, and that quiet numbing heat. Nothing rushed." data-zh="今天我们做一道麻婆豆腐。嫩豆腐，一点辣，还有那种安静的麻香。不着急。">Today we're making Mapo Tofu. Soft tofu, chili, and that quiet numbing heat. Nothing rushed.</p>
+    <p class="pillar-intro" data-en="Soft tofu, chili, and that quiet numbing heat. Nothing rushed." data-zh="嫩豆腐，一点辣，还有那种安静的麻香。不着急。">Soft tofu, chili, and that quiet numbing heat. Nothing rushed.</p>
     <p class="recipe-meta" data-en="15 min prep · 20 min cook · Serves 3–4" data-zh="备菜 15 分钟 · 烹饪 20 分钟 · 3–4 人">15 min prep · 20 min cook · Serves 3–4</p>
 
     <div class="recipe-body">
@@ -63,118 +64,150 @@
         <img src="recipe-media/mapo-tofu/01-hero.jpg" alt="Mapo Tofu" width="1280" height="720">
       </figure>
 
-      <h2 data-en="The Ingredients" data-zh="食材与调料">The Ingredients</h2>
-      <p data-en="Here are the ingredients. Everything you need, with the amounts." data-zh="这些是今天的食材。克数都标好了，备齐就可以开始。">Here are the ingredients. Everything you need, with the amounts.</p>
+      <div class="recipe-tabbar" role="tablist">
+        <button type="button" class="recipe-tab is-active" role="tab" aria-selected="true" data-tab="ingredients" data-en="Shopping" data-zh="购物">Shopping</button>
+        <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="method" data-en="Method" data-zh="步骤">Method</button>
+        <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="keep" data-en="Keep" data-zh="保存">Keep</button>
+        <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="nutrition" data-en="Nutrition" data-zh="营养">Nutrition</button>
+      </div>
 
-      <figure class="recipe-figure">
-        <img src="recipe-media/mapo-tofu/02-foods.jpg" alt="Foods" width="1280" height="720">
-        <figcaption data-en="Foods" data-zh="食材">Foods</figcaption>
-      </figure>
-      <ul class="recipe-list">
-        <li><span data-en="Soft tofu" data-zh="嫩豆腐">Soft tofu</span><span class="recipe-amt">400g</span></li>
-        <li><span data-en="Dried shiitake" data-zh="干香菇">Dried shiitake</span><span class="recipe-amt">10g</span></li>
-        <li><span data-en="Soy protein" data-zh="大豆蛋白">Soy protein</span><span class="recipe-amt">32g</span></li>
-        <li><span data-en="Ginger" data-zh="姜">Ginger</span><span class="recipe-amt">10g</span></li>
-        <li><span data-en="Celery" data-zh="香芹">Celery</span><span class="recipe-amt">10g</span></li>
-        <li><span data-en="Red pepper" data-zh="红椒">Red pepper</span><span class="recipe-amt">45g</span></li>
-      </ul>
+      <section class="recipe-panel" data-panel="ingredients">
+        <h2 data-en="Shopping list" data-zh="购物清单">Shopping list</h2>
+        <p data-en="Check off what you already have. Amounts are for 3–4 servings." data-zh="家里已有的可以勾掉。份量按 3–4 人。">Check off what you already have. Amounts are for 3–4 servings.</p>
 
-      <figure class="recipe-figure">
-        <img src="recipe-media/mapo-tofu/03-sauces.jpg" alt="Seasonings" width="1280" height="720">
-        <figcaption data-en="Seasonings" data-zh="调料">Seasonings</figcaption>
-      </figure>
-      <ul class="recipe-list">
-        <li><span data-en="Vegetable oil" data-zh="植物油">Vegetable oil</span><span class="recipe-amt">30g</span></li>
-        <li><span data-en="Bean paste" data-zh="豆瓣酱">Bean paste</span><span class="recipe-amt">30g</span></li>
-        <li><span data-en="Light soy sauce" data-zh="生抽">Light soy sauce</span><span class="recipe-amt">10g</span></li>
-        <li><span data-en="Dark soy sauce" data-zh="老抽">Dark soy sauce</span><span class="recipe-amt">3g</span></li>
-        <li><span data-en="Boiling water" data-zh="开水">Boiling water</span><span class="recipe-amt">250g</span></li>
-        <li><span data-en="Salt" data-zh="盐">Salt</span><span class="recipe-amt">1.5g</span></li>
-        <li><span data-en="White pepper" data-zh="白胡椒粉">White pepper</span><span class="recipe-amt">0.2g</span></li>
-        <li><span data-en="Cornstarch" data-zh="玉米淀粉">Cornstarch</span><span class="recipe-amt">5g</span></li>
-        <li><span data-en="Cold water" data-zh="凉水">Cold water</span><span class="recipe-amt">40g</span></li>
-        <li><span data-en="Sichuan pepper oil" data-zh="花椒油">Sichuan pepper oil</span><span class="recipe-amt">1.5g</span></li>
-        <li><span data-en="Chili oil" data-zh="辣椒油">Chili oil</span><span class="recipe-amt">2.5g</span></li>
-        <li><span data-en="Kelp powder" data-zh="昆布粉">Kelp powder</span><span class="recipe-amt">1g</span></li>
-      </ul>
+        <div class="recipe-shop-group">
+          <h3 data-en="Produce &amp; proteins" data-zh="蔬果与蛋白">Produce &amp; proteins</h3>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="tofu"><span class="recipe-shop-item__icon" aria-hidden="true">⬜</span><span class="recipe-shop-item__name" data-en="Soft tofu" data-zh="嫩豆腐">Soft tofu</span><span class="recipe-shop-item__amt">400g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="shiitake"><span class="recipe-shop-item__icon" aria-hidden="true">🍄</span><span class="recipe-shop-item__name" data-en="Dried shiitake" data-zh="干香菇">Dried shiitake</span><span class="recipe-shop-item__amt">10g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="soy-protein"><span class="recipe-shop-item__icon" aria-hidden="true">🫘</span><span class="recipe-shop-item__name" data-en="Soy protein" data-zh="大豆蛋白">Soy protein</span><span class="recipe-shop-item__amt">32g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="ginger"><span class="recipe-shop-item__icon" aria-hidden="true">🫚</span><span class="recipe-shop-item__name" data-en="Ginger" data-zh="姜">Ginger</span><span class="recipe-shop-item__amt">10g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="celery"><span class="recipe-shop-item__icon" aria-hidden="true">🥬</span><span class="recipe-shop-item__name" data-en="Celery" data-zh="香芹">Celery</span><span class="recipe-shop-item__amt">10g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="pepper"><span class="recipe-shop-item__icon" aria-hidden="true">🌶️</span><span class="recipe-shop-item__name" data-en="Red pepper" data-zh="红椒">Red pepper</span><span class="recipe-shop-item__amt">45g</span></label>
+        </div>
 
-      <h2 data-en="Five Steps" data-zh="五个步骤">Five Steps</h2>
-      <p data-en="Here's the whole recipe. Five easy steps. Nothing rushed." data-zh="完整步骤就这五步。不着急。">Here's the whole recipe. Five easy steps. Nothing rushed.</p>
-
-      <section class="recipe-step">
-        <h3 data-en="01  Prep" data-zh="01  备菜">01  Prep</h3>
-        <p data-en="Step one. Soak the shiitake first. Ten grams, in warm water, until they go soft. Then cut into small cubes." data-zh="第一步。先泡香菇。十克，温水泡软就好。泡发后切成小丁。">Step one. Soak the shiitake first. Ten grams, in warm water, until they go soft. Then cut into small cubes.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/04-soak-shiitake.jpg" alt="Soak shiitake" width="1280" height="720">
-        </figure>
-        <p data-en="Do the same with the soy protein. Thirty-two grams. Just let it sit. Squeeze dry and cut small." data-zh="大豆蛋白也一样。三十二克，泡着就行。泡发后挤干水分，切成小丁。">Do the same with the soy protein. Thirty-two grams. Just let it sit. Squeeze dry and cut small.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/05-soak-soy.jpg" alt="Soak soy protein" width="1280" height="720">
-        </figure>
-        <p data-en="Now we cut. Cube four hundred grams of tofu. Mince the ginger. Chop the celery and the red pepper. Keep the celery aside until the end." data-zh="然后切菜。豆腐切丁，姜切末，香芹和红椒切碎。香芹先放一边，最后再撒。">Now we cut. Cube four hundred grams of tofu. Mince the ginger. Chop the celery and the red pepper. Keep the celery aside until the end.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/06-cut.jpg" alt="Cut ingredients" width="1280" height="720">
-        </figure>
+        <div class="recipe-shop-group">
+          <h3 data-en="Sauces &amp; seasonings" data-zh="调料">Sauces &amp; seasonings</h3>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="oil"><span class="recipe-shop-item__icon" aria-hidden="true">🟡</span><span class="recipe-shop-item__name" data-en="Vegetable oil" data-zh="植物油">Vegetable oil</span><span class="recipe-shop-item__amt">30g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="bean-paste"><span class="recipe-shop-item__icon" aria-hidden="true">🔴</span><span class="recipe-shop-item__name" data-en="Bean paste" data-zh="豆瓣酱">Bean paste</span><span class="recipe-shop-item__amt">30g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="light-soy"><span class="recipe-shop-item__icon" aria-hidden="true">🟤</span><span class="recipe-shop-item__name" data-en="Light soy sauce" data-zh="生抽">Light soy sauce</span><span class="recipe-shop-item__amt">10g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="dark-soy"><span class="recipe-shop-item__icon" aria-hidden="true">⬛</span><span class="recipe-shop-item__name" data-en="Dark soy sauce" data-zh="老抽">Dark soy sauce</span><span class="recipe-shop-item__amt">3g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="salt"><span class="recipe-shop-item__icon" aria-hidden="true">⚪</span><span class="recipe-shop-item__name" data-en="Salt" data-zh="盐">Salt</span><span class="recipe-shop-item__amt">1.5g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="white-pepper"><span class="recipe-shop-item__icon" aria-hidden="true">⚫</span><span class="recipe-shop-item__name" data-en="White pepper" data-zh="白胡椒粉">White pepper</span><span class="recipe-shop-item__amt">0.2g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="cornstarch"><span class="recipe-shop-item__icon" aria-hidden="true">🌾</span><span class="recipe-shop-item__name" data-en="Cornstarch" data-zh="玉米淀粉">Cornstarch</span><span class="recipe-shop-item__amt">5g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="pepper-oil"><span class="recipe-shop-item__icon" aria-hidden="true">🟤</span><span class="recipe-shop-item__name" data-en="Sichuan pepper oil" data-zh="花椒油">Sichuan pepper oil</span><span class="recipe-shop-item__amt">1.5g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="chili-oil"><span class="recipe-shop-item__icon" aria-hidden="true">🟠</span><span class="recipe-shop-item__name" data-en="Chili oil" data-zh="辣椒油">Chili oil</span><span class="recipe-shop-item__amt">2.5g</span></label>
+          <label class="recipe-shop-item"><input type="checkbox" data-item="kelp"><span class="recipe-shop-item__icon" aria-hidden="true">🌿</span><span class="recipe-shop-item__name" data-en="Kelp powder" data-zh="昆布粉">Kelp powder</span><span class="recipe-shop-item__amt">1g</span></label>
+        </div>
       </section>
 
-      <section class="recipe-step">
-        <h3 data-en="02  Blanch" data-zh="02  焯水">02  Blanch</h3>
-        <p data-en="Step two. Give the tofu a quick blanch in lightly salted water. One minute, then lift it out. This takes away the beany smell and helps the tofu hold its shape." data-zh="第二步。豆腐放淡盐水里焯一下。一分钟，捞出来。这一步能去掉豆腥，豆腐也不容易碎。">Step two. Give the tofu a quick blanch in lightly salted water. One minute, then lift it out. This takes away the beany smell and helps the tofu hold its shape.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/07-blanch.jpg" alt="Blanch tofu" width="1280" height="720">
-        </figure>
+      <section class="recipe-panel" data-panel="method" hidden>
+        <section class="recipe-step">
+          <h3 data-en="Step 1" data-zh="步骤 1">Step 1</h3>
+          <p data-en="Soak the shiitake in warm water until soft, then cut into small cubes. Do the same with the soy protein: soak, squeeze dry, and cut small. Cube the tofu. Mince the ginger. Chop the celery and red pepper. Keep the celery aside until the end." data-zh="干香菇温水泡软，切成小丁。大豆蛋白同样泡发、挤干、切丁。豆腐切丁，姜切末，香芹和红椒切碎。香芹先放一边，最后再撒。">Soak the shiitake in warm water until soft, then cut into small cubes. Do the same with the soy protein: soak, squeeze dry, and cut small. Cube the tofu. Mince the ginger. Chop the celery and red pepper. Keep the celery aside until the end.</p>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/04-soak-shiitake.jpg" alt="" width="1280" height="720"></figure>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/05-soak-soy.jpg" alt="" width="1280" height="720"></figure>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/06-cut.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">🍄</span><span class="recipe-chip__amt">10g</span><span data-en="Dried shiitake" data-zh="干香菇">Dried shiitake</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🫘</span><span class="recipe-chip__amt">32g</span><span data-en="Soy protein" data-zh="大豆蛋白">Soy protein</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">⬜</span><span class="recipe-chip__amt">400g</span><span data-en="Soft tofu" data-zh="嫩豆腐">Soft tofu</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🫚</span><span class="recipe-chip__amt">10g</span><span data-en="Ginger" data-zh="姜">Ginger</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🌶️</span><span class="recipe-chip__amt">45g</span><span data-en="Red pepper" data-zh="红椒">Red pepper</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🥬</span><span class="recipe-chip__amt">10g</span><span data-en="Celery" data-zh="香芹">Celery</span></span>
+          </div>
+        </section>
+
+        <section class="recipe-step">
+          <h3 data-en="Step 2" data-zh="步骤 2">Step 2</h3>
+          <p data-en="Give the tofu a quick blanch in lightly salted water. One minute, then lift it out. This takes away the beany smell and helps the tofu hold its shape." data-zh="豆腐放淡盐水里焯一分钟，捞出来。去掉豆腥，豆腐也不容易碎。">Give the tofu a quick blanch in lightly salted water. One minute, then lift it out. This takes away the beany smell and helps the tofu hold its shape.</p>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/07-blanch.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">⬜</span><span class="recipe-chip__amt">400g</span><span data-en="Soft tofu" data-zh="嫩豆腐">Soft tofu</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">⚪</span><span data-en="Pinch of salt" data-zh="少许盐">Pinch of salt</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">💧</span><span data-en="Salted water" data-zh="淡盐水">Salted water</span></span>
+          </div>
+        </section>
+
+        <section class="recipe-step">
+          <h3 data-en="Step 3" data-zh="步骤 3">Step 3</h3>
+          <p data-en="Warm 30g oil — a thin film, not a pool. Stir-fry the ginger, shiitake, and soy protein until fragrant. Add 10g light soy, then 30g bean paste and the red pepper. Pour in 250g boiling water slowly along the side of the pan." data-zh="热植物油 30g，薄薄一层。把姜、香菇和大豆蛋白炒香。生抽 10g，再下豆瓣酱 30g 和红椒。沿锅边慢慢倒入开水 250g。">Warm 30g oil — a thin film, not a pool. Stir-fry the ginger, shiitake, and soy protein until fragrant. Add 10g light soy, then 30g bean paste and the red pepper. Pour in 250g boiling water slowly along the side of the pan.</p>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/08-oil.jpg" alt="" width="1280" height="720"></figure>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/09-paste.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">🟡</span><span class="recipe-chip__amt">30g</span><span data-en="Vegetable oil" data-zh="植物油">Vegetable oil</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🫚</span><span class="recipe-chip__amt">10g</span><span data-en="Ginger" data-zh="姜">Ginger</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🍄</span><span class="recipe-chip__amt">10g</span><span data-en="Dried shiitake" data-zh="干香菇">Dried shiitake</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🫘</span><span class="recipe-chip__amt">32g</span><span data-en="Soy protein" data-zh="大豆蛋白">Soy protein</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🟤</span><span class="recipe-chip__amt">10g</span><span data-en="Light soy sauce" data-zh="生抽">Light soy sauce</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🔴</span><span class="recipe-chip__amt">30g</span><span data-en="Bean paste" data-zh="豆瓣酱">Bean paste</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🌶️</span><span class="recipe-chip__amt">45g</span><span data-en="Red pepper" data-zh="红椒">Red pepper</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">💧</span><span class="recipe-chip__amt">250g</span><span data-en="Boiling water" data-zh="开水">Boiling water</span></span>
+          </div>
+        </section>
+
+        <section class="recipe-step">
+          <h3 data-en="Step 4" data-zh="步骤 4">Step 4</h3>
+          <p data-en="Slide the tofu in gently. Add 0.2g white pepper, 1.5g salt, and 3g dark soy. Simmer three minutes. Don't stir hard — let it settle into the sauce." data-zh="豆腐轻轻滑进去。白胡椒粉 0.2g、盐 1.5g、老抽 3g。焖三分钟。不要用力翻。">Slide the tofu in gently. Add 0.2g white pepper, 1.5g salt, and 3g dark soy. Simmer three minutes. Don't stir hard — let it settle into the sauce.</p>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/11-tofu.jpg" alt="" width="1280" height="720"></figure>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/14-soy.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">⬜</span><span class="recipe-chip__amt">400g</span><span data-en="Soft tofu" data-zh="嫩豆腐">Soft tofu</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">⚫</span><span class="recipe-chip__amt">0.2g</span><span data-en="White pepper" data-zh="白胡椒粉">White pepper</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">⚪</span><span class="recipe-chip__amt">1.5g</span><span data-en="Salt" data-zh="盐">Salt</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">⬛</span><span class="recipe-chip__amt">3g</span><span data-en="Dark soy sauce" data-zh="老抽">Dark soy sauce</span></span>
+          </div>
+        </section>
+
+        <section class="recipe-step">
+          <h3 data-en="Step 5" data-zh="步骤 5">Step 5</h3>
+          <p data-en="Mix 5g cornstarch with 40g cold water and stir it in slowly until glossy. Finish with Sichuan pepper oil, chili oil, and kelp powder. Sprinkle the celery." data-zh="淀粉 5g 加凉水 40g，慢慢勾芡至发亮。淋花椒油、辣椒油，撒昆布粉，最后撒香芹。">Mix 5g cornstarch with 40g cold water and stir it in slowly until glossy. Finish with Sichuan pepper oil, chili oil, and kelp powder. Sprinkle the celery.</p>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/16-finish.jpg" alt="" width="1280" height="720"></figure>
+          <figure class="recipe-figure"><img src="recipe-media/mapo-tofu/01-hero.jpg" alt="" width="1280" height="720"></figure>
+          <div class="recipe-chips">
+            <span class="recipe-chip"><span class="recipe-chip__icon">🌾</span><span class="recipe-chip__amt">5g</span><span data-en="Cornstarch" data-zh="玉米淀粉">Cornstarch</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">💧</span><span class="recipe-chip__amt">40g</span><span data-en="Cold water" data-zh="凉水">Cold water</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🟤</span><span class="recipe-chip__amt">1.5g</span><span data-en="Sichuan pepper oil" data-zh="花椒油">Sichuan pepper oil</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🟠</span><span class="recipe-chip__amt">2.5g</span><span data-en="Chili oil" data-zh="辣椒油">Chili oil</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🌿</span><span class="recipe-chip__amt">1g</span><span data-en="Kelp powder" data-zh="昆布粉">Kelp powder</span></span>
+            <span class="recipe-chip"><span class="recipe-chip__icon">🥬</span><span class="recipe-chip__amt">10g</span><span data-en="Celery" data-zh="香芹">Celery</span></span>
+          </div>
+        </section>
       </section>
 
-      <section class="recipe-step">
-        <h3 data-en="03  Stir-fry" data-zh="03  爆香">03  Stir-fry</h3>
-        <p data-en="Step three. Warm a little oil. Thirty grams is enough — a thin film, not a pool. Stir-fry the ginger, the shiitake, and the soy protein until they smell good." data-zh="第三步。热一点油。植物油三十克就够，薄薄一层。把姜、香菇和大豆蛋白炒香。">Step three. Warm a little oil. Thirty grams is enough — a thin film, not a pool. Stir-fry the ginger, the shiitake, and the soy protein until they smell good.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/08-oil.jpg" alt="Stir-fry aromatics" width="1280" height="720">
-        </figure>
-        <p data-en="A splash of light soy, ten grams. Then in goes the bean paste, thirty grams, and the red pepper. Stir until fragrant." data-zh="生抽十克翻炒一下。豆瓣酱三十克下去，红椒也一起。炒出红油和酱香。">A splash of light soy, ten grams. Then in goes the bean paste, thirty grams, and the red pepper. Stir until fragrant.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/09-paste.jpg" alt="Bean paste" width="1280" height="720">
-        </figure>
-        <p data-en="Then pour in the boiling water. About two hundred fifty grams. Pour slowly along the side of the pan." data-zh="再倒开水。大概二百五十克。沿着锅边慢慢倒，搅匀。">Then pour in the boiling water. About two hundred fifty grams. Pour slowly along the side of the pan.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/10-water.jpg" alt="Boiling water" width="1280" height="720">
-        </figure>
+      <section class="recipe-panel" data-panel="keep" hidden>
+        <div class="recipe-tips">
+          <article class="recipe-tip recipe-tip--store">
+            <span class="recipe-tip__icon" aria-hidden="true">🥡</span>
+            <h3 data-en="How to store it" data-zh="如何保存">How to store it</h3>
+            <p data-en="Cool completely. Keep in an airtight container in the fridge for up to 3 days. Add fresh celery only when serving." data-zh="彻底放凉后密封冷藏，最多 3 天。香芹请到食用时再撒。">Cool completely. Keep in an airtight container in the fridge for up to 3 days. Add fresh celery only when serving.</p>
+          </article>
+          <article class="recipe-tip recipe-tip--freeze">
+            <span class="recipe-tip__icon" aria-hidden="true">❄️</span>
+            <h3 data-en="How to freeze it" data-zh="如何冷冻">How to freeze it</h3>
+            <p data-en="Freeze the cooked tofu and sauce for up to 1 month. Tofu will be a little firmer after thawing. Do not freeze the celery garnish." data-zh="煮好的豆腐和汤汁可冷冻约 1 个月。解冻后豆腐会略紧实。香芹不要冷冻。">Freeze the cooked tofu and sauce for up to 1 month. Tofu will be a little firmer after thawing. Do not freeze the celery garnish.</p>
+          </article>
+          <article class="recipe-tip recipe-tip--reheat">
+            <span class="recipe-tip__icon" aria-hidden="true">🔥</span>
+            <h3 data-en="How to reheat it" data-zh="如何复热">How to reheat it</h3>
+            <p data-en="From fridge: gentle simmer until piping hot; add a splash of water if thick. From freezer: thaw in the fridge, then reheat the same way. Finish with fresh celery." data-zh="冷藏：小火焖热，汤汁太稠可加一点水。冷冻：先放冰箱解冻，再同样加热。复热后撒新鲜香芹。">From fridge: gentle simmer until piping hot; add a splash of water if thick. From freezer: thaw in the fridge, then reheat the same way. Finish with fresh celery.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="recipe-step">
-        <h3 data-en="04  Simmer" data-zh="04  焖煮">04  Simmer</h3>
-        <p data-en="Step four. Slide the tofu in, gently. Don't stir hard — let it settle into the sauce." data-zh="第四步。豆腐轻轻滑进去。不要用力翻，让它自己沉进汤里。">Step four. Slide the tofu in, gently. Don't stir hard — let it settle into the sauce.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/11-tofu.jpg" alt="Slide tofu in" width="1280" height="720">
-        </figure>
-        <p data-en="A tiny pinch of white pepper. That's about 0.2 grams." data-zh="白胡椒粉，一小撮就好。零点二克。">A tiny pinch of white pepper. That's about 0.2 grams.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/12-pepper.jpg" alt="White pepper" width="1280" height="720">
-        </figure>
-        <p data-en="A little salt. One and a half grams. That's about it." data-zh="再一点点盐。一点五克。差不多了。">A little salt. One and a half grams. That's about it.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/13-salt.jpg" alt="Salt" width="1280" height="720">
-        </figure>
-        <p data-en="And just a splash of dark soy. Three grams is plenty. Let it simmer three minutes." data-zh="老抽淋一小圈就够。三克。焖三分钟。">And just a splash of dark soy. Three grams is plenty. Let it simmer three minutes.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/14-soy.jpg" alt="Dark soy" width="1280" height="720">
-        </figure>
-      </section>
-
-      <section class="recipe-step">
-        <h3 data-en="05  Finish" data-zh="05  收尾">05  Finish</h3>
-        <p data-en="Step five. Mix a little cornstarch with cold water, and stir it in slowly, until it turns glossy. Don't pour it all at once." data-zh="第五步。淀粉加凉水，慢慢勾进去，等到发亮。不要一次倒完，避免结团。">Step five. Mix a little cornstarch with cold water, and stir it in slowly, until it turns glossy. Don't pour it all at once.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/15-slurry.jpg" alt="Cornstarch slurry" width="1280" height="720">
-        </figure>
-        <p data-en="Finish with a drizzle of Sichuan pepper oil, chili oil, and a pinch of kelp powder." data-zh="最后淋一点花椒油、辣椒油，再一小撮昆布粉。">Finish with a drizzle of Sichuan pepper oil, chili oil, and a pinch of kelp powder.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/16-finish.jpg" alt="Finish oils" width="1280" height="720">
-        </figure>
-        <p data-en="Sprinkle the celery. Numbing, fragrant, and warm." data-zh="撒上香芹。麻香开胃，又暖又轻。">Sprinkle the celery. Numbing, fragrant, and warm.</p>
-        <figure class="recipe-figure">
-          <img src="recipe-media/mapo-tofu/01-hero.jpg" alt="Finished Mapo Tofu" width="1280" height="720">
-        </figure>
+      <section class="recipe-panel" data-panel="nutrition" hidden>
+        <p class="recipe-nutri-note" data-en="Nutritional information per serving (based on 4 servings). Approximate." data-zh="每份营养参考（按 4 人份估算）。">Nutritional information per serving (based on 4 servings). Approximate.</p>
+        <div class="recipe-nutri-highlights">
+          <div class="recipe-nutri-card"><span data-en="Calories" data-zh="热量">Calories</span><strong>210 kcal</strong></div>
+          <div class="recipe-nutri-card"><span data-en="Protein" data-zh="蛋白质">Protein</span><strong>13 g</strong></div>
+        </div>
+        <table class="recipe-nutri-table">
+          <tr><td data-en="Fat" data-zh="脂肪">Fat</td><td>10g</td></tr>
+          <tr><td data-en="Saturated fat" data-zh="饱和脂肪">Saturated fat</td><td>1.5g</td></tr>
+          <tr><td data-en="Carbohydrates" data-zh="碳水化合物">Carbohydrates</td><td>8g</td></tr>
+          <tr><td data-en="Sugars" data-zh="糖">Sugars</td><td>2g</td></tr>
+          <tr><td data-en="Dietary fibre" data-zh="膳食纤维">Dietary fibre</td><td>2g</td></tr>
+          <tr><td data-en="Sodium" data-zh="钠">Sodium</td><td>720mg</td></tr>
+        </table>
       </section>
 
       <p class="recipe-back">
