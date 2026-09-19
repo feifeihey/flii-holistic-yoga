@@ -140,4 +140,29 @@
         });
     });
   }
+
+  var programTabs = document.querySelectorAll(".home-program-tab");
+  var programPanels = document.querySelectorAll(".home-program-panel");
+  if (programTabs.length) {
+    function showProgram(id) {
+      programTabs.forEach(function (tab) {
+        var on = tab.getAttribute("data-program") === id;
+        tab.classList.toggle("is-active", on);
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      programPanels.forEach(function (panel) {
+        panel.hidden = panel.getAttribute("data-program-panel") !== id;
+      });
+    }
+
+    programTabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        showProgram(tab.getAttribute("data-program"));
+      });
+    });
+
+    var hash = (location.hash || "").replace("#", "");
+    if (hash === "summer-rest-well" || hash.indexOf("summer-jul") === 0) showProgram("summer");
+    else showProgram("fall");
+  }
 })();

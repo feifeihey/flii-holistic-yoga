@@ -18,10 +18,10 @@
       head.insertBefore(base, head.firstChild);
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260601-4">
+  <link rel="stylesheet" href="styles.css?v=20260919-type">
   <link rel="stylesheet" href="index-minimal.css?v=20260423-2">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
-  <script src="script.js?v=20260423-34" defer></script>
+  <script src="script.js?v=20260919-notes" defer></script>
 </head>
 <body class="page-index--minimal">
   <div class="site-align">
@@ -103,8 +103,13 @@
       </div>
     </section>
 
-    <section id="summer-rest-well" class="summer-charity">
-      <p class="summer-charity__program-tag" data-en="FLII HOLISTIC · Summer Offline Program" data-zh="FLII HOLISTIC · 夏季线下公益项目">FLII HOLISTIC · Summer Offline Program</p>
+    <section id="summer-rest-well" class="summer-charity home-programs">
+      <div class="home-program-tabs" role="tablist">
+        <button type="button" class="section-title home-program-tab home-program-tab--fall is-active" role="tab" aria-selected="true" data-program="fall" data-en="Fall Cooking Meditation" data-zh="秋季烹饪冥想">Fall Cooking Meditation</button>
+        <button type="button" class="section-title home-program-tab home-program-tab--summer" role="tab" aria-selected="false" data-program="summer" data-en="Summer Offline Program" data-zh="夏季线下公益项目">Summer Offline Program</button>
+      </div>
+
+      <div class="home-program-panel" data-program-panel="summer" hidden>
       <h2 class="section-title summer-charity__theme-title" data-en="Rest Well" data-zh="夏季线下公益 ·【好好休息】计划">Rest Well</h2>
 
       <section class="summer-charity__overview" aria-labelledby="summer-overview-heading">
@@ -171,6 +176,35 @@
       <p class="summer-charity__cta-wrap">
         <a href="booking.html" class="summer-charity__cta" data-en="View July schedule &amp; book" data-zh="查看七月课表并预约">View July schedule &amp; book</a>
       </p>
+      </div>
+
+      <div class="home-program-panel" data-program-panel="fall" id="fall-cooking">
+        <h2 class="section-title summer-charity__theme-title" data-en="Cooking Meditation" data-zh="烹饪冥想">Cooking Meditation</h2>
+        <p class="pillar-intro" data-en="Plant-based cooking as a quiet practice. Wash, cut, heat, and plate with full attention." data-zh="以植物基烹饪作为一次安静的练习。带着觉知洗、切、加热、装盘。">Plant-based cooking as a quiet practice. Wash, cut, heat, and plate with full attention.</p>
+        <div class="recipe-index-grid">
+          <a class="recipe-index-card" href="recipe-mapo-tofu.html">
+            <div class="recipe-index-card__cover">
+              <img src="recipe-media/mapo-tofu/01-hero.jpg" alt="Mapo Tofu" width="1280" height="720">
+              <div class="recipe-index-card__overlay">
+                <span class="recipe-index-card__mins" data-en="15 min prep · 20 min cook" data-zh="备菜 15 分钟 · 烹饪 20 分钟">15 min prep · 20 min cook</span>
+                <h2 data-en="Mapo Tofu" data-zh="麻婆豆腐">Mapo Tofu</h2>
+              </div>
+            </div>
+          </a>
+          <a class="recipe-index-card" href="recipe-tomato-cauliflower.html">
+            <div class="recipe-index-card__cover">
+              <img src="recipe-media/tomato-cauliflower/01-hero.jpg" alt="Tomato Cauliflower" width="1280" height="720">
+              <div class="recipe-index-card__overlay">
+                <span class="recipe-index-card__mins" data-en="10 min prep · 10 min cook" data-zh="备菜 10 分钟 · 烹饪 10 分钟">10 min prep · 10 min cook</span>
+                <h2 data-en="Tomato Cauliflower" data-zh="番茄菜花">Tomato Cauliflower</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <p class="summer-charity__cta-wrap">
+          <a href="cooking-meditation.html" class="summer-charity__cta" data-en="All cooking meditations" data-zh="全部烹饪冥想">All cooking meditations</a>
+        </p>
+      </div>
     </section>
 
   </main>

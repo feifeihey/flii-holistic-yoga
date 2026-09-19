@@ -18,7 +18,7 @@
       head.insertBefore(base, head.firstChild);
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260919-keep">
+  <link rel="stylesheet" href="styles.css?v=20260919-back6">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
   <script src="script.js?v=20260423-34" defer></script>
   <script src="recipe.js?v=20260919-1" defer></script>
@@ -55,18 +55,24 @@
       ·
       <a href="cooking-meditation.html" data-en="Cooking Meditation" data-zh="烹饪冥想">Cooking Meditation</a>
     </p>
-    <h1 class="section-title" data-en="Mapo Tofu" data-zh="麻婆豆腐">Mapo Tofu</h1>
-    <p class="pillar-intro" data-en="Soft tofu, chili, and that quiet numbing heat. Nothing rushed." data-zh="嫩豆腐，一点辣，还有那种安静的麻香。不着急。">Soft tofu, chili, and that quiet numbing heat. Nothing rushed.</p>
-    <p class="recipe-meta" data-en="15 min prep · 20 min cook · Serves 3–4" data-zh="备菜 15 分钟 · 烹饪 20 分钟 · 3–4 人">15 min prep · 20 min cook · Serves 3–4</p>
 
     <div class="recipe-body">
-      <figure class="recipe-figure">
+      <figure class="recipe-cover">
         <img src="recipe-media/mapo-tofu/01-hero.jpg" alt="Mapo Tofu" width="1280" height="720">
       </figure>
+      <h1 class="section-title recipe-cover-title" data-en="Mapo Tofu" data-zh="麻婆豆腐">Mapo Tofu</h1>
+      <div class="recipe-keep-pills">
+        <span class="recipe-keep-pill recipe-keep-pill--store"><span data-en="Easily stored" data-zh="易保存">Easily stored</span> 🥡</span>
+        <span class="recipe-keep-pill recipe-keep-pill--freeze"><span data-en="Freezable" data-zh="可冷冻">Freezable</span> ❄️</span>
+        <span class="recipe-keep-pill recipe-keep-pill--reheat"><span data-en="Reheatable" data-zh="可复热">Reheatable</span> 🔥</span>
+      </div>
+      <p class="pillar-intro recipe-cover-intro" data-en="Soft tofu, chili, and that quiet numbing heat. Nothing rushed." data-zh="嫩豆腐，一点辣，还有那种安静的麻香。不着急。">Soft tofu, chili, and that quiet numbing heat. Nothing rushed.</p>
+      <p class="recipe-meta" data-en="15 min prep · 20 min cook · Serves 3–4" data-zh="备菜 15 分钟 · 烹饪 20 分钟 · 3–4 人">15 min prep · 20 min cook · Serves 3–4</p>
 
       <div class="recipe-tabbar" role="tablist">
         <button type="button" class="recipe-tab is-active" role="tab" aria-selected="true" data-tab="ingredients" data-en="Shopping" data-zh="购物">Shopping</button>
         <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="method" data-en="Method" data-zh="步骤">Method</button>
+        <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="tips" data-en="Tips" data-zh="贴士">Tips</button>
         <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="keep" data-en="Keep" data-zh="保存">Keep</button>
         <button type="button" class="recipe-tab" role="tab" aria-selected="false" data-tab="nutrition" data-en="Nutrition" data-zh="营养">Nutrition</button>
       </div>
@@ -172,6 +178,23 @@
             <span class="recipe-chip"><span class="recipe-chip__icon">🥬</span><span class="recipe-chip__amt">10g</span><span data-en="Celery" data-zh="香芹">Celery</span></span>
           </div>
         </section>
+      </section>
+
+      <section class="recipe-panel" data-panel="tips" hidden>
+        <div class="recipe-notes">
+          <article class="recipe-note">
+            <span class="recipe-note__num">1</span>
+            <p data-en="Use soft tofu for Mapo Tofu. In the south, silken or southern tofu works well." data-zh="麻婆豆腐要用嫩豆腐。南方一带可以选南豆腐、绢豆腐，口感更软。">Use soft tofu for Mapo Tofu. In the south, silken or southern tofu works well.</p>
+          </article>
+          <article class="recipe-note">
+            <span class="recipe-note__num">2</span>
+            <p data-en="This recipe is mildly numbing and spicy. Adjust the bean paste, Sichuan pepper oil, and chili oil to taste." data-zh="此配方的麻辣味偏温和。可按自己的口味增减豆瓣酱、花椒油和辣椒油。">This recipe is mildly numbing and spicy. Adjust the bean paste, Sichuan pepper oil, and chili oil to taste.</p>
+          </article>
+          <article class="recipe-note">
+            <span class="recipe-note__num">3</span>
+            <p data-en="Keep the celery until the very end. Don't add it earlier." data-zh="香芹留到最后再撒。前面的步骤里不要提前放进去。">Keep the celery until the very end. Don't add it earlier.</p>
+          </article>
+        </div>
       </section>
 
       <section class="recipe-panel" data-panel="keep" hidden>
