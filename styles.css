@@ -1711,6 +1711,278 @@ html:lang(zh) .class-card.meditation-space .class-overlay h3 {
   margin-top: 0.15rem;
 }
 
+.eat-well-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  width: 100%;
+  margin: 1.35rem auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.eat-well-grid__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  background: #f4f1ea;
+  box-shadow: 0 4px 20px rgba(47, 40, 36, 0.12);
+}
+
+.eat-well-grid__num {
+  display: block;
+  color: #8a5a36;
+  font-family: "Roboto Serif", Georgia, serif;
+  font-size: clamp(0.62rem, 1.15vw, 0.78rem);
+  letter-spacing: 0.08em;
+}
+
+.eat-well-grid__title {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(0.92rem, 1.7vw, 1.28rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+}
+
+.eat-well-grid__note {
+  margin: 0.28rem 0 0;
+  color: var(--ink-soft);
+  font-size: clamp(0.62rem, 1.1vw, 0.78rem);
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+}
+
+.eat-well-grid__kicker {
+  margin: 0 0 0.45rem;
+  color: #8a5a36;
+  font-size: clamp(0.62rem, 1.05vw, 0.76rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eat-well-grid__cover,
+.eat-well-grid__item--cta a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+}
+
+.eat-well-grid__cover img,
+.eat-well-grid__cover-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.eat-well-grid__cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(42, 28, 20, 0.42) 0%,
+    rgba(42, 28, 20, 0.1) 40%,
+    transparent 58%
+  );
+}
+
+.eat-well-grid__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: clamp(0.55rem, 1.6vw, 1.15rem) clamp(0.5rem, 1.4vw, 1rem) clamp(0.55rem, 1.5vw, 1.05rem);
+  text-align: center;
+}
+
+.eat-well-grid__item--photo .eat-well-grid__title {
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(42, 28, 20, 0.4);
+}
+
+.eat-well-grid__item--photo .eat-well-grid__note {
+  margin: 0 0 0.28rem;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 10px rgba(42, 28, 20, 0.35);
+}
+
+.eat-well-grid__item--photo .eat-well-grid__title + .eat-well-grid__note {
+  margin: 0.28rem 0 0;
+}
+
+.eat-well-grid__num--light {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.6rem;
+  z-index: 2;
+  margin: 0;
+  color: rgba(250, 246, 239, 0.92);
+  text-shadow: 0 1px 8px rgba(42, 28, 20, 0.35);
+}
+
+.eat-well-grid__item--cover {
+  padding: 8.5% 7% 7%;
+  background: #f4f1ea;
+}
+
+.eat-well-grid__item--cover .eat-well-grid__num {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.55rem;
+}
+
+.eat-well-grid__cover-photo {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.eat-well-grid__cover-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(42, 28, 20, 0.4) 0%,
+    rgba(42, 28, 20, 0.08) 42%,
+    transparent 58%
+  );
+}
+
+.eat-well-grid__cover-caption {
+  position: absolute;
+  left: 0.4rem;
+  right: 0.4rem;
+  bottom: 0.45rem;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 10px rgba(42, 28, 20, 0.4);
+}
+
+.eat-well-grid__cover-caption span {
+  display: block;
+}
+
+.eat-well-grid__cover-caption span:first-child {
+  font-size: clamp(0.58rem, 1.15vw, 0.82rem);
+  letter-spacing: 0.12em;
+}
+
+.eat-well-grid__cover-caption span:last-child {
+  margin-top: 0.12rem;
+  font-size: clamp(0.52rem, 0.95vw, 0.68rem);
+  letter-spacing: 0.06em;
+  opacity: 0.92;
+}
+
+.eat-well-grid__item--cover .eat-well-grid__title {
+  margin-top: 0.55rem;
+  text-align: center;
+  color: #8a5a36;
+  font-family: "Roboto Serif", Georgia, serif;
+  font-size: clamp(1.05rem, 2.1vw, 1.7rem);
+}
+
+.eat-well-grid__item--cover .eat-well-grid__note {
+  margin-top: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.eat-well-grid__item--type {
+  align-items: center;
+  justify-content: center;
+  padding: 12%;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #d2c4b2, 0 4px 20px rgba(47, 40, 36, 0.08);
+}
+
+.eat-well-grid__item--type .eat-well-grid__num {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.65rem;
+}
+
+.eat-well-grid__item--type .eat-well-grid__title {
+  max-width: 18ch;
+}
+
+.eat-well-grid__item--modules {
+  padding: 11% 8% 8%;
+  box-shadow: inset 0 0 0 1px #d2c4b2, 0 4px 20px rgba(47, 40, 36, 0.08);
+}
+
+.eat-well-grid__item--modules .eat-well-grid__num {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.6rem;
+}
+
+.eat-well-grid__item--modules .eat-well-grid__title {
+  margin: 0 0 0.45rem;
+  text-align: center;
+  font-size: clamp(0.78rem, 1.45vw, 1.05rem);
+}
+
+.eat-well-grid__modules {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 0.28rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.eat-well-grid__modules li {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 0;
+  flex: 1 1 auto;
+  padding: 0 0.45rem 0 0.35rem;
+  border-radius: 6px;
+  background: #f3eee0;
+  box-shadow: inset 4px 0 0 #8a5a36;
+  color: var(--ink);
+  font-size: clamp(0.58rem, 1.15vw, 0.82rem);
+  letter-spacing: 0.02em;
+}
+
+.eat-well-grid__modules li:nth-child(even) {
+  background: #e7eee8;
+}
+
+.eat-well-grid__mod-num {
+  flex: 0 0 auto;
+  color: #8a5a36;
+  font-family: "Roboto Serif", Georgia, serif;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
+}
+
+.eat-well-grid__item--cta:hover {
+  box-shadow: 0 8px 28px rgba(47, 40, 36, 0.16);
+}
+
 .summer-charity__theme-title {
   margin-top: 0.25rem;
   white-space: nowrap;
@@ -1905,6 +2177,10 @@ html:lang(zh) .summer-charity__overview .summer-charity__intro {
 
 .summer-charity__cta:hover {
   background: #6f4829;
+}
+
+.home-program-panel[data-program-panel="fall"] .summer-charity__cta-wrap {
+  margin-top: 1.5rem;
 }
 
 .home-program-panel[data-program-panel="summer"] .summer-charity__cta {
@@ -2734,6 +3010,31 @@ html:lang(zh) .recipe-body h2 {
 
   .recipe-index-grid {
     grid-template-columns: 1fr;
+  }
+
+  .eat-well-grid {
+    gap: 0.4rem;
+  }
+
+  .eat-well-grid__item--cover {
+    padding: 12% 6% 6%;
+  }
+
+  .eat-well-grid__cover-caption span:last-child,
+  .eat-well-grid__item--cover .eat-well-grid__note {
+    display: none;
+  }
+
+  .eat-well-grid__item--type {
+    padding: 10% 8%;
+  }
+
+  .eat-well-grid__item--modules {
+    padding: 12% 6% 6%;
+  }
+
+  .eat-well-grid__mod-num {
+    display: none;
   }
 
   .recipe-kicker {
