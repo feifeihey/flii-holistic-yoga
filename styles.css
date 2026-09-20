@@ -2183,6 +2183,25 @@ html:lang(zh) .summer-charity__overview .summer-charity__intro {
   margin-top: 1.5rem;
 }
 
+.eat-well-ig {
+  margin: 0.85rem 0 0;
+  text-align: center;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.eat-well-ig a,
+.eat-well-ig__link {
+  color: #8a5a36;
+  text-decoration: none;
+}
+
+.eat-well-ig a:hover,
+.eat-well-ig__link:hover {
+  text-decoration: underline;
+}
+
 .home-program-panel[data-program-panel="summer"] .summer-charity__cta {
   background: #4f6b52;
 }
