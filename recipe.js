@@ -27,7 +27,7 @@
     saved = JSON.parse(localStorage.getItem(key) || "{}");
   } catch (e) {}
 
-  document.querySelectorAll(".recipe-shop input[type='checkbox']").forEach(function (box) {
+  document.querySelectorAll(".recipe-shop-item input[type='checkbox']").forEach(function (box) {
     var id = box.getAttribute("data-item");
     if (id && saved[id]) box.checked = true;
     box.addEventListener("change", function () {
