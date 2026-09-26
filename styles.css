@@ -3192,3 +3192,225 @@ html:lang(zh) .recipe-body h2 {
     min-height: 44px;
   }
 }
+
+/* Eastern Philosophy · Read Well */
+.pillar-card--philosophy {
+  background-image: var(--photo-veil-warm-a), url("stories-media/beggar-rose.jpg");
+  background-position: center 28%;
+}
+
+.read-well-home {
+  margin: 2rem 0 3.5rem;
+}
+
+.read-well-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #faf6ef;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 20px rgba(47, 40, 36, 0.12);
+}
+
+.read-well-feature__photo {
+  min-height: 280px;
+  background: #e8dfd2 center 28% / cover no-repeat url("stories-media/beggar-rose.jpg");
+}
+
+.read-well-feature__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.25rem 2rem 2.4rem;
+}
+
+.read-well-feature__kicker {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a5a36;
+}
+
+.read-well-feature__title {
+  margin: 0 0 0.35rem;
+  font-weight: 300;
+  font-size: clamp(1.55rem, 3vw, 2.05rem);
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.read-well-feature__zh {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
+
+.read-well-feature__line {
+  margin: 0 0 1.35rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.read-well-feature__cta {
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a5a36;
+}
+
+.read-well-feature:hover {
+  box-shadow: 0 8px 28px rgba(47, 40, 36, 0.16);
+}
+
+.read-well-feature:hover .read-well-feature__cta {
+  text-decoration: underline;
+}
+
+.story-index-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 420px);
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 0 auto 3.5rem;
+}
+
+.story-index-card {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.story-index-card__cover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 3 / 4;
+  box-shadow: 0 4px 20px rgba(47, 40, 36, 0.12);
+}
+
+.story-index-card__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.story-index-card__cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(42, 28, 20, 0.5) 0%,
+    rgba(42, 28, 20, 0.08) 42%,
+    transparent 62%
+  );
+}
+
+.story-index-card__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 1.4rem 1.15rem 1.25rem;
+  text-align: center;
+}
+
+.story-index-card__ep {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(250, 246, 239, 0.88);
+}
+
+.story-index-card h2 {
+  margin: 0 0 0.3rem;
+  font-weight: 300;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.story-index-card__zh {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(250, 246, 239, 0.9);
+}
+
+.story-body {
+  max-width: 38rem;
+  margin: 0 auto 3.5rem;
+}
+
+.story-cover {
+  margin: 0.35rem 0 0;
+}
+
+.story-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 22%;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(47, 40, 36, 0.12);
+}
+
+.story-body .section-title {
+  margin: 1.2rem 0 0.35rem;
+  text-align: center;
+}
+
+.story-zh-title {
+  margin: 0 0 1.15rem;
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+}
+
+.story-body > p {
+  margin: 0 0 1.15rem;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.story-coda {
+  margin: 2.2rem 0 0;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #8a5a36;
+}
+
+html:lang(zh) .read-well-feature__kicker,
+html:lang(zh) .story-index-card__ep,
+html:lang(zh) .recipe-kicker {
+  letter-spacing: 0.18em;
+  text-transform: none;
+}
+
+@media (max-width: 800px) {
+  .read-well-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .read-well-feature__photo {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .read-well-feature__body {
+    padding: 1.5rem 1.25rem 1.75rem;
+  }
+}
