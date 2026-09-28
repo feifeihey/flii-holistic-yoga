@@ -25,3 +25,94 @@
 .page-index--minimal .site-footer .qr-card p {
   color: var(--ink-soft);
 }
+
+/* Our Story portrait removed — copy uses the full content column */
+.page-index--minimal .about-story-wrap__inner {
+  display: block;
+  min-height: 0;
+}
+
+/* Signature left, small round portrait and name on the right */
+.page-index--minimal #about .about-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 3.25rem;
+}
+
+.page-index--minimal #about .about-sign {
+  margin: 0;
+  text-align: left;
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  font-size: 1.45rem;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.page-index--minimal #about .about-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.page-index--minimal #about .about-author__photo-wrap {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.page-index--minimal #about .about-author__photo {
+  position: absolute;
+  width: 300%;
+  height: auto;
+  max-width: none;
+  left: 50%;
+  top: -28px;
+  transform: translateX(-50%);
+}
+
+.page-index--minimal #about .about-author__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.page-index--minimal #about .about-author__name,
+.page-index--minimal #about .about-author__role {
+  font-family: "Montserrat", system-ui, sans-serif;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.page-index--minimal #about .about-author__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.page-index--minimal #about .about-author__role {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.page-index--minimal #about .about-sign__line {
+  display: block;
+}
+
+html:lang(zh-Hans) .page-index--minimal #about .about-sign {
+  font-family: "Ma Shan Zheng", cursive;
+  font-weight: 400;
+  font-size: 1.28rem;
+  line-height: 1.25;
+}
+
+.page-index--minimal #about {
+  margin-bottom: 3.5rem;
+}

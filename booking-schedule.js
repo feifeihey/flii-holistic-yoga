@@ -2840,8 +2840,8 @@ window.FLII_BOOKING_SCHEDULE = {
         "zh": "菲菲"
       },
       "location": {
-        "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
-        "zh": "工作室 — 上海市长宁区愚园路1280弄"
+        "en": "Studio — 355 Fuzhou Road, Shanghai",
+        "zh": "工作室 — 上海市福州路355号"
       },
       "spots": 30,
       "note": {
@@ -3527,8 +3527,8 @@ window.FLII_BOOKING_SCHEDULE = {
         "zh": "菲菲"
       },
       "location": {
-        "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
-        "zh": "工作室 — 上海市长宁区愚园路1280弄"
+        "en": "Studio — 355 Fuzhou Road, Shanghai",
+        "zh": "工作室 — 上海市福州路355号"
       },
       "spots": 6,
       "note": {
@@ -3686,8 +3686,8 @@ window.FLII_BOOKING_SCHEDULE = {
         "zh": "菲菲"
       },
       "location": {
-        "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
-        "zh": "工作室 — 上海市长宁区愚园路1280弄"
+        "en": "Studio — 355 Fuzhou Road, Shanghai",
+        "zh": "工作室 — 上海市福州路355号"
       },
       "spots": 6,
       "note": {
@@ -3845,8 +3845,8 @@ window.FLII_BOOKING_SCHEDULE = {
         "zh": "菲菲"
       },
       "location": {
-        "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
-        "zh": "工作室 — 上海市长宁区愚园路1280弄"
+        "en": "Studio — 355 Fuzhou Road, Shanghai",
+        "zh": "工作室 — 上海市福州路355号"
       },
       "spots": 6,
       "note": {
@@ -4004,8 +4004,8 @@ window.FLII_BOOKING_SCHEDULE = {
         "zh": "菲菲"
       },
       "location": {
-        "en": "Studio — 1280 Lane, Yuyuan Rd, Changning, Shanghai",
-        "zh": "工作室 — 上海市长宁区愚园路1280弄"
+        "en": "Studio — 355 Fuzhou Road, Shanghai",
+        "zh": "工作室 — 上海市福州路355号"
       },
       "spots": 6,
       "note": {

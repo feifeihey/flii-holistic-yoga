@@ -301,6 +301,12 @@ body {
   margin-bottom: 0;
 }
 
+#about .about-sign {
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+  letter-spacing: 0.06em;
+}
+
 .contact-form-intro {
   text-align: center;
   max-width: 36rem;
@@ -3413,4 +3419,117 @@ html:lang(zh) .recipe-kicker {
   .read-well-feature__body {
     padding: 1.5rem 1.25rem 1.75rem;
   }
+}
+
+/* Western pantry */
+.pantry-hero {
+  margin: 0 auto 2rem;
+  max-width: 42rem;
+}
+
+.pantry-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(47, 40, 36, 0.12);
+}
+
+.pantry-group {
+  max-width: 42rem;
+  margin: 0 auto 2.25rem;
+}
+
+.pantry-group h2 {
+  margin: 0 0 0.85rem;
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #8a5a36;
+}
+
+html:lang(zh) .pantry-group h2 {
+  text-transform: none;
+  letter-spacing: 0.16em;
+}
+
+.pantry-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.pantry-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.38rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #faf6ef;
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+
+.pantry-recipe {
+  max-width: 42rem;
+  margin: 0 auto 3.25rem;
+}
+
+.pantry-recipe img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(47, 40, 36, 0.12);
+}
+
+.pantry-recipe h2 {
+  margin: 1.1rem 0 0.25rem;
+  font-weight: 300;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--ink);
+}
+
+.pantry-recipe__zh {
+  margin: 0 0 0.65rem;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+.pantry-recipe .recipe-meta {
+  margin-bottom: 1rem;
+}
+
+.pantry-recipe h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-weight: 400;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a5a36;
+}
+
+html:lang(zh) .pantry-recipe h3 {
+  text-transform: none;
+}
+
+.pantry-recipe ol {
+  margin: 0;
+  padding: 0 0 0 1.15rem;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.pantry-recipe li {
+  margin: 0 0 0.45rem;
 }
