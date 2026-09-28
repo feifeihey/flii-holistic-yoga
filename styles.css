@@ -3201,8 +3201,8 @@ html:lang(zh) .recipe-body h2 {
 
 /* Eastern Philosophy · Read Well */
 .pillar-card--philosophy {
-  background-image: var(--photo-veil-warm-a), url("stories-media/beggar-rose.jpg");
-  background-position: center 28%;
+  background-image: var(--photo-veil-warm-a), url("offerings-media/philosophy.png");
+  background-position: center 38%;
 }
 
 .read-well-home {
