@@ -3223,7 +3223,7 @@ html:lang(zh) .recipe-body h2 {
 
 .read-well-feature__photo {
   min-height: 280px;
-  background: #e8dfd2 center 28% / cover no-repeat url("stories-media/beggar-rose.jpg");
+  background: #e8dfd2 center 40% / cover no-repeat url("stories-media/cup-of-tea.jpg");
 }
 
 .read-well-feature__body {
@@ -3278,7 +3278,7 @@ html:lang(zh) .recipe-body h2 {
 
 .story-index-grid {
   display: grid;
-  grid-template-columns: minmax(0, 420px);
+  grid-template-columns: repeat(2, minmax(0, 420px));
   justify-content: center;
   gap: 1.25rem;
   margin: 0 auto 3.5rem;
@@ -3407,6 +3407,10 @@ html:lang(zh) .recipe-kicker {
 }
 
 @media (max-width: 800px) {
+  .story-index-grid {
+    grid-template-columns: minmax(0, 420px);
+  }
+
   .read-well-feature {
     grid-template-columns: 1fr;
   }
