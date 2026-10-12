@@ -3696,12 +3696,14 @@ html:lang(zh-Hans) .top-nav a {
 }
 
 #hero .hero-image::before {
-  background: linear-gradient(
-    180deg,
-    rgba(42, 38, 34, 0.46) 0%,
-    rgba(36, 32, 28, 0.32) 46%,
-    rgba(28, 24, 20, 0.22) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(48, 36, 26, 0.36) 0%,
+      rgba(48, 36, 26, 0.1) 24%,
+      rgba(255, 248, 238, 0) 40%
+    ),
+    rgba(255, 246, 234, 0.55);
 }
 
 .hero-text--stack {
