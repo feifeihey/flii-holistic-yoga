@@ -18,8 +18,8 @@
       head.insertBefore(base, head.firstChild);
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=20261011-boat">
-  <link rel="stylesheet" href="index-minimal.css?v=20260928-crop">
+  <link rel="stylesheet" href="styles.css?v=20261012-wide">
+  <link rel="stylesheet" href="index-minimal.css?v=20261012-logo">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Ma+Shan+Zheng&family=Montserrat:wght@300;400&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
   <script src="script.js?v=20260919-notes" defer></script>
 </head>
@@ -52,7 +52,7 @@
   <main class="site-wrapper">
     <section id="hero">
       <div class="hero-image">
-        <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
+        <img class="hero-bg" src="our-story.jpg?v=20261012-native" alt="" width="1024" height="802">
         <div class="hero-text hero-text--stack">
           <h1 class="hero-line hero-line--brand" data-en="FLII HOLISTIC" data-zh="FLII HOLISTIC">FLII HOLISTIC</h1>
           <p class="hero-line hero-line--cats" data-en="Eastern Philosophy · Yoga &amp; Meditation · Sound Healing" data-zh="东方哲学 · 瑜伽与冥想 · 声音疗愈">Eastern Philosophy · Yoga &amp; Meditation · Sound Healing</p>
@@ -75,6 +75,8 @@
           <p data-en="Today, FLII HOLISTIC is a lifestyle: yoga, moving meditation, sound healing, and mindful nourishment, practiced together through ordinary days. Not fixed. Not perfect. But who we really are." data-zh="如今，FLII HOLISTIC 是一种生活方式：瑜伽、动态冥想、声音疗愈与正念饮食，在日常里一起练习。不是被修好，不是完美，而是真实的自己。">Today, FLII HOLISTIC is a lifestyle: yoga, moving meditation, sound healing, and mindful nourishment, practiced together through ordinary days. Not fixed. Not perfect. But who we really are.</p>
           <p data-en="That is the invitation. Eastern philosophy is practiced, not performed for anyone else." data-zh="这就是这份邀请。东方哲学是用来练习的，不是演给别人看的。">That is the invitation. Eastern philosophy is practiced, not performed for anyone else.</p>
           <p data-en="And I am walking this path right beside you." data-zh="而我正与你并肩走在这条路上。">And I am walking this path right beside you.</p>
+            </div>
+            </div>
           <div class="about-close">
             <p class="about-sign">
               <span class="about-sign__line" data-en="With love," data-zh="爱你的，">With love,</span>
@@ -90,8 +92,6 @@
               </div>
             </div>
           </div>
-            </div>
-            </div>
           </div>
         </div>
       </div>
@@ -338,20 +338,5 @@
     </div>
     <p class="site-footer__copy">© 2025 FLII HOLISTIC. All Rights Reserved.</p>
   </footer>
-  <script>
-    (function () {
-      function assetUrlInPageFolder(file) {
-        var path = window.__siteRoot || window.location.pathname;
-        if (!window.__siteRoot) {
-          if (/\.html$/i.test(path)) path = path.replace(/[^/]+$/, "");
-          else if (path !== "/" && !path.endsWith("/")) path = path.replace(/[^/]+$/, "");
-          if (!path.endsWith("/")) path += "/";
-        }
-        return window.location.origin + path + file;
-      }
-      var el = document.getElementById("hero-bg");
-      if (el) el.style.backgroundImage = 'url("' + assetUrlInPageFolder("hero-image.jpg") + '")';
-    })();
-  </script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 /* FLII HOLISTIC — homepage: minimalist palette only (layout from styles.css) */
 
 .page-index--minimal {
-  --bg: #f8f7f4;
-  --ink: #1f1c19;
-  --ink-soft: #6b6560;
-  --line: rgba(31, 28, 25, 0.14);
+  --bg: #eeefeb;
+  --ink: #111111;
+  --ink-soft: #3a3a3a;
+  --line: rgba(0, 0, 0, 0.14);
 }
 
 .page-index--minimal {
@@ -14,22 +14,89 @@
 
 /* Logo size from minimalist pass — layout otherwise from styles.css */
 .page-index--minimal .logo {
-  height: 52px;
+  height: 72.5px;
 }
 
 .page-index--minimal .language-switch button.active {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: #5c4636;
+  border-color: #5c4636;
+  color: #f7f3ee;
 }
 
 .page-index--minimal .site-footer .qr-card p {
   color: var(--ink-soft);
 }
 
-/* Our Story portrait removed — copy uses the full content column */
+/* Our Story: photo sits in the text, then the signature spans the full width */
 .page-index--minimal .about-story-wrap__inner {
   display: block;
   min-height: 0;
+}
+
+.page-index--minimal .about-story-wrap__body {
+  padding: 0;
+}
+
+.page-index--minimal #about .about-text {
+  display: block;
+  max-width: none;
+}
+
+.page-index--minimal .about-story-wrap__figure {
+  position: static;
+  float: right;
+  width: min(46%, 520px);
+  min-height: 0;
+  height: auto;
+  margin: 0.2rem 0 1.15rem 2.25rem;
+  aspect-ratio: auto;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.page-index--minimal .about-story-wrap__photo {
+  position: relative;
+  display: block;
+  aspect-ratio: 1024 / 802;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.page-index--minimal .about-story-wrap__figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.page-index--minimal .about-story-wrap__caption {
+  margin: 0.55rem 0 0;
+  font-family: "Raleway", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 800px) {
+  .page-index--minimal .about-story-wrap__figure {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.35rem;
+  }
+
+  .page-index--minimal .about-story-wrap__photo {
+    border-radius: 16px;
+  }
+
+  .page-index--minimal #about .about-close {
+    margin-top: 1.75rem;
+    gap: 1rem;
+  }
 }
 
 /* Signature left, small round portrait and name on the right */
@@ -37,8 +104,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  clear: both;
   gap: 1.5rem;
-  margin-top: 3.25rem;
+  margin-top: 2.25rem;
+  padding-top: 0.25rem;
 }
 
 .page-index--minimal #about .about-sign {
@@ -85,7 +154,7 @@
 
 .page-index--minimal #about .about-author__name,
 .page-index--minimal #about .about-author__role {
-  font-family: "Montserrat", system-ui, sans-serif;
+  font-family: "Raleway", "PingFang SC", "Hiragino Sans GB", sans-serif;
   letter-spacing: 0;
   line-height: 1.25;
 }
@@ -115,4 +184,8 @@ html:lang(zh-Hans) .page-index--minimal #about .about-sign {
 
 .page-index--minimal #about {
   margin-bottom: 3.5rem;
+}
+
+.page-index--minimal #about .section-title {
+  margin-bottom: 1.35rem;
 }

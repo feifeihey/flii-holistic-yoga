@@ -1,31 +1,34 @@
 /* FLII HOLISTIC — shared styles (multi-page) */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap");
+
 :root {
-  --content-max: 1100px;
+  --content-max: 1180px;
   /* Horizontal gutter for header + main + footer — matches hero image inset */
-  --content-pad-x: 1.5rem;
+  --content-pad-x: clamp(1.25rem, 3.5vw, 2.5rem);
   --class-types-gap: 1rem;
   /* Total row width for three yoga / “classic” cards — gap × 2 between three items */
   --class-strip-three-span: calc(320px * 3 + 2 * var(--class-types-gap));
-  --ink: #2f2824;
-  --ink-soft: #6a5f58;
-  --bg: #f4f1ea;
-  --line: rgba(80, 66, 57, 0.2);
+  --ink: #111111;
+  --ink-soft: #3a3a3a;
+  --bg: #eeefeb;
+  --line: rgba(0, 0, 0, 0.14);
   --img-yoga-hatha: url("hatha.png");
   --img-yoga-yin: url("yin.png");
   --img-yoga-vinyasa: url("vinyasa.png");
-  /* Warm amber / honey photo veils (same family as meditation activity cards) */
+  /* Cool stone photo veils — quiet, desaturated, like an editorial wellness site */
   --photo-veil-warm-a: linear-gradient(
-    165deg,
-    rgba(200, 148, 98, 0.26) 0%,
-    rgba(92, 58, 38, 0.4) 42%,
-    rgba(42, 28, 20, 0.58) 100%
+    180deg,
+    rgba(28, 26, 24, 0.12) 0%,
+    rgba(22, 20, 18, 0.28) 48%,
+    rgba(16, 14, 12, 0.52) 100%
   );
   --photo-veil-warm-b: linear-gradient(
-    165deg,
-    rgba(210, 155, 105, 0.24) 0%,
-    rgba(95, 62, 42, 0.38) 44%,
-    rgba(40, 26, 18, 0.58) 100%
+    180deg,
+    rgba(28, 26, 24, 0.1) 0%,
+    rgba(22, 20, 18, 0.26) 46%,
+    rgba(16, 14, 12, 0.5) 100%
   );
+  --sans: "Raleway", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
 }
 
 * {
@@ -38,10 +41,12 @@ html {
 
 body {
   margin: 0;
-  font-family: "Roboto Serif", Georgia, "Times New Roman", serif;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 16.5px;
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Single column for header + main so logo aligns with hero & all body content */
@@ -2487,6 +2492,23 @@ a.class-card:focus-visible .class-overlay {
   outline: none;
 }
 
+.meditation-practice-list {
+  width: fit-content;
+  margin: 0 auto 0.65rem;
+  padding: 0 0 0 1.15rem;
+  text-align: left;
+  color: var(--ink-soft);
+  list-style: disc;
+}
+
+.meditation-practice-list li {
+  margin: 0 0 0.28rem;
+}
+
+.meditation-practice-list li:last-child {
+  margin-bottom: 0;
+}
+
 .meditation-practice-link {
   color: inherit;
   text-decoration: none;
@@ -3544,4 +3566,653 @@ html:lang(zh) .pantry-recipe h3 {
 
 .pantry-recipe li {
   margin: 0 0 0.45rem;
+}
+
+/* ----------------------------------------------------------------
+   Visual system — editorial, stone, light type (reference: soulravel)
+   Copy is unchanged. This layer only restyles shared chrome.
+   ---------------------------------------------------------------- */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.section-title,
+.hero-text--stack,
+.pillar-intro,
+.booking-cal-month-title,
+.recipe-cover-title {
+  font-family: var(--sans);
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: clamp(2.15rem, 4.8vw, 3.55rem);
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  text-align: left;
+  margin: 2.75rem 0 1.15rem;
+  color: #5c4636;
+}
+
+.pillar-intro {
+  max-width: 38rem;
+  margin: 0 0 2.25rem;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #2a2a2a;
+}
+
+.site-align > header {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0.7rem clamp(1.1rem, 3vw, 2.4rem);
+  background: rgba(238, 239, 235, 0.94);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(12px);
+}
+
+.header-container {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0.15rem 0;
+}
+
+.logo {
+  height: 72.5px;
+}
+
+.top-nav a {
+  color: #1a1a1a;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+html:lang(zh) .top-nav a,
+html:lang(zh-Hans) .top-nav a {
+  font-size: 0.86rem;
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 1px;
+}
+
+.language-switch button {
+  border-radius: 999px;
+  border-color: rgba(0, 0, 0, 0.28);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+}
+
+.language-switch button.active {
+  background: #5c4636;
+  border-color: #5c4636;
+  color: #f7f3ee;
+}
+
+#hero {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+#hero .hero-image {
+  min-height: 0;
+  height: auto;
+}
+
+#hero .hero-bg {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: none;
+  transform: none;
+  background: none;
+}
+
+#hero .hero-image::before {
+  background: linear-gradient(
+    180deg,
+    rgba(42, 38, 34, 0.46) 0%,
+    rgba(36, 32, 28, 0.32) 46%,
+    rgba(28, 24, 20, 0.22) 100%
+  );
+}
+
+.hero-text--stack {
+  justify-content: flex-start;
+  padding: 4.5vh 1.5rem 2rem;
+  font-family: var(--sans);
+  color: #fff;
+  text-shadow: 0 1px 16px rgba(20, 16, 12, 0.28);
+}
+
+.hero-line {
+  text-shadow: none;
+  font-weight: 400;
+}
+
+.hero-line--brand {
+  font-size: clamp(3rem, 7.4vw, 6.6rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  text-transform: none;
+  max-width: 16ch;
+}
+
+.hero-line--cats {
+  margin-top: 1rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.hero-line--cats::before {
+  content: "";
+  display: block;
+  width: 6.5rem;
+  height: 1px;
+  margin: 0 auto 1rem;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.hero-line--tag {
+  margin-top: 0.35rem;
+  max-width: 28rem;
+  font-size: clamp(0.92rem, 1.4vw, 1.08rem);
+  letter-spacing: 0;
+}
+
+#about .about-text {
+  max-width: 40rem;
+}
+
+#about .about-text p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.pillars-grid {
+  gap: 0.85rem;
+}
+
+.pillar-card {
+  height: clamp(210px, 26vw, 320px);
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+.pillar-card::after {
+  background: linear-gradient(
+    to top,
+    rgba(58, 40, 28, 0.46) 0%,
+    rgba(58, 40, 28, 0.1) 24%,
+    rgba(58, 40, 28, 0) 48%
+  );
+}
+
+.pillar-card span {
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding-bottom: 1.35rem;
+}
+
+html:lang(zh) .pillar-card span,
+html:lang(zh-Hans) .pillar-card span {
+  letter-spacing: 0.12em;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.read-well-feature {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 2rem;
+  align-items: center;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.read-well-feature__photo {
+  min-height: 440px;
+  border-radius: 22px;
+}
+
+.read-well-feature__body {
+  padding: 0.5rem 0.25rem 0.5rem 0.4rem;
+}
+
+.read-well-home .recipe-kicker,
+.recipe-kicker {
+  text-align: left;
+}
+
+.read-well-feature__kicker,
+.recipe-kicker,
+.read-well-home .recipe-kicker,
+.story-index-card__ep,
+.eat-well-ig a,
+.eat-well-ig__link,
+.summer-charity__program-tag,
+.summer-charity__spots,
+.eat-well-grid__kicker,
+.eat-well-grid__num,
+.pantry-group h2,
+.pantry-recipe h3,
+.site-footer .qr-card p,
+.story-coda {
+  color: #1a1a1a;
+}
+
+.read-well-feature__title {
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  letter-spacing: -0.03em;
+  font-weight: 400;
+  color: #5c4636;
+}
+
+.read-well-feature__cta {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 0.35rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #5c4636;
+  border-radius: 999px;
+  color: #5c4636;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+}
+
+.read-well-feature:hover {
+  box-shadow: none;
+}
+
+.read-well-feature:hover .read-well-feature__cta {
+  background: #5c4636;
+  color: #f7f3ee;
+  text-decoration: none;
+}
+
+.home-programs {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.home-program-tabs {
+  justify-content: flex-start;
+  gap: 1.25rem 2.25rem;
+}
+
+.home-program-tab.section-title {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.home-program-tab--summer,
+.home-program-tab--fall,
+.home-program-tab--summer.is-active,
+.home-program-tab--fall.is-active {
+  color: #5c4636;
+  border-bottom-color: transparent;
+}
+
+.home-program-tab.is-active {
+  border-bottom-color: #5c4636;
+  opacity: 1;
+}
+
+.home-program-tab:not(.is-active) {
+  opacity: 0.38;
+}
+
+.eat-well-grid__item,
+.recipe-index-card,
+.recipe-index-card__cover,
+.story-index-card__cover,
+.class-card {
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+.story-index-grid,
+.recipe-index-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: stretch;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.summer-charity__cta,
+.home-program-panel[data-program-panel="summer"] .summer-charity__cta,
+.contact-form__submit {
+  background: #5c4636;
+  color: #f7f3ee;
+  border-radius: 999px;
+  border: 1px solid #5c4636;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.45rem;
+}
+
+.summer-charity__cta:hover,
+.home-program-panel[data-program-panel="summer"] .summer-charity__cta:hover,
+.contact-form__submit:hover {
+  background: #4a382c;
+  border-color: #4a382c;
+}
+
+.booking-class-card__book {
+  background: #5c4636;
+  color: #f7f3ee;
+}
+
+.booking-class-card__book:hover {
+  background: #4a382c;
+}
+
+.cta-button {
+  border-radius: 999px;
+  padding: 0.75rem 1.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.class-card.hatha .class-overlay h3,
+.class-card.yin .class-overlay h3,
+.class-card.vinyasa .class-overlay h3,
+.class-overlay h3 {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.story-cover img,
+.pantry-hero img,
+.pantry-recipe img,
+.featured-visual img,
+.recipe-cover img {
+  border-radius: 22px;
+  box-shadow: none;
+}
+
+.story-page .recipe-kicker {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.story-body .section-title,
+.story-zh-title,
+.story-source {
+  text-align: left;
+}
+
+.story-coda {
+  text-align: left;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+  border-top: 0;
+  padding-top: 0.4rem;
+}
+
+.site-footer {
+  max-width: none;
+  margin-top: 3rem;
+  padding: 2.25rem clamp(1.25rem, 4vw, 2.75rem) 2.5rem;
+  background: #e6e7e2;
+  border-top: 0;
+}
+
+.site-footer__inner,
+.site-footer__copy {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-footer__copy {
+  margin-top: 2.25rem;
+}
+
+.contact-space-address .en,
+.contact-space-address .cn {
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.pantry-pill {
+  background: transparent;
+  border-color: rgba(0, 0, 0, 0.22);
+  border-radius: 999px;
+}
+
+@media (max-width: 800px) {
+  .story-index-grid,
+  .recipe-index-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .read-well-feature__photo {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  #hero .hero-image {
+    min-height: 0;
+  }
+
+  .hero-line--brand {
+    font-size: clamp(2.6rem, 12vw, 3.6rem);
+  }
+}
+
+.recipe-cover-title {
+  color: #5c4636;
+}
+
+/* Offering and yoga photos: drop the gray veil so the picture stays bright.
+   A short warm scrim remains only behind the label. */
+.pillar-card--philosophy {
+  background-image: url("offerings-media/philosophy.png?v=20261012-warm");
+}
+
+.pillar-card--yoga {
+  background-image: url("yin.png?v=20261012-warm");
+}
+
+.pillar-card--meditation {
+  background-image: url("meditation.png?v=20261012-warm");
+}
+
+.pillar-card--sound {
+  background-image: url("soundhealing-main.png?v=20261012-warm");
+}
+
+.class-card.hatha .class-image-wrapper {
+  background-image: linear-gradient(
+    180deg,
+    rgba(72, 46, 28, 0.1) 0%,
+    rgba(52, 32, 18, 0.28) 30%,
+    rgba(32, 18, 10, 0.64) 68%,
+    rgba(22, 12, 8, 0.8) 100%
+  ), url("hatha.png?v=20261012-read");
+}
+
+.class-card.yin .class-image-wrapper {
+  background-image: linear-gradient(
+    180deg,
+    rgba(72, 46, 28, 0.1) 0%,
+    rgba(52, 32, 18, 0.28) 30%,
+    rgba(32, 18, 10, 0.64) 68%,
+    rgba(22, 12, 8, 0.8) 100%
+  ), url("yin.png?v=20261012-read");
+}
+
+.class-card.vinyasa .class-image-wrapper {
+  background-image: linear-gradient(
+    180deg,
+    rgba(72, 46, 28, 0.1) 0%,
+    rgba(52, 32, 18, 0.28) 30%,
+    rgba(32, 18, 10, 0.64) 68%,
+    rgba(22, 12, 8, 0.8) 100%
+  ), url("vinyasa.png?v=20261012-read");
+}
+
+.content-box.ayurveda-single .class-card.sound .class-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 427px;
+  background-position: center, center 43%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(22, 12, 8, 0.75) 0%,
+    rgba(32, 18, 10, 0.42) 30%,
+    rgba(52, 32, 18, 0.08) 52%,
+    rgba(72, 46, 28, 0) 100%
+  ), url("sound-healing.png?v=20261012-warm2");
+}
+
+.class-card.sound .class-overlay {
+  flex: 1 1 auto;
+  height: auto;
+  justify-content: flex-start;
+}
+
+.class-card.meditation-cooking .meditation-card-photo--cooking {
+  background-image: linear-gradient(
+    180deg,
+    rgba(72, 46, 28, 0.1) 0%,
+    rgba(52, 32, 18, 0.28) 30%,
+    rgba(32, 18, 10, 0.64) 68%,
+    rgba(22, 12, 8, 0.8) 100%
+  ), url("cooking-meditation.png?v=20261012-warm2");
+}
+
+.class-card.meditation-baking .meditation-card-photo--baking {
+  background-image: linear-gradient(
+    180deg,
+    rgba(72, 46, 28, 0.1) 0%,
+    rgba(52, 32, 18, 0.28) 30%,
+    rgba(32, 18, 10, 0.64) 68%,
+    rgba(22, 12, 8, 0.8) 100%
+  ), url("baking-meditation.png?v=20261012-warm2");
+}
+
+.class-card.meditation-tea .meditation-card-photo--tea {
+  background-image: linear-gradient(
+    180deg,
+    rgba(72, 46, 28, 0.1) 0%,
+    rgba(52, 32, 18, 0.28) 30%,
+    rgba(32, 18, 10, 0.64) 68%,
+    rgba(22, 12, 8, 0.8) 100%
+  ), url("coffee-tea-meditation.png?v=20261012-warm2");
+}
+
+.class-card.meditation-space .meditation-card-photo--space {
+  background-image: linear-gradient(
+    180deg,
+    rgba(72, 46, 28, 0.1) 0%,
+    rgba(52, 32, 18, 0.28) 30%,
+    rgba(32, 18, 10, 0.64) 68%,
+    rgba(22, 12, 8, 0.8) 100%
+  ), url("space-arrangement-meditation.png?v=20261012-warm2");
+}
+
+.meditation-cards-row .class-types > .class-card > .class-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 460px;
+}
+
+.meditation-cards-row .class-card .class-overlay {
+  flex: 1 1 auto;
+  height: auto;
+}
+
+.class-card.meditation-cooking .class-overlay h3,
+.class-card.meditation-baking .class-overlay h3,
+.class-card.meditation-tea .class-overlay h3,
+.class-card.meditation-space .class-overlay h3 {
+  font-size: 0.98rem;
+  line-height: 1.25;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.class-card.meditation-cooking .class-overlay p,
+.class-card.meditation-baking .class-overlay p,
+.class-card.meditation-tea .class-overlay p,
+.class-card.meditation-space .class-overlay p {
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.class-card.hatha .class-overlay,
+.class-card.yin .class-overlay,
+.class-card.vinyasa .class-overlay,
+.class-card.sound .class-overlay,
+.class-card.meditation-cooking .class-overlay,
+.class-card.meditation-baking .class-overlay,
+.class-card.meditation-tea .class-overlay,
+.class-card.meditation-space .class-overlay {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(24, 12, 6, 0.45);
+}
+
+.class-card.hatha .class-overlay h3,
+.class-card.yin .class-overlay h3,
+.class-card.vinyasa .class-overlay h3,
+.class-card.sound .class-overlay h2,
+.class-card.meditation-cooking .class-overlay h3,
+.class-card.meditation-baking .class-overlay h3,
+.class-card.meditation-tea .class-overlay h3,
+.class-card.meditation-space .class-overlay h3,
+.class-card.meditation-baking .meditation-plant-highlight {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(24, 12, 6, 0.4);
 }
