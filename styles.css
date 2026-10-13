@@ -4058,19 +4058,19 @@ html:lang(zh-Hans) .pillar-card span {
 /* Offering and yoga photos: drop the gray veil so the picture stays bright.
    A short warm scrim remains only behind the label. */
 .pillar-card--philosophy {
-  background-image: url("offerings-media/philosophy.png?v=20261012-warm");
+  background-image: url("page-offer-philosophy.jpg?v=20261012-offer");
 }
 
 .pillar-card--yoga {
-  background-image: url("yin.png?v=20261012-warm");
+  background-image: url("page-offer-yoga.jpg?v=20261012-offer");
 }
 
 .pillar-card--meditation {
-  background-image: url("meditation.png?v=20261012-warm");
+  background-image: url("page-offer-meditation.jpg?v=20261012-wall");
 }
 
 .pillar-card--sound {
-  background-image: url("soundhealing-main.png?v=20261012-warm");
+  background-image: url("page-offer-sound.jpg?v=20261012-offer");
 }
 
 .class-card.hatha .class-image-wrapper {
@@ -4080,7 +4080,7 @@ html:lang(zh-Hans) .pillar-card span {
     rgba(52, 32, 18, 0.28) 30%,
     rgba(32, 18, 10, 0.64) 68%,
     rgba(22, 12, 8, 0.8) 100%
-  ), url("hatha.png?v=20261012-read");
+  ), url("page-hatha.jpg?v=20261012-match");
 }
 
 .class-card.yin .class-image-wrapper {
@@ -4090,7 +4090,7 @@ html:lang(zh-Hans) .pillar-card span {
     rgba(52, 32, 18, 0.28) 30%,
     rgba(32, 18, 10, 0.64) 68%,
     rgba(22, 12, 8, 0.8) 100%
-  ), url("yin.png?v=20261012-read");
+  ), url("page-yin.jpg?v=20261012-tone");
 }
 
 .class-card.vinyasa .class-image-wrapper {
@@ -4100,21 +4100,21 @@ html:lang(zh-Hans) .pillar-card span {
     rgba(52, 32, 18, 0.28) 30%,
     rgba(32, 18, 10, 0.64) 68%,
     rgba(22, 12, 8, 0.8) 100%
-  ), url("vinyasa.png?v=20261012-read");
+  ), url("page-vinyasa.jpg?v=20261012-tone");
 }
 
 .content-box.ayurveda-single .class-card.sound .class-image-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 427px;
-  background-position: center, center 43%;
+  min-height: 580px;
+  background-position: center, center;
   background-image: linear-gradient(
     180deg,
     rgba(22, 12, 8, 0.75) 0%,
     rgba(32, 18, 10, 0.42) 30%,
     rgba(52, 32, 18, 0.08) 52%,
     rgba(72, 46, 28, 0) 100%
-  ), url("sound-healing.png?v=20261012-warm2");
+  ), url("page-sound.jpg?v=20261013-wall");
 }
 
 .class-card.sound .class-overlay {
@@ -4130,7 +4130,7 @@ html:lang(zh-Hans) .pillar-card span {
     rgba(52, 32, 18, 0.28) 30%,
     rgba(32, 18, 10, 0.64) 68%,
     rgba(22, 12, 8, 0.8) 100%
-  ), url("cooking-meditation.png?v=20261012-warm2");
+  ), url("page-cooking.jpg?v=20261012-edit");
 }
 
 .class-card.meditation-baking .meditation-card-photo--baking {
@@ -4140,7 +4140,7 @@ html:lang(zh-Hans) .pillar-card span {
     rgba(52, 32, 18, 0.28) 30%,
     rgba(32, 18, 10, 0.64) 68%,
     rgba(22, 12, 8, 0.8) 100%
-  ), url("baking-meditation.png?v=20261012-warm2");
+  ), url("page-baking.jpg?v=20261012-tone");
 }
 
 .class-card.meditation-tea .meditation-card-photo--tea {
@@ -4150,7 +4150,7 @@ html:lang(zh-Hans) .pillar-card span {
     rgba(52, 32, 18, 0.28) 30%,
     rgba(32, 18, 10, 0.64) 68%,
     rgba(22, 12, 8, 0.8) 100%
-  ), url("coffee-tea-meditation.png?v=20261012-warm2");
+  ), url("page-tea.jpg?v=20261012-tone");
 }
 
 .class-card.meditation-space .meditation-card-photo--space {
@@ -4160,7 +4160,7 @@ html:lang(zh-Hans) .pillar-card span {
     rgba(52, 32, 18, 0.28) 30%,
     rgba(32, 18, 10, 0.64) 68%,
     rgba(22, 12, 8, 0.8) 100%
-  ), url("space-arrangement-meditation.png?v=20261012-warm2");
+  ), url("page-space.jpg?v=20261012-tone");
 }
 
 .meditation-cards-row .class-types > .class-card > .class-image-wrapper {
